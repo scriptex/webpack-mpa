@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
@@ -143,7 +144,8 @@ module.exports = {
     }),
     new CleanWebpackPlugin(paths.cleanUp, {
       verbose: false
-    })
+    }),
+    new UglifyJSPlugin()
   ],
   cache: true,
   bail: false,
