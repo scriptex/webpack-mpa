@@ -29,6 +29,7 @@ const postcssConfig = {
     require('postcss-easy-import'),
     require('postcss-flexbugs-fixes'),
     require('postcss-utilities'),
+    require('postcss-merge-rules'),
     require('autoprefixer')(),
     require('cssnano')({
       discardComments: {

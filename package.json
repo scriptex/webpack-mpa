@@ -6,7 +6,12 @@
     "dist": "webpack",
     "start": "webpack --watch"
   },
-  "keywords": ["MPA", "webpack", "setup", "multi-page"],
+  "keywords": [
+    "MPA",
+    "webpack",
+    "setup",
+    "multi-page"
+  ],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -29,6 +34,7 @@
     "postcss-easy-import": "^3.0.0",
     "postcss-flexbugs-fixes": "^3.2.0",
     "postcss-loader": "^2.0.10",
+    "postcss-merge-rules": "^2.1.2",
     "postcss-utilities": "^0.7.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
