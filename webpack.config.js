@@ -12,15 +12,15 @@ const paths = {
   scriptsBuild: './assets/scripts/app.js',
   resolveModules: 'node_modules',
   resolveScripts: './assets/scripts',
-  resolveIcons: './assets/img/sprite',
-  iconsSrc: 'assets/img/sprite',
-  iconsTarget: 'assets/img/sprite.png',
+  resolveIcons: './assets/images/sprite',
+  iconsSrc: 'assets/images/sprite',
+  iconsTarget: 'assets/images/sprite.png',
   iconsStyle: 'assets/src/styles/_sprite.scss',
-  iconsRef: '../../img/sprite.png',
+  iconsRef: '../../images/sprite.png',
   cleanUp: [
     './assets/scripts/',
     './assets/styles/',
-    './assets/img/sprite.png',
+    './assets/images/sprite.png',
     './sprite.png'
   ]
 };
