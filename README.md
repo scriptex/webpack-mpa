@@ -40,3 +40,8 @@ The setup includes:
 3. Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
 4. Latest EcmaScript support
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
+
+## TODO
+
+1. Add images optimization using a tool such as imagemin
+2. Add separate configs based on environment variables such as NODE_ENV
