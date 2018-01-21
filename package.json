@@ -6,12 +6,7 @@
     "dist": "webpack",
     "start": "webpack --watch"
   },
-  "keywords": [
-    "MPA",
-    "webpack",
-    "setup",
-    "multi-page"
-  ],
+  "keywords": ["MPA", "webpack", "setup", "multi-page"],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com>",
   "license": "MIT",
   "dependencies": {
