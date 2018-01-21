@@ -35,7 +35,8 @@ const postcssConfig = {
         removeAll: true
       }
     })
-  ]
+  ],
+  sourceMap: true
 };
 
 const babelConfig = [
@@ -63,12 +64,22 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           use: [
-            'css-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
             {
               loader: 'postcss-loader',
               options: postcssConfig
             },
-            'sass-loader'
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
+              }
+            }
           ],
           fallback: 'style-loader'
         })
