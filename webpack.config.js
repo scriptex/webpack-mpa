@@ -145,7 +145,9 @@ module.exports = {
     new CleanWebpackPlugin(paths.cleanUp, {
       verbose: false
     }),
-    new UglifyJSPlugin()
+    new UglifyJSPlugin({
+      sourceMap: true
+    })
   ],
   cache: true,
   bail: false,
