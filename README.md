@@ -19,7 +19,7 @@ Multiple page application setup with Webpack using SASS, PostCSS, ES6+, etc
 
 ## Build
 
-`yarn dist`
+`yarn build`
 
 ## Details
 
@@ -36,6 +36,8 @@ The setup includes:
 * [postcss-utilities](https://github.com/ismamz/postcss-utilities) usage
 * [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) fixing
 * [css minification](http://cssnano.co/)
+
+The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
 
 3. Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
 4. Latest EcmaScript support
