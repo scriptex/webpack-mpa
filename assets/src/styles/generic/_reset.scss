@@ -1,0 +1,162 @@
+// Reset
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	text-decoration-skip: ink;
+}
+
+nav {
+	ul,
+	ol {
+		padding: 0;
+		margin: 0;
+		list-style: none outside none;
+	}
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img,
+iframe,
+video,
+audio,
+object {
+	max-width: 100%;
+}
+
+img,
+iframe {
+	border: 0 none;
+}
+
+img {
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+template {
+	display: none;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+a,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='image'],
+label[for],
+.c-btn {
+	cursor: pointer;
+}
+
+a[href^='tel'],
+button[disabled],
+input[disabled],
+textarea[disabled],
+select[disabled],
+.c-btn.disabled,
+.c-btn[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+textarea,
+a[href^='tel'] {
+	appearance: none;
+}
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+	appearance: none;
+}
+
+textarea {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+input::placeholder {
+	color: inherit;
+	opacity: 1;
+}
+
+textarea::placeholder {
+	color: inherit;
+	opacity: 1;
+}
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: inherit;
+	-webkit-box-shadow: 0 0 0 1000px $color-white inset;
+}
+
+a,
+a img,
+input,
+button,
+select,
+textarea,
+.c-btn,
+[class^='svg-'] {
+	transition-property: color, opacity, border-color, background-color,
+		box-shadow, fill, stroke;
+	transition-duration: $timing;
+	transition-timing-function: $easing;
+}

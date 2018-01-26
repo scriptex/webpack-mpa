@@ -1,0 +1,17 @@
+// Button
+
+.c-btn {
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	appearance: none;
+
+	&--block {
+		width: 100%;
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

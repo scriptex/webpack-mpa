@@ -1,0 +1,14 @@
+// Texts
+
+p,
+ul,
+ol,
+dl,
+table,
+blockquote {
+	margin-top: 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

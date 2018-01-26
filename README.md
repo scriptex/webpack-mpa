@@ -45,4 +45,3 @@ The setup includes:
 
 1. Add images optimization using a tool such as imagemin
 2. Add separate configs based on environment variables such as NODE_ENV
-3. Starting SASS files and folders

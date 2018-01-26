@@ -1,0 +1,13 @@
+// Shell
+
+.o-shell {
+	max-width: $shell-width;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	&--flex {
+		@include flex-row;
+	}
+}

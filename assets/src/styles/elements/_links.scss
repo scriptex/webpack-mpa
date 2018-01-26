@@ -1,0 +1,15 @@
+// Links
+
+a {
+	color: $color-action;
+	text-decoration: underline;
+
+	&[href^='tel'] {
+		color: inherit;
+	}
+
+	&:hover,
+	&[href^='tel'] {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,21 @@
+// Align
+
+.alignleft {
+	float: left;
+	margin: 0.35rem 1.25rem 1.25rem 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.35rem 0 1.25rem 1.25rem;
+}
+
+.alignnone,
+.aligncenter {
+	float: none;
+	margin: 0.35rem 0 1.25rem;
+}
+
+.aligncenter {
+	display: block;
+}

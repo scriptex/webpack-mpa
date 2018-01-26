@@ -1,6 +1,37 @@
+// Libraries and external files
 @import 'normalize.css';
+
+// Icons
 @import 'sprite';
-@import 'ico';
 
 // Uncomment this to enable image sprite usage
 // @include sprites($spritesheet-sprites);
+
+// Settings
+@import 'settings/variables';
+
+// Tools
+@import 'tools/mixins';
+
+// Generic
+@import 'generic/reset';
+
+// Elements
+@import 'elements/document';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/texts';
+
+// Objects
+@import 'objects/wrapper';
+@import 'objects/shell';
+@import 'objects/grid';
+
+// Components
+@import 'components/btn';
+@import 'components/ico';
+
+// Utilities
+@import 'utilities/align';
+@import 'utilities/text-align';
+@import 'utilities/_fullsize-background';
