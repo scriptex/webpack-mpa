@@ -46,4 +46,3 @@ The SASS file/folder structure utilizes the ITCSS pattern as shown and expained 
 ## TODO
 
 1. Add images optimization using a tool such as imagemin
-2. Add separate configs based on environment variables such as NODE_ENV
