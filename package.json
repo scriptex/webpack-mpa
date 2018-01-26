@@ -3,15 +3,10 @@
   "version": "0.0.1",
   "description": "Multi page app setup with webpack",
   "scripts": {
-    "dist": "webpack",
-    "start": "webpack --watch"
+    "build": "webpack --env.NODE_ENV=production",
+    "start": "webpack --watch --env.NODE_ENV=development"
   },
-  "keywords": [
-    "MPA",
-    "webpack",
-    "setup",
-    "multi-page"
-  ],
+  "keywords": ["MPA", "webpack", "setup", "multi-page"],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -42,5 +37,5 @@
     "webpack": "^3.10.0",
     "webpack-spritesmith": "^0.4.0"
   },
-  "browserslist": "last 1 version"
+  "browserslist": ["> 1%", "last 2 versions"]
 }
