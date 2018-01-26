@@ -42,7 +42,4 @@ The SASS file/folder structure utilizes the ITCSS pattern as shown and expained 
 3. Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
 4. Latest EcmaScript support
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
-
-## TODO
-
-1. Add images optimization using a tool such as imagemin
+6. Images optimization using [Imagemin](https://github.com/Klathmon/imagemin-webpack-plugin)

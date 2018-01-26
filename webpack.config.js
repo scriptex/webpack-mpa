@@ -1,9 +1,14 @@
 const path = require('path');
+
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const imageminPNGquant = require('imagemin-pngquant');
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 
 const paths = {
 	stylesSrc: './assets/src/styles/main.scss',
@@ -17,6 +22,7 @@ const paths = {
 	iconsTarget: 'assets/images/sprite.png',
 	iconsStyle: 'assets/src/styles/_sprite.scss',
 	iconsRef: '../../images/sprite.png',
+	imagesSrc: './assets/images/',
 	cleanUp: [
 		'./assets/scripts/',
 		'./assets/styles/',
@@ -165,6 +171,40 @@ module.exports = env => {
 		config.plugins.push(
 			new UglifyJSPlugin({
 				sourceMap: true
+			}),
+			new ImageminWebpackPlugin({
+				test: paths.imagesSrc,
+				gifsicle: {
+					interlaced: true
+				},
+				svgo: {
+					plugins: [
+						{ cleanupAttrs: true },
+						{ removeDoctype: true },
+						{ removeXMLProcInst: true },
+						{ removeComments: true },
+						{ removeMetadata: true },
+						{ removeUselessDefs: true },
+						{ removeEditorsNSData: true },
+						{ removeEmptyAttrs: true },
+						{ removeHiddenElems: false },
+						{ removeEmptyText: true },
+						{ removeEmptyContainers: true },
+						{ cleanupEnableBackground: true },
+						{ removeViewBox: true },
+						{ cleanupIDs: false },
+						{ convertStyleToAttrs: true }
+					]
+				},
+				plugins: [
+					imageminMozjpeg({
+						quality: 70
+					}),
+					imageminPNGquant({
+						speed: 1,
+						quality: 90
+					})
+				]
 			})
 		);
 	}
