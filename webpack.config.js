@@ -26,7 +26,7 @@ const paths = {
 };
 
 const postcssConfig = {
-  plugins: () => [
+  plugins: [
     require('postcss-easy-import'),
     require('postcss-flexbugs-fixes'),
     require('postcss-utilities'),
@@ -52,7 +52,7 @@ const babelConfig = [
   }
 ];
 
-module.exports = {
+const config = {
   entry: [paths.stylesSrc, paths.scriptsSrc],
   output: {
     filename: paths.scriptsBuild
@@ -115,42 +115,55 @@ module.exports = {
         cssImageRef: paths.iconsRef
       }
     }),
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      open: 'external',
-      files: [
-        '*.php',
-        '*.html',
-        './assets/styles/app.css',
-        './assets/styles/app.js'
-      ],
-      ghostMode: {
-        clicks: false,
-        scroll: true,
-        forms: {
-          submit: true,
-          inputs: true,
-          toggles: true
-        }
-      },
-      snippetOptions: {
-        rule: {
-          match: /<\/body>/i,
-          fn: (snippet, match) => `${snippet}${match}`
-        }
-      },
-      proxy: 'localhost'
-    }),
     new CleanWebpackPlugin(paths.cleanUp, {
       verbose: false
-    }),
-    new UglifyJSPlugin({
-      sourceMap: true
     })
   ],
   cache: true,
   bail: false,
-  watch: true,
   devtool: 'source-map'
+};
+
+module.exports = env => {
+  if (env.NODE_ENV === 'development') {
+    config.plugins.push(
+      new BrowserSyncPlugin({
+        host: 'localhost',
+        port: 3000,
+        open: 'external',
+        files: [
+          '*.php',
+          '*.html',
+          './assets/styles/app.css',
+          './assets/styles/app.js'
+        ],
+        ghostMode: {
+          clicks: false,
+          scroll: true,
+          forms: {
+            submit: true,
+            inputs: true,
+            toggles: true
+          }
+        },
+        snippetOptions: {
+          rule: {
+            match: /<\/body>/i,
+            fn: (snippet, match) => `${snippet}${match}`
+          }
+        },
+        proxy: 'localhost'
+      })
+    );
+  }
+
+  if (env.NODE_ENV === 'production') {
+    config.plugins.push(
+      new UglifyJSPlugin({
+        sourceMap: true
+      })
+    );
+  }
+
+  return config;
 };
