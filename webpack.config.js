@@ -1,6 +1,7 @@
 const url = require('url');
 const path = require('path');
 
+const magicImporter = require('node-sass-magic-importer');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
@@ -177,7 +178,10 @@ const config = {
 						},
 						{
 							loader: 'sass-loader',
-							options: sourceMap
+							options: {
+								importer: magicImporter(),
+								...sourceMap
+							}
 						}
 					],
 					fallback: 'style-loader'
