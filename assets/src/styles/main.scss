@@ -1,9 +1,8 @@
 // Libraries and external files
 @import 'normalize.css';
 
-// Icons
+// Sprite
 @import 'sprite';
-
 // Uncomment this to enable image sprite usage
 // @include sprites($spritesheet-sprites);
 
@@ -30,8 +29,9 @@
 // Components
 @import 'components/btn';
 @import 'components/ico';
+@import 'components/lists';
 
 // Utilities
 @import 'utilities/align';
 @import 'utilities/text-align';
-@import 'utilities/_fullsize-background';
+@import 'utilities/fullsize-background';
