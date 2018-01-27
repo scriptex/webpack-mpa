@@ -25,7 +25,7 @@ The default setup uses php files, but you can easily switch to a file format of 
 
 ## Details
 
-This setup uses [Webpack](https://webpack.js.org/) as a module bundler and [Yarn](https://yarnpkg.com/en/ as a dependency manager.
+This setup uses [Webpack](https://webpack.js.org/) as a module bundler and [Yarn](https://yarnpkg.com/en/) as a dependency manager.
 
 The setup includes:
 
