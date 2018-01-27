@@ -71,7 +71,7 @@ const browserSyncConfig = {
 		'**/*.php',
 		'**/*.html',
 		'./assets/styles/app.css',
-		'./assets/styles/app.js'
+		'./assets/scripts/app.js'
 	],
 	ghostMode: {
 		clicks: false,
@@ -112,10 +112,6 @@ const spritesmithConfig = {
 
 const cleanConfig = {
 	verbose: false
-};
-
-const uglifyJSconfig = {
-	...sourceMap
 };
 
 const imageminConfig = {
@@ -205,7 +201,8 @@ const config = {
 	],
 	cache: true,
 	bail: false,
-	devtool: 'source-map'
+	devtool: 'source-map',
+	stats: 'errors-only'
 };
 
 module.exports = env => {
@@ -220,7 +217,7 @@ module.exports = env => {
 
 	if (env.NODE_ENV === 'production') {
 		config.plugins.push(
-			new UglifyJSPlugin(uglifyJSconfig),
+			new UglifyJSPlugin(sourceMap),
 			new ImageminWebpackPlugin(imageminConfig)
 		);
 	}
