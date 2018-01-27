@@ -37,7 +37,7 @@ The setup includes:
     * [postcss-utilities](https://github.com/ismamz/postcss-utilities) usage
     * [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) fixing
     * [css minification](http://cssnano.co/)
-3. Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
+3. PNG Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
 4. Latest EcmaScript support
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
 6. Images optimization using [Imagemin](https://github.com/Klathmon/imagemin-webpack-plugin)
@@ -47,3 +47,7 @@ If you wish to use a proxy in browsersync you can do it using the `DEV_URL` CLI 
 ```
 yarn start --env.DEV_URL=http://your-proxy.app
 ```
+
+### TODO
+
+1. Add SVG sprite generating
