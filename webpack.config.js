@@ -1,3 +1,4 @@
+const url = require('url');
 const path = require('path');
 
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
@@ -58,6 +59,96 @@ const babelConfig = [
 	}
 ];
 
+const browserSyncConfig = {
+	host: 'localhost',
+	port: 3000,
+	open: 'external',
+	files: [
+		'**/*.php',
+		'**/*.html',
+		'./assets/styles/app.css',
+		'./assets/styles/app.js'
+	],
+	ghostMode: {
+		clicks: false,
+		scroll: true,
+		forms: {
+			submit: true,
+			inputs: true,
+			toggles: true
+		}
+	},
+	snippetOptions: {
+		rule: {
+			match: /<\/body>/i,
+			fn: (snippet, match) => `${snippet}${match}`
+		}
+	},
+	proxy: 'localhost'
+};
+
+const extractTextConfig = {
+	filename: paths.stylesBuild,
+	allChunks: true
+};
+
+const spritesmithConfig = {
+	src: {
+		cwd: path.resolve(__dirname, paths.iconsSrc),
+		glob: '*.png'
+	},
+	target: {
+		image: path.resolve(__dirname, paths.iconsTarget),
+		css: path.resolve(__dirname, paths.iconsStyle)
+	},
+	apiOptions: {
+		cssImageRef: paths.iconsRef
+	}
+};
+
+const cleanConfig = {
+	verbose: false
+};
+
+const uglifyJSconfig = {
+	sourceMap: true
+};
+
+const imageminConfig = {
+	test: paths.imagesSrc,
+	gifsicle: {
+		interlaced: true
+	},
+	svgo: {
+		plugins: [
+			{ cleanupAttrs: true },
+			{ removeDoctype: true },
+			{ removeXMLProcInst: true },
+			{ removeComments: true },
+			{ removeMetadata: true },
+			{ removeUselessDefs: true },
+			{ removeEditorsNSData: true },
+			{ removeEmptyAttrs: true },
+			{ removeHiddenElems: false },
+			{ removeEmptyText: true },
+			{ removeEmptyContainers: true },
+			{ cleanupEnableBackground: true },
+			{ removeViewBox: true },
+			{ cleanupIDs: false },
+			{ convertStyleToAttrs: true }
+		]
+	},
+	plugins: [
+		imageminMozjpeg({
+			quality: 70
+		}),
+		imageminPNGquant({
+			speed: 1,
+			quality: 90
+		})
+	]
+};
+
 const config = {
 	entry: [paths.stylesSrc, paths.scriptsSrc],
 	output: {
@@ -108,26 +199,9 @@ const config = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin({
-			filename: paths.stylesBuild,
-			allChunks: true
-		}),
-		new SpritesmithPlugin({
-			src: {
-				cwd: path.resolve(__dirname, paths.iconsSrc),
-				glob: '*.png'
-			},
-			target: {
-				image: path.resolve(__dirname, paths.iconsTarget),
-				css: path.resolve(__dirname, paths.iconsStyle)
-			},
-			apiOptions: {
-				cssImageRef: paths.iconsRef
-			}
-		}),
-		new CleanWebpackPlugin(paths.cleanUp, {
-			verbose: false
-		})
+		new ExtractTextPlugin(extractTextConfig),
+		new SpritesmithPlugin(spritesmithConfig),
+		new CleanWebpackPlugin(paths.cleanUp, cleanConfig)
 	],
 	cache: true,
 	bail: false,
@@ -136,76 +210,18 @@ const config = {
 
 module.exports = env => {
 	if (env.NODE_ENV === 'development') {
-		config.plugins.push(
-			new BrowserSyncPlugin({
-				host: 'localhost',
-				port: 3000,
-				open: 'external',
-				files: [
-					'*.php',
-					'*.html',
-					'./assets/styles/app.css',
-					'./assets/styles/app.js'
-				],
-				ghostMode: {
-					clicks: false,
-					scroll: true,
-					forms: {
-						submit: true,
-						inputs: true,
-						toggles: true
-					}
-				},
-				snippetOptions: {
-					rule: {
-						match: /<\/body>/i,
-						fn: (snippet, match) => `${snippet}${match}`
-					}
-				},
-				proxy: 'localhost'
-			})
-		);
+		if (env.DEV_URL) {
+			browserSyncConfig.host = url.parse(env.DEV_URL).hostname;
+			browserSyncConfig.proxy = env.DEV_URL;
+		}
+
+		config.plugins.push(new BrowserSyncPlugin(browserSyncConfig));
 	}
 
 	if (env.NODE_ENV === 'production') {
 		config.plugins.push(
-			new UglifyJSPlugin({
-				sourceMap: true
-			}),
-			new ImageminWebpackPlugin({
-				test: paths.imagesSrc,
-				gifsicle: {
-					interlaced: true
-				},
-				svgo: {
-					plugins: [
-						{ cleanupAttrs: true },
-						{ removeDoctype: true },
-						{ removeXMLProcInst: true },
-						{ removeComments: true },
-						{ removeMetadata: true },
-						{ removeUselessDefs: true },
-						{ removeEditorsNSData: true },
-						{ removeEmptyAttrs: true },
-						{ removeHiddenElems: false },
-						{ removeEmptyText: true },
-						{ removeEmptyContainers: true },
-						{ cleanupEnableBackground: true },
-						{ removeViewBox: true },
-						{ cleanupIDs: false },
-						{ convertStyleToAttrs: true }
-					]
-				},
-				plugins: [
-					imageminMozjpeg({
-						quality: 70
-					}),
-					imageminPNGquant({
-						speed: 1,
-						quality: 90
-					})
-				]
-			})
+			new UglifyJSPlugin(uglifyJSconfig),
+			new ImageminWebpackPlugin(imageminConfig)
 		);
 	}
 
