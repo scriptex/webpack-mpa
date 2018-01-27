@@ -212,7 +212,11 @@ module.exports = env => {
 			browserSyncConfig.proxy = env.DEV_URL;
 		}
 
-		config.plugins.push(new BrowserSyncPlugin(browserSyncConfig));
+		config.plugins.push(
+			new BrowserSyncPlugin(browserSyncConfig, {
+				reload: false
+			})
+		);
 	}
 
 	if (env.NODE_ENV === 'production') {
