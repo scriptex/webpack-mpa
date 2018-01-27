@@ -9,6 +9,8 @@ Multiple page application setup with Webpack using SASS, PostCSS, ES6+, etc
    or
 3. Yarn - min v1.3.2
 
+The default setup uses php files, but you can easily switch to a file format of your choice.
+
 ## Install
 
 `yarn`
@@ -23,14 +25,13 @@ Multiple page application setup with Webpack using SASS, PostCSS, ES6+, etc
 
 ## Details
 
-This setup uses [Webpack](https://webpack.js.org/) as a module bundler and dependency manager.
-
-All modules/dependenices are installed via [Yarn](https://yarnpkg.com/en/.
+This setup uses [Webpack](https://webpack.js.org/) as a module bundler and [Yarn](https://yarnpkg.com/en/ as a dependency manager.
 
 The setup includes:
 
 1. [SASS](http://sass-lang.com/) stylesheets preprocessing
-   The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
+    * The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+    * Wildcard imports in SASS thanks to [Node SASS Magic Importer](https://github.com/maoberlehner/node-sass-magic-importer)
 2. [PostCSS](https://github.com/postcss/postcss) stylesheet postprocessing including:
     * [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
     * [postcss-utilities](https://github.com/ismamz/postcss-utilities) usage
@@ -41,8 +42,8 @@ The setup includes:
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
 6. Images optimization using [Imagemin](https://github.com/Klathmon/imagemin-webpack-plugin)
 
-If you use a custom domain name for your server instead of `localhost`, you can take advantage of the additional CLI argument which specifies the proxy and host which Browsersync uses. For example, if you want to view your app via http://app.test, you need to call the `start` command like this:
+If you wish to use a proxy in browsersync you can do it using the `DEV_URL` CLI argument like this:
 
 ```
-yarn start --env.DEV_URL=http://app.test
+yarn start --env.DEV_URL=http://your-proxy.app
 ```
