@@ -32,6 +32,10 @@ const paths = {
 	]
 };
 
+const sourceMap = {
+	sourceMap: true
+};
+
 const postcssConfig = {
 	plugins: [
 		require('postcss-easy-import'),
@@ -45,7 +49,7 @@ const postcssConfig = {
 			}
 		})
 	],
-	sourceMap: true
+	...sourceMap
 };
 
 const babelConfig = [
@@ -111,7 +115,7 @@ const cleanConfig = {
 };
 
 const uglifyJSconfig = {
-	sourceMap: true
+	...sourceMap
 };
 
 const imageminConfig = {
@@ -169,9 +173,7 @@ const config = {
 					use: [
 						{
 							loader: 'css-loader',
-							options: {
-								sourceMap: true
-							}
+							options: sourceMap
 						},
 						{
 							loader: 'postcss-loader',
@@ -179,16 +181,14 @@ const config = {
 						},
 						{
 							loader: 'sass-loader',
-							options: {
-								sourceMap: true
-							}
+							options: sourceMap
 						}
 					],
 					fallback: 'style-loader'
 				})
 			},
 			{
-				test: /\.png$/,
+				test: /sprite\.png$/,
 				loaders: ['file-loader?name=../../[path][name].[ext]']
 			},
 			{
