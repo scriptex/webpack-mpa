@@ -34,7 +34,6 @@
 		"imagemin-pngquant": "^5.0.1",
 		"imagemin-webpack-plugin": "^1.6.1",
 		"node-sass": "^4.7.2",
-		"node-sass-magic-importer": "^5.1.0",
 		"postcss-easy-import": "^3.0.0",
 		"postcss-flexbugs-fixes": "^3.2.0",
 		"postcss-loader": "^2.0.10",

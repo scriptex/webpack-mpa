@@ -3,26 +3,34 @@
 
 // Sprite
 @import 'sprite';
-// Uncomment this to enable image sprite usage
-// @include sprites($spritesheet-sprites);
+@include sprites($spritesheet-sprites);
 
 // Settings
-@import 'settings/**/*';
+@import 'settings/variables';
 
 // Tools
-@import 'tools/**/*';
+@import 'tools/mixins';
 
 // Generic
-@import 'generic/**/*';
+@import 'generic/reset';
 
 // Elements
-@import 'elements/**/*';
+@import 'elements/document';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/texts';
 
 // Objects
-@import 'objects/**/*';
+@import 'objects/wrapper';
+@import 'objects/shell';
+@import 'objects/grid';
 
 // Utilities
-@import 'utilities/**/*';
+@import 'utilities/text-align';
+@import 'utilities/align';
+@import 'utilities/fullsize-background';
 
 // Components
-@import 'components/**/*';
+@import 'components/btn';
+@import 'components/ico';
+@import 'components/lists';

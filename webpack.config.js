@@ -1,7 +1,6 @@
 const url = require('url');
 const path = require('path');
 
-const magicImporter = require('node-sass-magic-importer');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
@@ -178,10 +177,7 @@ const config = {
 						},
 						{
 							loader: 'sass-loader',
-							options: {
-								importer: magicImporter(),
-								...sourceMap
-							}
+							options: sourceMap
 						}
 					],
 					fallback: 'style-loader'
@@ -195,6 +191,20 @@ const config = {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: babelConfig
+			},
+			{
+				test: /\.(jpe?g|gif|[^sprite\.]png|svg|woff2?|ttf|eot|wav|mp3|mp4)(\?.*$|$)/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[hash].[ext]',
+							context: '',
+							publicPath: '../../',
+							outputPath: 'assets/modules/'
+						}
+					}
+				]
 			}
 		]
 	},
