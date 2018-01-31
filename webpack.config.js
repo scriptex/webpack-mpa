@@ -1,6 +1,7 @@
 const url = require('url');
 const path = require('path');
 
+const globImporter = require('sass-glob-importer');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
@@ -179,7 +180,10 @@ const config = {
 						},
 						{
 							loader: 'sass-loader',
-							options: sourceMap
+							options: {
+								importer: globImporter(),
+								...sourceMap
+							}
 						}
 					],
 					fallback: 'style-loader'

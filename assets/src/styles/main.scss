@@ -6,31 +6,22 @@
 @include sprites($spritesheet-sprites);
 
 // Settings
-@import 'settings/variables';
+@import 'settings/**/*';
 
 // Tools
-@import 'tools/mixins';
+@import 'tools/**/*';
 
 // Generic
-@import 'generic/reset';
+@import 'generic/**/*';
 
 // Elements
-@import 'elements/document';
-@import 'elements/headings';
-@import 'elements/links';
-@import 'elements/texts';
+@import 'elements/**/*';
 
 // Objects
-@import 'objects/wrapper';
-@import 'objects/shell';
-@import 'objects/grid';
+@import 'objects/**/*';
 
 // Utilities
-@import 'utilities/text-align';
-@import 'utilities/align';
-@import 'utilities/fullsize-background';
+@import 'utilities/**/*';
 
 // Components
-@import 'components/btn';
-@import 'components/ico';
-@import 'components/lists';
+@import 'components/**/*';
