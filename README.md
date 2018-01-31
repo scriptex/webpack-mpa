@@ -31,7 +31,7 @@ The setup includes:
 
 1. [SASS](http://sass-lang.com/) stylesheets preprocessing
     * The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
-    * Wildcard imports in SASS thanks to [Node SASS Magic Importer](https://github.com/maoberlehner/node-sass-magic-importer)
+    * Wildcard imports in SASS thanks to [SASS Glob Importer](https://github.com/lucasmotta/sass-glob-importer)
 2. [PostCSS](https://github.com/postcss/postcss) stylesheet postprocessing including:
     * [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
     * [postcss-utilities](https://github.com/ismamz/postcss-utilities) usage
