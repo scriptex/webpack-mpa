@@ -45,9 +45,5 @@ The setup includes:
 If you wish to use a proxy in browsersync you can do it using the `DEV_URL` CLI argument like this:
 
 ```
-yarn start --env.DEV_URL=http://your-proxy.app
+yarn start --env.DEV_URL=http://your.app
 ```
-
-### TODO
-
-1. Add SVG sprite generating
