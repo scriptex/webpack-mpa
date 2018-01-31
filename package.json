@@ -1,10 +1,12 @@
 {
 	"name": "webpack-mpa",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Multi page app setup with webpack",
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
-		"start": "webpack --watch --env.NODE_ENV=development"
+		"start": "webpack --watch --env.NODE_ENV=development",
+		"svg":
+			"svgo -f assets/images/svg && spritesh -q -i assets/images/svg -o ./sprite.svg -p svg-"
 	},
 	"keywords": ["MPA", "webpack", "setup", "multi-page"],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com>",
@@ -36,6 +38,7 @@
 		"postcss-utilities": "^0.7.0",
 		"sass-loader": "^6.0.6",
 		"sass-glob-importer": "^1.0.1",
+		"spritesh": "^1.2.0",
 		"style-loader": "^0.19.1",
 		"uglifyjs-webpack-plugin": "^1.1.6",
 		"webpack": "^3.10.0",
