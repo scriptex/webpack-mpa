@@ -25,12 +25,12 @@ const paths = {
 	iconsStyle: 'assets/src/styles/_sprite.scss',
 	iconsRef: '../../images/sprite.png',
 	imagesSrc: './assets/images/',
-	modules: 'assets/modules/',
+	vendor: 'assets/vendor/',
 	cleanUp: [
 		'./assets/scripts/',
 		'./assets/styles/',
 		'./assets/images/sprite.png',
-		'./assets/modules/',
+		'./assets/vendor/',
 		'./sprite.png'
 	]
 };
@@ -207,7 +207,7 @@ const config = {
 							name: '[hash].[ext]',
 							context: '',
 							publicPath: '../../',
-							outputPath: paths.modules
+							outputPath: paths.vendor
 						}
 					}
 				]
