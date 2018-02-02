@@ -5,15 +5,20 @@
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
 		"start": "webpack --watch --env.NODE_ENV=development",
-		"svg": "svgo -f assets/images/svg && spritesh -q -i assets/images/svg -o ./sprite.svg -p svg-"
+		"svgs": "svgo -f assets/images/svg",
+		"svgsprite": "spritesh -q -i assets/images/svg -o ./sprite.svg -p svg-",
+		"svg": "npm run svgs && npm run svgsprite"
 	},
-	"keywords": [
-		"MPA",
-		"webpack",
-		"setup",
-		"multi-page"
-	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com>",
+	"keywords": ["MPA", "webpack", "setup", "multi-page"],
+	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (http://atanas.info)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/scriptex/webpack-mpa"
+	},
+	"bugs": {
+		"url": "https://github.com/scriptex/webpack-mpa/issues",
+		"email": "scriptex.bg@gmail.com"
+	},
 	"license": "MIT",
 	"dependencies": {
 		"normalize.css": "^7.0.0"
@@ -48,8 +53,5 @@
 		"webpack": "^3.10.0",
 		"webpack-spritesmith": "^0.4.0"
 	},
-	"browserslist": [
-		"> 1%",
-		"last 2 versions"
-	]
+	"browserslist": ["> 1%", "last 2 versions"]
 }
