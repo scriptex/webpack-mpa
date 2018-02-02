@@ -1,7 +1,6 @@
 const url = require('url');
 const path = require('path');
 
-const globImporter = require('sass-glob-importer');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
@@ -13,24 +12,24 @@ const imageminPNGquant = require('imagemin-pngquant');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 
 const paths = {
-	stylesSrc: './assets/src/styles/main.scss',
+	stylesSrc: './assets/scss/main.scss',
 	stylesBuild: 'assets/styles/app.css',
-	scriptsSrc: './assets/src/scripts/main.js',
+	scriptsSrc: './assets/js/main.js',
 	scriptsBuild: './assets/scripts/app.js',
 	resolveModules: 'node_modules',
 	resolveScripts: './assets/scripts',
 	resolveIcons: './assets/images/sprite',
 	iconsSrc: 'assets/images/sprite',
 	iconsTarget: 'assets/images/sprite.png',
-	iconsStyle: 'assets/src/styles/_sprite.scss',
+	iconsStyle: 'assets/scss/_sprite.scss',
 	iconsRef: '../../images/sprite.png',
 	imagesSrc: './assets/images/',
-	vendor: 'assets/vendor/',
+	static: 'assets/static/',
 	cleanUp: [
 		'./assets/scripts/',
 		'./assets/styles/',
 		'./assets/images/sprite.png',
-		'./assets/vendor/',
+		'./assets/static/',
 		'./sprite.png'
 	]
 };
@@ -42,6 +41,9 @@ const sourceMap = {
 const postcssConfig = {
 	plugins: [
 		require('postcss-easy-import'),
+		require('postcss-url')({
+			url: 'rebase'
+		}),
 		require('postcss-flexbugs-fixes'),
 		require('postcss-utilities'),
 		require('postcss-merge-rules'),
@@ -180,10 +182,7 @@ const config = {
 						},
 						{
 							loader: 'sass-loader',
-							options: {
-								importer: globImporter(),
-								...sourceMap
-							}
+							options: sourceMap
 						}
 					],
 					fallback: 'style-loader'
@@ -207,7 +206,7 @@ const config = {
 							name: '[hash].[ext]',
 							context: '',
 							publicPath: '../../',
-							outputPath: paths.vendor
+							outputPath: paths.static
 						}
 					}
 				]

@@ -5,10 +5,14 @@
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
 		"start": "webpack --watch --env.NODE_ENV=development",
-		"svg":
-			"svgo -f assets/images/svg && spritesh -q -i assets/images/svg -o ./sprite.svg -p svg-"
+		"svg": "svgo -f assets/images/svg && spritesh -q -i assets/images/svg -o ./sprite.svg -p svg-"
 	},
-	"keywords": ["MPA", "webpack", "setup", "multi-page"],
+	"keywords": [
+		"MPA",
+		"webpack",
+		"setup",
+		"multi-page"
+	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
@@ -35,14 +39,17 @@
 		"postcss-flexbugs-fixes": "^3.2.0",
 		"postcss-loader": "^2.0.10",
 		"postcss-merge-rules": "^2.1.2",
+		"postcss-url": "^7.3.0",
 		"postcss-utilities": "^0.7.0",
 		"sass-loader": "^6.0.6",
-		"sass-glob-importer": "^1.0.1",
 		"spritesh": "^1.2.0",
 		"style-loader": "^0.19.1",
 		"uglifyjs-webpack-plugin": "^1.1.6",
 		"webpack": "^3.10.0",
 		"webpack-spritesmith": "^0.4.0"
 	},
-	"browserslist": ["> 1%", "last 2 versions"]
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
 }

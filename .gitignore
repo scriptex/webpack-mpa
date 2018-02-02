@@ -16,6 +16,3 @@ node_modules/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Lock files
-package-lock.json
