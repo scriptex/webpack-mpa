@@ -99,7 +99,7 @@ const cleanConfig = {
 };
 
 const imageminConfig = {
-	test: './assets/images/',
+	test: /\.(jpe?g|png|gif|svg)$/i,
 	gifsicle: {
 		interlaced: true
 	},
