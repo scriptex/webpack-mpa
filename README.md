@@ -30,13 +30,13 @@ This setup uses [Webpack](https://webpack.js.org/) as a module bundler and [Yarn
 The setup includes:
 
 1. [SASS](http://sass-lang.com/) stylesheets preprocessing
-    * The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+   * The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
 2. [PostCSS](https://github.com/postcss/postcss) stylesheet postprocessing including:
-    * [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
-    * [url rebase](https://github.com/postcss/postcss-url) - locates and copies assets from `node_modules`
-    * [postcss-utilities](https://github.com/ismamz/postcss-utilities) usage
-    * [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) fixing
-    * [css minification](http://cssnano.co/)
+   * [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
+   * [url rebase](https://github.com/postcss/postcss-url) - locates and copies assets from `node_modules`
+   * [postcss-utilities](https://github.com/ismamz/postcss-utilities) usage
+   * [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) fixing
+   * [css minification](http://cssnano.co/)
 3. PNG Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
 4. Latest EcmaScript support
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
@@ -56,9 +56,9 @@ yarn start --env.url=http://your.app
 The `assets` folder contains several folders:
 
 * `images` - contains several folders too:
-  _ `favicon` - holds all favicon variations
-  _ `sprite` - holds png sprite's parts
-  _ `svg` - holds svg sprite's parts
-  _ `temp` - holds content images
+  * `favicon` - holds all favicon variations
+  * `sprite` - holds png sprite's parts
+  * `svg` - holds svg sprite's parts
+  * `temp` - holds content images
 * `scripts` - contains the JS modules
 * `styles` - contains the SASS stylesheets
