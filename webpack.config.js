@@ -12,26 +12,21 @@ const imageminPNGquant = require('imagemin-pngquant');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 
 const paths = {
-	stylesSrc: './assets/scss/main.scss',
-	stylesBuild: 'assets/styles/app.css',
-	scriptsSrc: './assets/js/main.js',
-	scriptsBuild: './assets/scripts/app.js',
+	stylesSrc: './assets/styles/main.scss',
+	stylesBuild: 'assets/static/app.css',
+	scriptsSrc: './assets/scripts/main.js',
+	scriptsBuild: './assets/static/app.js',
 	resolveModules: 'node_modules',
-	resolveScripts: './assets/scripts',
+	resolveScripts: './assets/static',
 	resolveIcons: './assets/images/sprite',
 	iconsSrc: 'assets/images/sprite',
-	iconsTarget: 'assets/images/sprite.png',
-	iconsStyle: 'assets/scss/_sprite.scss',
-	iconsRef: '../../images/sprite.png',
+	iconsTarget: './assets/static/sprite.png',
+	iconsStyle: './assets/styles/_sprite.scss',
+	iconsRef: '../static/sprite.png',
 	imagesSrc: './assets/images/',
 	static: 'assets/static/',
-	cleanUp: [
-		'./assets/scripts/',
-		'./assets/styles/',
-		'./assets/images/sprite.png',
-		'./assets/static/',
-		'./sprite.png'
-	]
+	cleanUp: ['./assets/static/'],
+	cleanUpExclude: ['sprite.svg']
 };
 
 const sourceMap = {
@@ -75,8 +70,8 @@ const browserSyncConfig = {
 	files: [
 		'**/*.php',
 		'**/*.html',
-		'./assets/styles/app.css',
-		'./assets/scripts/app.js'
+		'./assets/static/app.css',
+		'./assets/static/app.js'
 	],
 	ghostMode: {
 		clicks: false,
@@ -116,7 +111,8 @@ const spritesmithConfig = {
 };
 
 const cleanConfig = {
-	verbose: false
+	verbose: false,
+	exclude: paths.cleanUpExclude
 };
 
 const imageminConfig = {
@@ -187,10 +183,6 @@ const config = {
 					],
 					fallback: 'style-loader'
 				})
-			},
-			{
-				test: /sprite\.png$/,
-				loaders: ['file-loader?name=../../[path][name].[ext]']
 			},
 			{
 				test: /\.js$/,
