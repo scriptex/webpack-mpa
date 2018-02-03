@@ -16,26 +16,26 @@
 	flex-flow: column $wrap;
 }
 
+@mixin small-desktop {
+	@media (max-width: #{$small-desktop}) {
+		@content;
+	}
+}
+
 @mixin tablet-landscape {
-	@media #{$tablet-landscape} {
+	@media (max-width: #{$tablet-landscape}) {
 		@content;
 	}
 }
 
 @mixin tablet-portrait {
-	@media #{$tablet-portrait} {
-		@content;
-	}
-}
-
-@mixin mobile-large {
-	@media #{$mobile-large} {
+	@media (max-width: #{$tablet-portrait}) {
 		@content;
 	}
 }
 
 @mixin mobile {
-	@media #{$mobile} {
+	@media (max-width: #{$mobile}) {
 		@content;
 	}
 }
