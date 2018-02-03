@@ -1,6 +1,6 @@
 {
 	"name": "webpack-mpa",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Multi page app setup with webpack",
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",

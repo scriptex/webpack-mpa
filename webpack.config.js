@@ -107,7 +107,8 @@ const spritesmithConfig = {
 	},
 	apiOptions: {
 		cssImageRef: paths.iconsRef
-	}
+	},
+	retina: '@2x'
 };
 
 const cleanConfig = {
