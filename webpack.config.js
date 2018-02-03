@@ -218,9 +218,9 @@ const config = {
 
 module.exports = env => {
 	if (env.NODE_ENV === 'development') {
-		if (env.DEV_URL) {
-			browserSyncConfig.host = url.parse(env.DEV_URL).hostname;
-			browserSyncConfig.proxy = env.DEV_URL;
+		if (env.url) {
+			browserSyncConfig.host = url.parse(env.url).hostname;
+			browserSyncConfig.proxy = env.url;
 		}
 
 		config.plugins.push(

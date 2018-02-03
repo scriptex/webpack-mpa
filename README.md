@@ -45,16 +45,20 @@ The setup includes:
    The command which generates SVG sprite is `yarn svg`.
    The command takes the svg files from `assets/images/svg` and produces a single `sprite.svg` file in `static` directory.
 
-**If you wish to use a proxy in browsersync you can do it using the `DEV_URL` CLI argument like this:**
+**If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:**
 
 ```
-yarn start --env.DEV_URL=http://your.app
+yarn start --env.url=http://your.app
 ```
 
 ## Assets
 
 The `assets` folder contains several folders:
 
-* `images` - contains several folders too: - `favicon` - holds all favicon variations - `sprite` - holds png sprite's parts - `svg` - holds svg sprite's parts - `temp` - holds content images
+* `images` - contains several folders too:
+  _ `favicon` - holds all favicon variations
+  _ `sprite` - holds png sprite's parts
+  _ `svg` - holds svg sprite's parts
+  _ `temp` - holds content images
 * `scripts` - contains the JS modules
 * `styles` - contains the SASS stylesheets
