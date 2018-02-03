@@ -11,24 +11,6 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPNGquant = require('imagemin-pngquant');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 
-const paths = {
-	stylesSrc: './assets/styles/main.scss',
-	stylesBuild: 'assets/static/app.css',
-	scriptsSrc: './assets/scripts/main.js',
-	scriptsBuild: './assets/static/app.js',
-	resolveModules: 'node_modules',
-	resolveScripts: './assets/static',
-	resolveIcons: './assets/images/sprite',
-	iconsSrc: 'assets/images/sprite',
-	iconsTarget: './assets/static/sprite.png',
-	iconsStyle: './assets/styles/_sprite.scss',
-	iconsRef: '../static/sprite.png',
-	imagesSrc: './assets/images/',
-	static: 'assets/static/',
-	cleanUp: ['./assets/static/'],
-	cleanUpExclude: ['sprite.svg']
-};
-
 const sourceMap = {
 	sourceMap: true
 };
@@ -92,32 +74,32 @@ const browserSyncConfig = {
 };
 
 const extractTextConfig = {
-	filename: paths.stylesBuild,
+	filename: 'assets/static/app.css',
 	allChunks: true
 };
 
 const spritesmithConfig = {
 	src: {
-		cwd: path.resolve(__dirname, paths.iconsSrc),
+		cwd: path.resolve(__dirname, 'assets/images/sprite'),
 		glob: '*.png'
 	},
 	target: {
-		image: path.resolve(__dirname, paths.iconsTarget),
-		css: path.resolve(__dirname, paths.iconsStyle)
+		image: path.resolve(__dirname, './assets/static/sprite.png'),
+		css: path.resolve(__dirname, './assets/styles/_sprite.scss')
 	},
 	apiOptions: {
-		cssImageRef: paths.iconsRef
+		cssImageRef: '../static/sprite.png'
 	},
 	retina: '@2x'
 };
 
 const cleanConfig = {
 	verbose: false,
-	exclude: paths.cleanUpExclude
+	exclude: ['sprite.svg']
 };
 
 const imageminConfig = {
-	test: paths.imagesSrc,
+	test: './assets/images/',
 	gifsicle: {
 		interlaced: true
 	},
@@ -152,16 +134,12 @@ const imageminConfig = {
 };
 
 const config = {
-	entry: [paths.stylesSrc, paths.scriptsSrc],
+	entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
 	output: {
-		filename: paths.scriptsBuild
+		filename: './assets/static/app.js'
 	},
 	resolve: {
-		modules: [
-			paths.resolveModules,
-			paths.resolveScripts,
-			paths.resolveIcons
-		]
+		modules: ['node_modules', './assets/static', './assets/images/sprite']
 	},
 	module: {
 		rules: [
@@ -199,7 +177,7 @@ const config = {
 							name: '[hash].[ext]',
 							context: '',
 							publicPath: '../../',
-							outputPath: paths.static
+							outputPath: 'assets/static/'
 						}
 					}
 				]
@@ -209,7 +187,7 @@ const config = {
 	plugins: [
 		new ExtractTextPlugin(extractTextConfig),
 		new SpritesmithPlugin(spritesmithConfig),
-		new CleanWebpackPlugin(paths.cleanUp, cleanConfig)
+		new CleanWebpackPlugin(['./assets/static/'], cleanConfig)
 	],
 	cache: true,
 	bail: false,
