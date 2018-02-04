@@ -13,15 +13,39 @@ The default setup uses php files, but you can easily switch to a file format of 
 
 ## Install
 
-`yarn` or `npm i`
+```
+yarn
+```
+
+or
+
+```
+npm i
+```
 
 ## Develop
 
-`yarn start` or `npm start`
+```
+yarn start
+```
+
+or
+
+```
+npm start
+```
 
 ## Build
 
-`yarn build` or `npm run build`
+```
+yarn build
+```
+
+or
+
+```
+npm run build
+```
 
 ## Details
 
@@ -45,6 +69,12 @@ The default setup uses php files, but you can easily switch to a file format of 
 
 ```
 yarn start --env.url=http://your.app
+```
+
+or
+
+```
+npm start -- --env.url=http://your.app
 ```
 
 ## Assets
