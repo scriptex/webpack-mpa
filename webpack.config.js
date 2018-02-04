@@ -3,6 +3,7 @@ const path = require('path');
 
 const magicImporter = require('node-sass-magic-importer');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const { ProvidePlugin } = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
@@ -189,6 +190,10 @@ const config = {
 		]
 	},
 	plugins: [
+		new ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery'
+		}),
 		new ExtractTextPlugin(extractTextConfig),
 		new SpritesmithPlugin(spritesmithConfig),
 		new CleanWebpackPlugin(['./assets/static/'], cleanConfig)
