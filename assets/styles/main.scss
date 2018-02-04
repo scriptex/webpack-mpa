@@ -7,31 +7,22 @@
 @include retina-sprites($retina-groups);
 
 // Settings
-@import 'settings/variables';
+@import 'settings/**/*.scss';
 
 // Tools
-@import 'tools/mixins';
+@import 'tools/**/*.scss';
 
 // Generic
-@import 'generic/reset';
+@import 'generic/**/*.scss';
 
 // Elements
-@import 'elements/document';
-@import 'elements/headings';
-@import 'elements/links';
-@import 'elements/texts';
+@import 'elements/**/*.scss';
 
 // Objects
-@import 'objects/wrapper';
-@import 'objects/shell';
-@import 'objects/grid';
+@import 'objects/**/*.scss';
 
 // Utilities
-@import 'utilities/text-align';
-@import 'utilities/align';
-@import 'utilities/fullsize-background';
+@import 'utilities/**/*.scss';
 
 // Components
-@import 'components/btn';
-@import 'components/ico';
-@import 'components/lists';
+@import 'components/**/*.scss';
