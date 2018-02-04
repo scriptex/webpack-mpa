@@ -13,21 +13,17 @@ The default setup uses php files, but you can easily switch to a file format of 
 
 ## Install
 
-`yarn`
+`yarn` or `npm i`
 
 ## Develop
 
-`yarn start`
+`yarn start` or `npm start`
 
 ## Build
 
-`yarn build`
+`yarn build` or `npm run build`
 
 ## Details
-
-This setup uses [Webpack](https://webpack.js.org/) as a module bundler and [Yarn](https://yarnpkg.com/en/) as a dependency manager.
-
-The setup includes:
 
 1. [SASS](http://sass-lang.com/) stylesheets preprocessing
    * The SASS file/folder structure utilizes the ITCSS pattern as shown and expained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
@@ -42,7 +38,7 @@ The setup includes:
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
 6. Images optimization using [Imagemin](https://github.com/Klathmon/imagemin-webpack-plugin)
 7. SVG Sprite generating using [spritesh](https://www.npmjs.com/package/spritesh)
-   The command which generates SVG sprite is `yarn svg`.
+   The command which generates SVG sprite is `yarn svg` or `npm run svg`.
    The command takes the svg files from `assets/images/svg` and produces a single `sprite.svg` file in `static` directory.
 
 **If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:**

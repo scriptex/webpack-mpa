@@ -1,14 +1,18 @@
 {
 	"name": "webpack-mpa",
-	"version": "1.2.3",
+	"version": "1.3.0",
 	"description": "Multi page app setup with webpack",
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
 		"start": "webpack --watch --env.NODE_ENV=development",
-		"svg":
-			"svgo -f assets/images/svg && spritesh -q -i assets/images/svg -o ./assets/static/sprite.svg -p svg-"
+		"svg": "svgo -f assets/images/svg && spritesh -q -i assets/images/svg -o ./assets/static/sprite.svg -p svg-"
 	},
-	"keywords": ["MPA", "webpack", "setup", "multi-page"],
+	"keywords": [
+		"MPA",
+		"webpack",
+		"setup",
+		"multi-page"
+	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (http://atanas.info)",
 	"repository": "https://github.com/scriptex/webpack-mpa",
 	"bugs": {
@@ -36,6 +40,7 @@
 		"imagemin-pngquant": "^5.0.1",
 		"imagemin-webpack-plugin": "^1.6.1",
 		"node-sass": "^4.7.2",
+		"node-sass-magic-importer": "^5.1.0",
 		"postcss-easy-import": "^3.0.0",
 		"postcss-flexbugs-fixes": "^3.2.0",
 		"postcss-loader": "^2.0.10",
@@ -49,7 +54,10 @@
 		"webpack": "^3.10.0",
 		"webpack-spritesmith": "^0.4.0"
 	},
-	"browserslist": ["> 1%", "last 2 versions"],
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
 	"main": "assets/js/main.js",
 	"private": false
 }
