@@ -139,7 +139,7 @@ const config = {
 		filename: './assets/static/app.js'
 	},
 	resolve: {
-		modules: ['node_modules', './assets/static', './assets/images/sprite']
+		modules: ['node_modules', './assets/scripts', './assets/images/sprite']
 	},
 	module: {
 		rules: [
