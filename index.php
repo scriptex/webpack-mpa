@@ -29,9 +29,9 @@
 	<meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png" />
 	<meta name="theme-color" content="#000000" />
 
-	<link rel="stylesheet" href="assets/static/app.css" />
+	<link rel="stylesheet" href="assets/dist/app.css" />
 </head>
 <body>
-	<script src="assets/static/app.js"></script>
+	<script src="assets/dist/app.js"></script>
 </body>
 </html>

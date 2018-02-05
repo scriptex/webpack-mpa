@@ -5,10 +5,14 @@
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
 		"start": "webpack --watch --env.NODE_ENV=development",
-		"svg":
-			"svgo -f assets/images/svg --config='{ \"plugins\": [{ \"cleanupAttrs\": true }, { \"removeDoctype\": true }, { \"removeXMLProcInst\": true }, { \"removeComments\": true }, { \"removeMetadata\": true }, { \"removeUselessDefs\": true }, { \"removeEditorsNSData\": true }, { \"removeEmptyAttrs\": true }, { \"removeHiddenElems\": false }, { \"removeEmptyText\": true }, { \"removeEmptyContainers\": true }, { \"cleanupEnableBackground\": true }, { \"removeViewBox\": false }, { \"cleanupIDs\": false }, { \"convertStyleToAttrs\": true }, { \"removeUselessStrokeAndFill\": true }] }' && spritesh -q -i assets/images/svg -o ./assets/dist/sprite.svg -p svg-"
+		"svg": "svgo -f assets/images/svg --config='{ \"plugins\": [{ \"cleanupAttrs\": true }, { \"removeDoctype\": true }, { \"removeXMLProcInst\": true }, { \"removeComments\": true }, { \"removeMetadata\": true }, { \"removeUselessDefs\": true }, { \"removeEditorsNSData\": true }, { \"removeEmptyAttrs\": true }, { \"removeHiddenElems\": false }, { \"removeEmptyText\": true }, { \"removeEmptyContainers\": true }, { \"cleanupEnableBackground\": true }, { \"removeViewBox\": false }, { \"cleanupIDs\": false }, { \"convertStyleToAttrs\": true }, { \"removeUselessStrokeAndFill\": true }] }' && spritesh -q -i assets/images/svg -o ./assets/dist/sprite.svg -p svg-"
 	},
-	"keywords": ["MPA", "webpack", "setup", "multi-page"],
+	"keywords": [
+		"MPA",
+		"webpack",
+		"setup",
+		"multi-page"
+	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (http://atanas.info)",
 	"repository": "https://github.com/scriptex/webpack-mpa",
 	"bugs": {
@@ -50,7 +54,10 @@
 		"webpack": "^3.10.0",
 		"webpack-spritesmith": "^0.4.0"
 	},
-	"browserslist": ["> 1%", "last 2 versions"],
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
 	"main": "assets/js/main.js",
 	"private": false
 }
