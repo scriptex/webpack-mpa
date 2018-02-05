@@ -54,8 +54,8 @@ const browserSyncConfig = {
 	files: [
 		'**/*.php',
 		'**/*.html',
-		'./assets/static/app.css',
-		'./assets/static/app.js'
+		'./assets/dist/app.css',
+		'./assets/dist/app.js'
 	],
 	ghostMode: {
 		clicks: false,
@@ -76,7 +76,7 @@ const browserSyncConfig = {
 };
 
 const extractTextConfig = {
-	filename: 'assets/static/app.css',
+	filename: 'assets/dist/app.css',
 	allChunks: true
 };
 
@@ -86,11 +86,11 @@ const spritesmithConfig = {
 		glob: '*.png'
 	},
 	target: {
-		image: path.resolve(__dirname, './assets/static/sprite.png'),
+		image: path.resolve(__dirname, './assets/dist/sprite.png'),
 		css: path.resolve(__dirname, './assets/styles/_sprite.scss')
 	},
 	apiOptions: {
-		cssImageRef: '../static/sprite.png'
+		cssImageRef: '../dist/sprite.png'
 	},
 	retina: '@2x'
 };
@@ -138,7 +138,7 @@ const imageminConfig = {
 const config = {
 	entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
 	output: {
-		filename: './assets/static/app.js'
+		filename: './assets/dist/app.js'
 	},
 	resolve: {
 		modules: ['node_modules', './assets/scripts', './assets/images/sprite']
@@ -182,7 +182,7 @@ const config = {
 							name: '[hash].[ext]',
 							context: '',
 							publicPath: '../../',
-							outputPath: 'assets/static/'
+							outputPath: 'assets/dist/'
 						}
 					}
 				]
@@ -196,7 +196,7 @@ const config = {
 		}),
 		new ExtractTextPlugin(extractTextConfig),
 		new SpritesmithPlugin(spritesmithConfig),
-		new CleanWebpackPlugin(['./assets/static/'], cleanConfig)
+		new CleanWebpackPlugin(['./assets/dist/'], cleanConfig)
 	],
 	cache: true,
 	bail: false,
