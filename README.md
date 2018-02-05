@@ -58,12 +58,15 @@ npm run build
    * [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) fixing
    * [css minification](http://cssnano.co/)
 3. PNG Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
+   The default setup includes retina sprite support which means that you should provide a retina version of each png icon.
+   If you do not wish to use the retina sprite, comment the `@include retina-sprites($retina-groups);` statement in `main.scss` file.
 4. Latest EcmaScript support
 5. Automatic browser reload using [BrowserSync](https://browsersync.io/)
 6. Images optimization using [Imagemin](https://github.com/Klathmon/imagemin-webpack-plugin)
 7. SVG Sprite generating using [spritesh](https://www.npmjs.com/package/spritesh)
    The command which generates SVG sprite is `yarn svg` or `npm run svg`.
-   The command takes the svg files from `assets/images/svg` and produces a single `sprite.svg` file in `static` directory.
+   The command takes the svg files from `assets/images/svg` and produces a single `sprite.svg` file in `dist` directory.
+8. All front-end assets are stored in an auto-generated `dist` folder.
 
 **If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:**
 
