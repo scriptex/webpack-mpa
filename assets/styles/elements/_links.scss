@@ -3,9 +3,12 @@
 a {
 	color: $color-action;
 	text-decoration: underline;
+	cursor: pointer;
 
 	&[href^='tel'] {
 		color: inherit;
+		cursor: default;
+		appearance: none;
 	}
 
 	&:hover,

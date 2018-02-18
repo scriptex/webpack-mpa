@@ -1,4 +1,4 @@
-// Button
+// Buttons
 
 .c-btn {
 	text-align: center;
@@ -7,6 +7,11 @@
 	vertical-align: middle;
 	cursor: pointer;
 	appearance: none;
+
+	&.disabled,
+	&[disabled] {
+		cursor: default;
+	}
 
 	&--block {
 		width: 100%;
