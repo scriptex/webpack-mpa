@@ -23,15 +23,7 @@ const postcssConfig = {
 		require('postcss-url')({
 			url: 'rebase'
 		}),
-		require('postcss-flexbugs-fixes'),
-		require('postcss-utilities'),
-		require('postcss-merge-rules'),
-		require('autoprefixer')(),
-		require('cssnano')({
-			discardComments: {
-				removeAll: true
-			}
-		})
+		require('postcss-utilities')
 	],
 	...sourceMap
 };
@@ -135,77 +127,97 @@ const imageminConfig = {
 	]
 };
 
-const config = {
-	entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
-	output: {
-		filename: './assets/dist/app.js'
-	},
-	resolve: {
-		modules: ['node_modules', './assets/scripts', './assets/images/sprite']
-	},
-	module: {
-		rules: [
-			{
-				test: /\.scss$/,
-				use: ExtractTextPlugin.extract({
+module.exports = env => {
+	const isDevelopment = env.NODE_ENV === 'development';
+	const isProduction = env.NODE_ENV === 'production';
+
+	if (isProduction) {
+		postcssConfig.plugins.push(
+			require('postcss-flexbugs-fixes'),
+			require('postcss-merge-rules'),
+			require('autoprefixer')(),
+			require('cssnano')({
+				discardComments: {
+					removeAll: true
+				}
+			})
+		);
+	}
+
+	const config = {
+		entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
+		output: {
+			filename: './assets/dist/app.js'
+		},
+		resolve: {
+			modules: [
+				'node_modules',
+				'./assets/scripts',
+				'./assets/images/sprite'
+			]
+		},
+		module: {
+			rules: [
+				{
+					test: /\.scss$/,
+					use: ExtractTextPlugin.extract({
+						use: [
+							{
+								loader: 'css-loader',
+								options: sourceMap
+							},
+							{
+								loader: 'postcss-loader',
+								options: postcssConfig
+							},
+							{
+								loader: 'sass-loader',
+								options: {
+									importer: magicImporter(),
+									...sourceMap
+								}
+							}
+						],
+						fallback: 'style-loader'
+					})
+				},
+				{
+					test: /\.js$/,
+					exclude: /node_modules/,
+					use: babelConfig
+				},
+				{
+					test: /\.(jpe?g|gif|png|svg|woff2?|ttf|eot|wav|mp3|mp4)(\?.*$|$)/,
 					use: [
 						{
-							loader: 'css-loader',
-							options: sourceMap
-						},
-						{
-							loader: 'postcss-loader',
-							options: postcssConfig
-						},
-						{
-							loader: 'sass-loader',
+							loader: 'file-loader',
 							options: {
-								importer: magicImporter(),
-								...sourceMap
+								name: '[hash].[ext]',
+								context: '',
+								publicPath: '../../',
+								outputPath: 'assets/dist/'
 							}
 						}
-					],
-					fallback: 'style-loader'
-				})
-			},
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: babelConfig
-			},
-			{
-				test: /\.(jpe?g|gif|png|svg|woff2?|ttf|eot|wav|mp3|mp4)(\?.*$|$)/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[hash].[ext]',
-							context: '',
-							publicPath: '../../',
-							outputPath: 'assets/dist/'
-						}
-					}
-				]
-			}
-		]
-	},
-	plugins: [
-		new ProvidePlugin({
-			$: 'jquery',
-			jQuery: 'jquery'
-		}),
-		new ExtractTextPlugin(extractTextConfig),
-		new SpritesmithPlugin(spritesmithConfig),
-		new CleanWebpackPlugin(['./assets/dist/'], cleanConfig)
-	],
-	cache: true,
-	bail: false,
-	devtool: 'source-map',
-	stats: 'errors-only'
-};
+					]
+				}
+			]
+		},
+		plugins: [
+			new ProvidePlugin({
+				$: 'jquery',
+				jQuery: 'jquery'
+			}),
+			new ExtractTextPlugin(extractTextConfig),
+			new SpritesmithPlugin(spritesmithConfig),
+			new CleanWebpackPlugin(['./assets/dist/'], cleanConfig)
+		],
+		cache: true,
+		bail: false,
+		devtool: 'source-map',
+		stats: 'errors-only'
+	};
 
-module.exports = env => {
-	if (env.NODE_ENV === 'development') {
+	if (isDevelopment) {
 		if (env.url) {
 			browserSyncConfig.host = url.parse(env.url).hostname;
 			browserSyncConfig.proxy = env.url;
@@ -218,7 +230,7 @@ module.exports = env => {
 		);
 	}
 
-	if (env.NODE_ENV === 'production') {
+	if (isProduction) {
 		config.plugins.push(
 			new UglifyJSPlugin(sourceMap),
 			new ImageminWebpackPlugin(imageminConfig)
