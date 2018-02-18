@@ -205,7 +205,8 @@ module.exports = env => {
 		plugins: [
 			new ProvidePlugin({
 				$: 'jquery',
-				jQuery: 'jquery'
+				jQuery: 'jquery',
+				'window.jQuery': 'jquery'
 			}),
 			new ExtractTextPlugin(extractTextConfig),
 			new SpritesmithPlugin(spritesmithConfig),
