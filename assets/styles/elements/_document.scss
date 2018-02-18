@@ -10,11 +10,6 @@ body {
 	font-size: $font-size-base;
 	line-height: $line-height-base;
 	color: $color-black;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	text-size-adjust: none;
 	min-width: 320px;
-	margin: 0;
 	background-color: $color-white;
 }

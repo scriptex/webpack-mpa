@@ -10,4 +10,8 @@
 	&--flex {
 		@include flex-row;
 	}
+
+	&--fluid {
+		max-width: none;
+	}
 }

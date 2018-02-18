@@ -12,6 +12,11 @@ html {
 
 body {
 	text-decoration-skip: ink;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
 }
 
 nav {
@@ -54,6 +59,14 @@ template {
 
 svg:not(:root) {
 	overflow: hidden;
+}
+
+fieldset {
+	padding: 0;
+}
+
+figure {
+	margin: 0;
 }
 
 a,
@@ -125,6 +138,7 @@ textarea {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 button,
