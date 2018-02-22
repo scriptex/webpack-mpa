@@ -23,7 +23,9 @@ const postcssConfig = {
 		require('postcss-url')({
 			url: 'rebase'
 		}),
-		require('postcss-utilities')
+		require('postcss-utilities'),
+		require('postcss-flexbugs-fixes'),
+		require('autoprefixer')()
 	],
 	...sourceMap
 };
@@ -133,9 +135,7 @@ module.exports = env => {
 
 	if (isProduction) {
 		postcssConfig.plugins.push(
-			require('postcss-flexbugs-fixes'),
 			require('postcss-merge-rules'),
-			require('autoprefixer')(),
 			require('cssnano')({
 				discardComments: {
 					removeAll: true
