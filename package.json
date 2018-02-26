@@ -34,7 +34,7 @@
 		"clean-webpack-plugin": "^0.1.17",
 		"css-loader": "^0.28.10",
 		"cssnano": "^3.10.0",
-		"extract-text-webpack-plugin": "^3.0.2",
+		"extract-text-webpack-plugin": "^4.0.0-alpha.0",
 		"file-loader": "^1.1.9",
 		"imagemin-mozjpeg": "^7.0.0",
 		"imagemin-pngquant": "^5.0.1",
@@ -51,7 +51,8 @@
 		"spritesh": "^1.2.0",
 		"style-loader": "^0.20.2",
 		"uglifyjs-webpack-plugin": "^1.2.2",
-		"webpack": "^3.10.0",
+		"webpack": "^4.0.0",
+		"webpack-cli": "^2.0.9",
 		"webpack-spritesmith": "^0.4.0"
 	},
 	"browserslist": [
