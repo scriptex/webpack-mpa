@@ -36,7 +36,7 @@ const babelConfig = [
 		options: {
 			cacheDirectory: true,
 			comments: false,
-			presets: ['env', 'stage-2']
+			presets: ['@babel/env', '@babel/stage-2']
 		}
 	}
 ];
