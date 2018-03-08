@@ -1,5 +1,6 @@
 const url = require('url');
 const path = require('path');
+const glob = require('glob');
 
 const magicImporter = require('node-sass-magic-importer');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
@@ -96,6 +97,15 @@ const cleanConfig = {
 
 const imageminConfig = {
 	test: 'assets/**/*.{jpg,png,gif}',
+	externalImages: {
+		context: '.',
+		sources: [
+			...glob.sync('assets/images/temp/*.jpg'),
+			...glob.sync('assets/images/temp/*.png'),
+			...glob.sync('assets/images/temp/*.gif')
+		],
+		destination: '.'
+	},
 	gifsicle: {
 		interlaced: true
 	},
