@@ -4,8 +4,7 @@
 	"description": "Multi page app setup with webpack",
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
-		"start": "webpack --watch --env.NODE_ENV=development",
-		"svg": "svgo -f assets/images/svg --config='{ \"plugins\": [{ \"cleanupAttrs\": true }, { \"removeDoctype\": true }, { \"removeXMLProcInst\": true }, { \"removeComments\": true }, { \"removeMetadata\": true }, { \"removeUselessDefs\": true }, { \"removeEditorsNSData\": true }, { \"removeEmptyAttrs\": true }, { \"removeHiddenElems\": false }, { \"removeEmptyText\": true }, { \"removeEmptyContainers\": true }, { \"cleanupEnableBackground\": true }, { \"removeViewBox\": false }, { \"cleanupIDs\": false }, { \"convertStyleToAttrs\": true }, { \"removeUselessStrokeAndFill\": true }] }' && spritesh -q -i assets/images/svg -o ./assets/dist/sprite.svg -p svg-"
+		"start": "webpack --watch --env.NODE_ENV=development"
 	},
 	"keywords": [
 		"MPA",
@@ -53,6 +52,7 @@
 		"uglifyjs-webpack-plugin": "^1.2.2",
 		"webpack": "^4.0.0",
 		"webpack-cli": "^2.0.9",
+		"webpack-shell-plugin": "^0.5.0",
 		"webpack-spritesmith": "^0.4.0"
 	},
 	"browserslist": [
