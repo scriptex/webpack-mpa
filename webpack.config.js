@@ -132,25 +132,7 @@ const imageminConfig = {
 	gifsicle: {
 		interlaced: true
 	},
-	svgo: {
-		plugins: [
-			{ cleanupAttrs: true },
-			{ removeDoctype: true },
-			{ removeXMLProcInst: true },
-			{ removeComments: true },
-			{ removeMetadata: true },
-			{ removeUselessDefs: true },
-			{ removeEditorsNSData: true },
-			{ removeEmptyAttrs: true },
-			{ removeHiddenElems: false },
-			{ removeEmptyText: true },
-			{ removeEmptyContainers: true },
-			{ cleanupEnableBackground: true },
-			{ removeViewBox: true },
-			{ cleanupIDs: false },
-			{ convertStyleToAttrs: true }
-		]
-	},
+	svgo: svgoConfig,
 	plugins: [
 		imageminMozjpeg({
 			quality: 70
