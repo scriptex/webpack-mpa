@@ -91,3 +91,10 @@ The `assets` folder contains several folders:
   * `temp` - holds content images
 * `scripts` - contains the JS modules
 * `styles` - contains the SASS stylesheets
+
+## Known Issues
+
+1. Newly created SCSS files do not trigger the build process.
+
+   A workaround for this issue is to save an old file after the newly created file has been added.
+   More on this can be found [here](https://github.com/sass/node-sass/issues/1891)
