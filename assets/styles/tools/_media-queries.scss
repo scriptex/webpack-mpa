@@ -7,7 +7,7 @@
 }
 
 @mixin desktop-only {
-	@media (min-width: #{$tablet-landscape} + 1px) {
+	@media (min-width: $tablet-landscape + 1) {
 		@content;
 	}
 }
@@ -19,7 +19,7 @@
 }
 
 @mixin tablet-landscape-only {
-	@media (min-width: #{$tablet-portrait} + 1px) and (max-width: $tablet-landscape) {
+	@media (min-width: $tablet-portrait + 1) and (max-width: $tablet-landscape) {
 		@content;
 	}
 }
@@ -31,7 +31,7 @@
 }
 
 @mixin tablet-portrait-only {
-	@media (min-width: #{$mobile} + 1px) and (max-width: $tablet-portrait) {
+	@media (min-width: $mobile + 1) and (max-width: $tablet-portrait) {
 		@content;
 	}
 }
