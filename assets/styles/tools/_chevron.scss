@@ -1,7 +1,7 @@
 // Chevron
-// USAGE: @include chevron(20px, 0 0 1px 1px, black, auto, 45deg);
+// USAGE: @include chevron(1.25rem, 0 0 1px 1px, black, auto, 45deg);
 
-@mixin chevron ($dimensions: 14px, $borderWidth: 0 0 1px 1px, $borderColor: currentColor, $margin: auto, $rotation: 45deg) {
+@mixin chevron ($dimensions: 1rem, $borderWidth: 0 0 1px 1px, $borderColor: currentColor, $margin: auto, $rotation: 45deg) {
 	content: '';
 	width: $dimensions;
 	height: $dimensions;
