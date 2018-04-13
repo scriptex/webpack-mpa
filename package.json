@@ -46,7 +46,7 @@
 		"postcss-merge-rules": "^2.1.2",
 		"postcss-url": "^7.3.2",
 		"postcss-utilities": "^0.8.0",
-		"sass-loader": "^6.0.7",
+		"sass-loader": "^7.0.0",
 		"spritesh": "^1.2.1",
 		"style-loader": "^0.20.3",
 		"uglifyjs-webpack-plugin": "^1.2.4",
