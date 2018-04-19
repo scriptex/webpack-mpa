@@ -1,13 +1,13 @@
 {
 	"name": "webpack-mpa",
-	"version": "1.6.3",
+	"version": "1.6.4",
 	"description": "Multi page app setup with webpack",
 	"scripts": {
 		"build": "webpack --env.NODE_ENV=production",
 		"start": "webpack --watch --env.NODE_ENV=development"
 	},
 	"keywords": ["MPA", "webpack", "setup", "multi-page"],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (http://atanas.info)",
+	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"repository": "https://github.com/scriptex/webpack-mpa",
 	"bugs": {
 		"url": "https://github.com/scriptex/webpack-mpa/issues",
