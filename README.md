@@ -14,11 +14,29 @@ In order to use this setup you need to have installed the following dependencies
 
 ## Default setup
 
-The default setup uses php files, but you can easily switch to a file format of your choice.
+The default setup uses PHP files, but you can easily switch to a file format of your choice.
 
 Also, you can always switch to another file/folder structure if the current one does not suit you.
 
 Just keep in mind that the styles should be located in `assets/styles` and the scripts should be located in `assets/scripts`.
+
+## Download
+
+You can download this setup [directly](https://github.com/scriptex/webpack-mpa/archive/master.zip) and extract it.
+
+or use NPM or Yarn to install it:
+
+```
+npm i webpack-mpa
+```
+
+or
+
+```
+yarn add webpack-mpa
+```
+
+Then navigate to the `webpack-mpa` folder and proceed with the rest of the instructions.
 
 ## Install
 
@@ -60,19 +78,19 @@ npm run build
 
 1.  [SASS](http://sass-lang.com/) stylesheets preprocessing
 
-    * The SASS file/folder structure utilizes the ITCSS pattern as shown and explained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
-    * Glob import in SASS thanks to [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer)
+    *   The SASS file/folder structure utilizes the ITCSS pattern as shown and explained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+    *   Glob import in SASS thanks to [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer)
 
 2.  [PostCSS](https://github.com/postcss/postcss) stylesheets postprocessing including:
 
-    * [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
-    * [url rebase](https://github.com/postcss/postcss-url) - locates and copies assets from `node_modules`
-    * [postcss-utilities](https://github.com/ismamz/postcss-utilities) - allows usage of utility mixins such as `clearfix`
-    * [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) - fixes common flexbox issues on Internet Explorer
-    * [css minification](http://cssnano.co/) - minifies the bundles stylesheet
-    * [automatic vendor prefixes](https://github.com/postcss/autoprefixer)
+    *   [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
+    *   [url rebase](https://github.com/postcss/postcss-url) - locates and copies assets from `node_modules`
+    *   [postcss-utilities](https://github.com/ismamz/postcss-utilities) - allows usage of utility mixins such as `clearfix`
+    *   [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) - fixes common flexbox issues on Internet Explorer
+    *   [css minification](http://cssnano.co/) - minifies the bundles stylesheet
+    *   [automatic vendor prefixes](https://github.com/postcss/autoprefixer)
 
-      > "Write your CSS rules without vendor prefixes (in fact, forget about them entirely)"
+        > "Write your CSS rules without vendor prefixes (in fact, forget about them entirely)"
 
 3.  PNG Sprite generating using [Webpack SpriteSmith](https://github.com/mixtur/webpack-spritesmith)
     The default setup includes retina sprite support which means that you should provide a retina version of each png icon.
@@ -81,15 +99,15 @@ npm run build
 
 4.  Latest EcmaScript support
 
-    * Usage of the latest features in EcmaScript
-    * Using [Babel](https://github.com/babel/babel) to transpile to ES5
-    * Minification of the bundled file
-    * Source maps
+    *   Usage of the latest features in EcmaScript
+    *   Using [Babel](https://github.com/babel/babel) to transpile to ES5
+    *   Minification of the bundled file
+    *   Source maps
 
 5.  Automatic browser reload using [BrowserSync](https://browsersync.io/)
 
-    * The setup assumes that you have a web server installed. If you do not, then the files will be served via the browser-sync built-in server.
-    * If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:
+    *   The setup assumes that you have a web server installed. If you do not, then the files will be served via the browser-sync built-in server.
+    *   If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:
 
     ```
     yarn start --env.url=http://your.app
@@ -115,13 +133,13 @@ npm run build
 
 The `assets` folder contains several folders:
 
-* `images` - contains several folders too:
-  * `favicon` - holds all favicon variations
-  * `sprite` - holds png sprite's parts
-  * `svg` - holds svg sprite's parts
-  * `temp` - holds content images
-* `scripts` - contains the JS modules
-* `styles` - contains the SASS stylesheets
+*   `images` - contains several folders too:
+    *   `favicon` - holds all favicon variations
+    *   `sprite` - holds png sprite's parts
+    *   `svg` - holds svg sprite's parts
+    *   `temp` - holds content images
+*   `scripts` - contains the JS modules
+*   `styles` - contains the SASS stylesheets
 
 **Each `start` command regenerates the contents of the `dist` folder.**
 
