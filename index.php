@@ -48,7 +48,7 @@ function autoversion($url) {
 	<?php critical_css(); ?>
 </head>
 <body>
-	<link rel="preload" href="<?php autoversion('assets/dist/app.css'); ?>" as="style" onload="this.rel='stylesheet'" />
+	<link rel="stylesheet" href="<?php autoversion('assets/dist/app.css'); ?>" />
 
 	<script src="<?php autoversion('assets/dist/app.js'); ?>" async defer></script>
 </body>
