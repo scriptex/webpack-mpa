@@ -5,7 +5,7 @@ function critical_css($path = '/assets/dist/critical.css') {
 	if ( file_exists($critical) ) {
 		$critical_css = file_get_contents($critical);
 
-		echo "<style type=\"text/css\" id=\"critical-css\">" . $critical_css . "</style>";
+		echo '<style type="text/css" id="critical-css">' . $critical_css . '</style>';
 	}
 }
 
