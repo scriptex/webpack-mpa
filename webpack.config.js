@@ -2,7 +2,6 @@ const fs = require('fs');
 const url = require('url');
 const path = require('path');
 const glob = require('glob');
-const chokidar = require('chokidar');
 
 const magicImporter = require('node-sass-magic-importer');
 const { ProvidePlugin } = require('webpack');
@@ -128,18 +127,6 @@ if (svgs.length) {
 	);
 }
 
-const watchFiles = () => {
-	chokidar.watch('./assets/styles/').on('add', () => {
-		const main = './assets/styles/main.scss';
-
-		fs.appendFile(main, '/*CHANGE*/', () => {
-			fs.readFile(main, 'utf8', (err, data) => {
-				fs.writeFileSync(main, data.replace(/\n?\/\*CHANGE\*\//gm, ''));
-			});
-		});
-	});
-};
-
 module.exports = env => {
 	const isDevelopment = env.NODE_ENV === 'development';
 	const isProduction = env.NODE_ENV === 'production';
@@ -156,7 +143,12 @@ module.exports = env => {
 	}
 
 	if (isDevelopment) {
-		watchFiles();
+		postcssConfig.plugins.push(
+			require('postcss-watch-folder')({
+				folder: './assets/styles',
+				main: './assets/styles/main.scss'
+			})
+		);
 	}
 
 	const config = {

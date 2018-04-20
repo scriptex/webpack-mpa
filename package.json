@@ -8,7 +8,12 @@
 		"optisize": "optisize --src=\"./assets/images\"",
 		"critical": "critical index.php > assets/dist/critical.css"
 	},
-	"keywords": ["MPA", "webpack", "setup", "multi-page"],
+	"keywords": [
+		"MPA",
+		"webpack",
+		"setup",
+		"multi-page"
+	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"repository": "https://github.com/scriptex/webpack-mpa",
 	"bugs": {
@@ -28,7 +33,6 @@
 		"babel-loader": "^8.0.0-beta.0",
 		"browser-sync": "^2.23.5",
 		"browser-sync-webpack-plugin": "^2.2.2",
-		"chokidar": "^2.0.3",
 		"clean-webpack-plugin": "^0.1.19",
 		"critical": "^1.2.2",
 		"css-loader": "^0.28.11",
@@ -43,6 +47,7 @@
 		"postcss-merge-rules": "^2.1.2",
 		"postcss-url": "^7.3.2",
 		"postcss-utilities": "^0.8.0",
+		"postcss-watch-folder": "^0.1.1",
 		"sass-loader": "^7.0.0",
 		"spritesh": "^1.2.1",
 		"style-loader": "^0.20.3",
@@ -51,7 +56,10 @@
 		"webpack-shell-plugin": "^0.5.0",
 		"webpack-spritesmith": "^0.4.1"
 	},
-	"browserslist": ["> 1%", "last 2 versions"],
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
 	"main": "assets/scripts/main.js",
 	"private": false
 }

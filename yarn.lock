@@ -7722,6 +7722,13 @@ postcss-value-parser@^3.0.1, postcss-value-parser@^3.0.2, postcss-value-parser@^
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
+postcss-watch-folder@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/postcss-watch-folder/-/postcss-watch-folder-0.1.1.tgz#a2532fa72f121034cd79f0c7de0e18544f02218f"
+  dependencies:
+    chokidar "^2.0.3"
+    postcss "^6.0.16"
+
 postcss-zindex@^2.0.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/postcss-zindex/-/postcss-zindex-2.2.0.tgz#d2109ddc055b91af67fc4cb3b025946639d2af22"
