@@ -46,10 +46,10 @@ function autoversion($url) {
 	<meta name="theme-color" content="#000000" />
 
 	<?php critical_css(); ?>
-
-	<link rel="preload" href="<?php autoversion('assets/dist/app.css'); ?>" as="style" onload="this.rel='stylesheet'" />
 </head>
 <body>
+	<link rel="preload" href="<?php autoversion('assets/dist/app.css'); ?>" as="style" onload="this.rel='stylesheet'" />
+
 	<script src="<?php autoversion('assets/dist/app.js'); ?>" async defer></script>
 </body>
 </html>
