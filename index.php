@@ -1,3 +1,19 @@
+<?php
+function critical_css($path = '/assets/dist/critical.css') {
+	$critical = __DIR__ . $path;
+
+	if ( file_exists($critical) ) {
+		$critical_css = file_get_contents($critical);
+
+		echo "<style type=\"text/css\" id=\"critical-css\">" . $critical_css . "</style>";
+	}
+}
+
+function autoversion($url) {
+	echo $url . '?v=' . filemtime(__DIR__ . DIRECTORY_SEPARATOR . $url);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +45,11 @@
 	<meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png" />
 	<meta name="theme-color" content="#000000" />
 
-	<link rel="stylesheet" href="assets/dist/app.css" />
+	<?php critical_css(); ?>
+
+	<link rel="preload" href="<?php autoversion('assets/dist/app.css'); ?>" as="style" onload="this.rel='stylesheet'" />
 </head>
 <body>
-	<script src="assets/dist/app.js"></script>
+	<script src="<?php autoversion('assets/dist/app.js'); ?>" async defer></script>
 </body>
 </html>
