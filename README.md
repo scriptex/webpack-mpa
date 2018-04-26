@@ -1,3 +1,10 @@
+[![GitHub stars](https://img.shields.io/github/stars/scriptex/webpack-mpa.svg?style=social&label=Stars)](https://github.com/scriptex/webpack-mpa)
+[![npm](https://img.shields.io/npm/dt/webpack-mpa.svg)](https://www.npmjs.com/package/webpack-mpa)
+[![npm](https://img.shields.io/npm/v/webpack-mpa.svg)](https://www.npmjs.com/package/webpack-mpa)
+[![GitHub issues](https://img.shields.io/github/issues/scriptex/webpack-mpa.svg)](https://github.com/scriptex/webpack-mpa)
+[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/webpack-mpa.svg)](https://github.com/scriptex/webpack-mpa)
+[![license](https://img.shields.io/github/license/scriptex/webpack-mpa.svg)](https://github.com/scriptex/webpack-mpa)
+
 # Webpack-MPA
 
 Multiple page application setup with Webpack using SASS, PostCSS, ES2017, PNG & SVG Sprites and more
