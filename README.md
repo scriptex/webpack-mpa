@@ -11,12 +11,12 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/webpack-mpa/webpack.config.js/graphs/commit-activity)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
-[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
-[![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](http://ForTheBadge.com)
 
 # Webpack-MPA
 
-Multiple page application setup with Webpack using SASS, PostCSS, ES2017, PNG & SVG Sprites and more
+Opinionated multiple page application setup with Webpack using SASS, PostCSS, ES2017, PNG & SVG Sprites and more.
+
+This boilerplate is suitable for static web applications, WordPress websites, etc.
 
 ## Dependencies
 
