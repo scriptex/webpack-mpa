@@ -6,5 +6,4 @@ install:
   - yarn
 script:
   - yarn build
-  - yarn critical
   - yarn optisize
