@@ -55,7 +55,10 @@ const babelConfig = [
 		options: {
 			cacheDirectory: true,
 			comments: false,
-			presets: ['@babel/env', '@babel/stage-2']
+			presets: [
+				'@babel/env',
+				['@babel/stage-2', { decoratorsLegacy: true }]
+			]
 		}
 	}
 ];
