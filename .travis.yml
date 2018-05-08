@@ -1,0 +1,10 @@
+language: node_js
+sudo: false
+node_js:
+  - "8.9.4"
+install:
+  - yarn
+script:
+  - yarn critical
+  - yarn optisize
+  - yarn build
