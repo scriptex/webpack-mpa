@@ -8,7 +8,12 @@
 		"optisize": "optisize --src=\"./assets/images\"",
 		"critical": "critical index.php > assets/dist/critical.css"
 	},
-	"keywords": ["MPA", "webpack", "setup", "multi-page"],
+	"keywords": [
+		"MPA",
+		"webpack",
+		"setup",
+		"multi-page"
+	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"repository": "https://github.com/scriptex/webpack-mpa",
 	"bugs": {
@@ -17,12 +22,12 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"@babel/preset-stage-2": "^7.0.0-beta.46",
 		"normalize.css": "^8.0.0"
 	},
 	"devDependencies": {
 		"@babel/core": "7.0.0-beta.46",
 		"@babel/preset-env": "7.0.0-beta.46",
-		"@babel/preset-stage-2": "7.0.0-beta.46",
 		"@three11/optisize": "^0.4.0",
 		"autoprefixer": "^8.4.1",
 		"babel-loader": "^8.0.0-beta.0",
@@ -51,7 +56,10 @@
 		"webpack-shell-plugin": "^0.5.0",
 		"webpack-spritesmith": "^0.4.1"
 	},
-	"browserslist": ["> 1%", "last 2 versions"],
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
 	"main": "assets/scripts/main.js",
 	"private": false
 }
