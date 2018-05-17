@@ -21,7 +21,11 @@ function autoversion($url) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>{ Project Name }</title>
-
+	
+	<!-- 
+	For more info about the favicons and meta tags below see 
+	https://github.com/audreyr/favicon-cheat-sheet 
+	-->
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png" />
