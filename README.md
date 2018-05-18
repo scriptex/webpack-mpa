@@ -151,10 +151,10 @@ npm run build
 The `assets` folder contains several folders:
 
 *   `images` - contains several folders too:
-    *   `favicon` - holds all favicon variations
-    *   `sprite` - holds png sprite's parts
-    *   `svg` - holds svg sprite's parts
-    *   `temp` - holds content images
+    *   `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
+    *   `sprite` - contains png sprite's parts
+    *   `svg` - contains svg sprite's parts
+    *   `temp` - contains content images
 *   `scripts` - contains the JS modules
 *   `styles` - contains the SASS stylesheets
 
