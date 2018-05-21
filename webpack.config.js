@@ -2,6 +2,7 @@ const fs = require('fs');
 const url = require('url');
 const path = require('path');
 const glob = require('glob');
+const { argv } = require('yargs');
 
 const magicImporter = require('node-sass-magic-importer');
 const { ProvidePlugin } = require('webpack');
@@ -12,7 +13,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 
 const sourceMap = {
-	sourceMap: true
+	sourceMap: argv.env.NODE_ENV === 'development'
 };
 
 const svgoConfig = {
@@ -229,7 +230,7 @@ module.exports = env => {
 		],
 		cache: true,
 		bail: false,
-		devtool: 'source-map',
+		devtool: isDevelopment ? 'source-map' : false,
 		stats: 'errors-only'
 	};
 
