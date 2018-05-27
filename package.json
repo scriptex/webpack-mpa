@@ -6,7 +6,8 @@
 		"build": "webpack --env.NODE_ENV=production",
 		"start": "webpack --watch --env.NODE_ENV=development",
 		"optisize": "optisize --src=\"./assets/images\"",
-		"critical": "critical index.php > assets/dist/critical.css"
+		"critical": "critical index.php > assets/dist/critical.css",
+		"pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\""
 	},
 	"keywords": ["MPA", "webpack", "setup", "multi-page"],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
@@ -29,6 +30,7 @@
 		"browser-sync": "^2.24.4",
 		"browser-sync-webpack-plugin": "^2.2.2",
 		"clean-webpack-plugin": "^0.1.19",
+		"create-pwa": "^0.2.3",
 		"critical": "^1.3.0",
 		"css-loader": "^0.28.11",
 		"cssnano": "^3.10.0",
