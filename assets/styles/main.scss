@@ -7,22 +7,22 @@
 @include retina-sprites($retina-groups);
 
 // Settings
-@import 'settings/**/*.scss';
+@import 'settings/**/*';
 
 // Tools
-@import 'tools/**/*.scss';
+@import 'tools/**/*';
 
 // Generic
-@import 'generic/**/*.scss';
+@import 'generic/**/*';
 
 // Elements
-@import 'elements/**/*.scss';
+@import 'elements/**/*';
 
 // Objects
-@import 'objects/**/*.scss';
+@import 'objects/**/*';
 
 // Utilities
-@import 'utilities/**/*.scss';
+@import 'utilities/**/*';
 
 // Components
-@import 'components/**/*.scss';
+@import 'components/**/*';

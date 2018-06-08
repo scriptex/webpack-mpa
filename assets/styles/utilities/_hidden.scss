@@ -2,5 +2,5 @@
 
 .hidden,
 [hidden] {
-	display: none !important;
+	display: none !important; //// scss-lint:disable ImportantRule
 }
