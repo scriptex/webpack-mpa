@@ -1,6 +1,6 @@
 {
   "name": "webpack-mpa",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Multi page app setup with webpack",
   "scripts": {
     "build": "webpack --env.NODE_ENV=production",
@@ -9,12 +9,7 @@
     "critical": "critical index.php > assets/dist/critical.css",
     "pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\""
   },
-  "keywords": [
-    "MPA",
-    "webpack",
-    "setup",
-    "multi-page"
-  ],
+  "keywords": ["MPA", "webpack", "setup", "multi-page"],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
   "repository": "https://github.com/scriptex/webpack-mpa",
   "bugs": {
@@ -58,10 +53,7 @@
     "webpack-spritesmith": "^0.4.1",
     "yargs": "^11.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
+  "browserslist": ["> 1%", "last 2 versions"],
   "main": "assets/scripts/main.js",
   "private": false
 }
