@@ -21,10 +21,10 @@ function autoversion($url) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>{ Project Name }</title>
-	
-	<!-- 
-	For more info about the favicons and meta tags below see 
-	https://github.com/audreyr/favicon-cheat-sheet 
+
+	<!--
+	For more info about the favicons and meta tags below see
+	https://github.com/audreyr/favicon-cheat-sheet
 	-->
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
@@ -47,6 +47,7 @@ function autoversion($url) {
 	<meta name="msapplication-square150x150logo" content="assets/images/favicon/mstile-150x150.png" />
 	<meta name="msapplication-wide310x150logo" content="assets/images/favicon/mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png" />
+	<meta name="msapplication-config" content="config.xml" />
 	<meta name="theme-color" content="#000000" />
 
 	<?php critical_css(); ?>
