@@ -44,13 +44,13 @@ You can download this setup [directly](https://github.com/scriptex/webpack-mpa/a
 
 or use NPM or Yarn to install it:
 
-```console
+```sh
 npm i webpack-mpa
 ```
 
 or
 
-```console
+```sh
 yarn add webpack-mpa
 ```
 
@@ -58,37 +58,37 @@ Then navigate to the `webpack-mpa` folder and proceed with the rest of the instr
 
 ## Install
 
-```console
+```sh
 yarn
 ```
 
 or
 
-```console
+```sh
 npm i
 ```
 
 ## Develop
 
-```console
+```sh
 yarn start
 ```
 
 or
 
-```console
+```sh
 npm start
 ```
 
 ## Build
 
-```console
+```sh
 yarn build
 ```
 
 or
 
-```console
+```sh
 npm run build
 ```
 
@@ -127,13 +127,13 @@ npm run build
     * The setup assumes that you have a web server installed. If you do not, then the files will be served via the browser-sync built-in server.
     * If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:
 
-    ```console
+    ```sh
     yarn start --env.url=http://your.app
     ```
 
     or
 
-    ```console
+    ```sh
     npm start -- --env.url=http://your.app
     ```
 
@@ -167,7 +167,7 @@ This setup uses [Browserslist](https://github.com/browserslist/browserslist) to 
 
 The default list of supported browsers is listed in the `package.json` file:
 
-```
+```json
 "browserslist": ["> 1%", "last 2 versions"]
 ```
 
