@@ -1,16 +1,15 @@
 const fs = require('fs');
 const url = require('url');
 const path = require('path');
-const glob = require('glob');
 const { argv } = require('yargs');
 
 const magicImporter = require('node-sass-magic-importer');
 const { ProvidePlugin } = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const sourceMap = {
 	sourceMap: argv.env.NODE_ENV === 'development'
@@ -176,24 +175,25 @@ module.exports = env => {
 			rules: [
 				{
 					test: /\.scss$/,
-					use: [
-						MiniCssExtractPlugin.loader,
-						{
-							loader: 'css-loader',
-							options: sourceMap
-						},
-						{
-							loader: 'postcss-loader',
-							options: postcssConfig
-						},
-						{
-							loader: 'sass-loader',
-							options: {
-								importer: magicImporter(),
-								...sourceMap
+					use: ExtractTextPlugin.extract({
+						use: [
+							{
+								loader: 'css-loader',
+								options: sourceMap
+							},
+							{
+								loader: 'postcss-loader',
+								options: postcssConfig
+							},
+							{
+								loader: 'sass-loader',
+								options: {
+									importer: magicImporter(),
+									...sourceMap
+								}
 							}
-						}
-					]
+						]
+					})
 				},
 				{
 					test: /\.js$/,
@@ -222,7 +222,7 @@ module.exports = env => {
 				jQuery: 'jquery',
 				'window.jQuery': 'jquery'
 			}),
-			new MiniCssExtractPlugin(extractTextConfig),
+			new ExtractTextPlugin(extractTextConfig),
 			new SpritesmithPlugin(spritesmithConfig),
 			new CleanWebpackPlugin(['./assets/dist/'], cleanConfig),
 			new WebpackShellPlugin({
