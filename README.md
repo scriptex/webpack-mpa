@@ -11,6 +11,8 @@
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/scriptex/webpack-mpa/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/webpack-mpa/graphs/commit-activity)
 [![Greenkeeper badge](https://badges.greenkeeper.io/scriptex/webpack-mpa.svg)](https://greenkeeper.io/)
+[![devDependencies Status](https://david-dm.org/scriptex/webpack-mpa/dev-status.svg)](https://david-dm.org/scriptex/webpack-mpa?type=dev)
+[![dependencies Status](https://david-dm.org/scriptex/webpack-mpa/status.svg)](https://david-dm.org/scriptex/webpack-mpa)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
 
