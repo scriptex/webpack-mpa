@@ -12,7 +12,12 @@
     "pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\"",
     "prod": "yarn build && yarn html && yarn critical && yarn rm-html"
   },
-  "keywords": ["MPA", "webpack", "setup", "multi-page"],
+  "keywords": [
+    "MPA",
+    "webpack",
+    "setup",
+    "multi-page"
+  ],
   "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
   "repository": "https://github.com/scriptex/webpack-mpa",
   "bugs": {
@@ -26,7 +31,7 @@
     "@babel/preset-env": "7.0.0-beta.52",
     "@babel/preset-stage-2": "^7.0.0-beta.52",
     "@three11/optisize": "^0.5.0",
-    "autoprefixer": "^8.6.2",
+    "autoprefixer": "^8.6.5",
     "babel-loader": "^8.0.0-beta.0",
     "browser-sync": "^2.24.4",
     "browser-sync-webpack-plugin": "^2.2.2",
@@ -37,11 +42,11 @@
     "cssnano": "^4.0.0",
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",
     "file-loader": "^1.1.11",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "node-sass-magic-importer": "^5.1.2",
     "postcss-easy-import": "^3.0.0",
     "postcss-flexbugs-fixes": "^3.3.1",
-    "postcss-loader": "^2.1.5",
+    "postcss-loader": "^2.1.6",
     "postcss-merge-rules": "^4.0.0",
     "postcss-normalize": "^6.0.0",
     "postcss-url": "^7.3.2",
@@ -49,13 +54,16 @@
     "postcss-watch-folder": "^0.1.1",
     "sass-loader": "^7.0.3",
     "spritesh": "^1.2.1",
-    "webpack": "^4.12.0",
+    "webpack": "^4.15.1",
     "webpack-cli": "^3.0.4",
     "webpack-shell-plugin": "^0.5.0",
     "webpack-spritesmith": "^0.4.1",
     "yargs": "^12.0.1"
   },
-  "browserslist": ["> 1%", "last 2 versions"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "main": "assets/scripts/main.js",
   "private": false
 }
