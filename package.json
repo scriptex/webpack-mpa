@@ -28,7 +28,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.0.0-beta.53",
-    "@babel/preset-env": "7.0.0-beta.52",
+    "@babel/preset-env": "7.0.0-beta.53",
     "@babel/preset-stage-2": "^7.0.0-beta.52",
     "@three11/optisize": "^0.5.0",
     "autoprefixer": "^8.6.5",
