@@ -1,3 +1,5 @@
+![Webpack MPA Logo](./webpack-mpa.svg)
+
 [![GitHub stars](https://img.shields.io/github/stars/scriptex/webpack-mpa.svg?style=social&label=Stars)](https://github.com/scriptex/webpack-mpa)
 [![GitHub forks](https://img.shields.io/github/forks/scriptex/webpack-mpa.svg?style=social&label=Fork)](https://github.com/scriptex/webpack-mpa/network#fork-destination-box)
 [![GitHub release](https://img.shields.io/github/release/scriptex/webpack-mpa.svg)](https://github.com/scriptex/webpack-mpa/releases/latest)
