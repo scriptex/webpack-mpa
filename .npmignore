@@ -16,6 +16,7 @@ node_modules/
 .Trashes
 ehthumbs.db
 Thumbs.db
+webpack-mpa.svg
 
 # Build directory
 /assets/dist
