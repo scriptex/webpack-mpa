@@ -25,7 +25,9 @@
     "email": "scriptex.bg@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "itscss": "^0.2.0"
+  },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.54",
     "@babel/preset-env": "7.0.0-beta.54",

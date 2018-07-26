@@ -5018,6 +5018,10 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
+itscss@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/itscss/-/itscss-0.2.0.tgz#470e51dd028f921b6db8f74b35c98795d1fee488"
+
 jpeg-js@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.0.4.tgz#06aaf47efec7af0b1924a59cd695a6d2b5ed870e"
