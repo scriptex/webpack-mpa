@@ -91,10 +91,12 @@ npm run build
 
 ## Details
 
-1.  [SASS](http://sass-lang.com/) stylesheets preprocessing
+1.  [SCSS](http://sass-lang.com/) stylesheets preprocessing
 
--   The SASS file/folder structure utilizes the ITCSS pattern as shown and explained [here](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
--   Glob import in SASS thanks to [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer)
+-   SCSS entry point is `main.scss` file located in `assets/styles`
+-   The whole stylesheets file/folder structure is up to you
+-   [ITSCSS](https://github.com/scriptex/itscss) boilerplate used as a starting point.
+-   Glob import in SCSS thanks to [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer)
 
 2.  [PostCSS](https://github.com/postcss/postcss) stylesheets postprocessing including:
 
