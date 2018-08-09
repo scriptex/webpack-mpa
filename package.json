@@ -51,7 +51,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-merge-rules": "^4.0.1",
     "postcss-normalize": "^6.0.0",
-    "postcss-url": "^7.3.2",
+    "postcss-url": "^8.0.0",
     "postcss-utilities": "^0.8.0",
     "postcss-watch-folder": "^0.1.1",
     "sass-loader": "^7.0.3",
