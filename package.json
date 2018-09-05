@@ -58,7 +58,7 @@
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "postcss-merge-rules": "^4.0.1",
-    "postcss-normalize": "^6.0.0",
+    "postcss-normalize": "^7.0.0",
     "postcss-url": "^8.0.0",
     "postcss-utilities": "^0.8.0",
     "postcss-watch-folder": "^0.1.1",
