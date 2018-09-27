@@ -9136,9 +9136,9 @@ webpack-sources@^1.2.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack-spritesmith@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/webpack-spritesmith/-/webpack-spritesmith-0.5.2.tgz#fc30b2f157dac275cc6858b2a49763eeb0fa094f"
+webpack-spritesmith@0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/webpack-spritesmith/-/webpack-spritesmith-0.5.3.tgz#c1b2e3f163cc5c50e4d60d8fff3b20bdc501bc2e"
   dependencies:
     gaze "^1.1.2"
     glob "^7.1.2"
