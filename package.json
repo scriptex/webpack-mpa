@@ -64,7 +64,7 @@
     "sass-loader": "7.1.0",
     "spritesh": "1.2.1",
     "webpack": "4.17.2",
-    "webpack-cli": "3.1.0",
+    "webpack-cli": "3.1.2",
     "webpack-shell-plugin": "0.5.0",
     "webpack-spritesmith": "0.5.2",
     "yargs": "12.0.1"
