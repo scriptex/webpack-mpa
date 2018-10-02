@@ -149,10 +149,10 @@ This action is performed each time the `start` command is invoked.
 The `assets` folder contains several folders:
 
 -   `images` - contains several folders too:
-    _ `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
-    _ `sprite` - contains png sprite's parts
-    _ `svg` - contains svg sprite's parts
-    _ `temp` - contains content images
+    - `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
+    - `sprite` - contains png sprite's parts
+    - `svg` - contains svg sprite's parts
+    - `temp` - contains content images
 -   `scripts` - contains the JS modules
 -   `styles` - contains the SASS stylesheets
 
