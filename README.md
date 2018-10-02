@@ -8,8 +8,6 @@
 [![npm](https://img.shields.io/npm/v/webpack-mpa.svg)](https://www.npmjs.com/package/webpack-mpa)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/webpack-mpa/README.md)](https://github.com/scriptex/webpack-mpa/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/scriptex/webpack-mpa.svg)](https://greenkeeper.io/)
-[![devDependencies Status](https://david-dm.org/scriptex/webpack-mpa/dev-status.svg)](https://david-dm.org/scriptex/webpack-mpa?type=dev)
-[![dependencies Status](https://david-dm.org/scriptex/webpack-mpa/status.svg)](https://david-dm.org/scriptex/webpack-mpa)
 
 # Webpack-MPA
 
