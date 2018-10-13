@@ -43,7 +43,7 @@
     "@three11/optisize": "0.6.0",
     "autoprefixer": "9.1.5",
     "babel-loader": "8.0.4",
-    "browser-sync": "2.26.0",
+    "browser-sync": "2.26.1",
     "browser-sync-webpack-plugin": "2.2.2",
     "clean-webpack-plugin": "0.1.19",
     "create-pwa": "0.4.0",
