@@ -41,7 +41,7 @@
     "@babel/plugin-syntax-import-meta": "7.0.0",
     "@babel/preset-env": "7.1.0",
     "@three11/optisize": "0.6.0",
-    "autoprefixer": "9.1.5",
+    "autoprefixer": "9.2.0",
     "babel-loader": "8.0.4",
     "browser-sync": "2.26.3",
     "browser-sync-webpack-plugin": "2.2.2",
