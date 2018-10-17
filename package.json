@@ -49,7 +49,7 @@
     "create-pwa": "0.4.0",
     "critical": "1.3.4",
     "css-loader": "1.0.0",
-    "cssnano": "4.1.4",
+    "cssnano": "4.1.5",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "2.0.0",
     "node-sass": "4.9.4",
