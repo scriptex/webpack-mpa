@@ -29,9 +29,9 @@
     "itscss": "^0.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.1.5",
+    "@babel/core": "7.1.6",
     "@babel/plugin-proposal-class-properties": "7.1.0",
-    "@babel/plugin-proposal-decorators": "7.1.2",
+    "@babel/plugin-proposal-decorators": "7.1.6",
     "@babel/plugin-proposal-export-namespace-from": "7.0.0",
     "@babel/plugin-proposal-function-sent": "7.1.0",
     "@babel/plugin-proposal-json-strings": "7.0.0",
@@ -39,7 +39,7 @@
     "@babel/plugin-proposal-throw-expressions": "7.0.0",
     "@babel/plugin-syntax-dynamic-import": "7.0.0",
     "@babel/plugin-syntax-import-meta": "7.0.0",
-    "@babel/preset-env": "7.1.5",
+    "@babel/preset-env": "7.1.6",
     "@three11/optisize": "0.6.0",
     "autoprefixer": "9.3.1",
     "babel-loader": "8.0.4",
