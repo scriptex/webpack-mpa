@@ -16,7 +16,6 @@ node_modules/
 .Trashes
 ehthumbs.db
 Thumbs.db
-webpack-mpa.svg
 
 # Build directory
 /assets/dist
@@ -33,3 +32,14 @@ webpack-mpa.svg
 
 # lock files
 yarn.lock
+
+# Prettier
+.prettierrc
+.prettierignore
+
+# Config files
+renovate.json
+webpack.config.js
+
+# Project specific
+webpack-mpa.svg
