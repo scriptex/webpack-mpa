@@ -33,6 +33,16 @@ Also, you can always switch to another file/folder structure if the current one 
 
 Just keep in mind that the styles should be located in `assets/styles` and the scripts should be located in `assets/scripts`.
 
+## Zero config and fast installation
+
+Navigate to your new project's folder and execute the following command:
+
+```sh
+npx webpack-mpa && npm i && npm start
+```
+
+This will install Webpack-MPA in your project folder and you will be able to start right away.
+
 ## Download
 
 You can download this setup [directly](https://github.com/scriptex/webpack-mpa/archive/master.zip) and extract it.
@@ -51,7 +61,31 @@ yarn add webpack-mpa
 
 Then navigate to the `webpack-mpa` folder and proceed with the rest of the instructions.
 
-## Install
+## Global installation
+
+It is possible to use the CLI tool included in Webpack MPA. In order to do this you must install Webpack MPA globally:
+
+```sh
+npm i webpack-mpa -g
+```
+
+or
+
+```sh
+yarn global add webpack-mpa
+```
+
+The `wmpa` binary is now available for you to use.
+
+Go to your new project folder and execute
+
+```sh
+wmpa
+```
+
+Your new project is setup!
+
+## Install dependencies
 
 ```sh
 yarn
@@ -149,10 +183,10 @@ This action is performed each time the `start` command is invoked.
 The `assets` folder contains several folders:
 
 -   `images` - contains several folders too:
-    - `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
-    - `sprite` - contains png sprite's parts
-    - `svg` - contains svg sprite's parts
-    - `temp` - contains content images
+    -   `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
+    -   `sprite` - contains png sprite's parts
+    -   `svg` - contains svg sprite's parts
+    -   `temp` - contains content images
 -   `scripts` - contains the JS modules
 -   `styles` - contains the SASS stylesheets
 
