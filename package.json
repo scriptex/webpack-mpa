@@ -70,6 +70,9 @@
 		"webpack-spritesmith": "0.5.4",
 		"yargs": "12.0.5"
 	},
+	"peerDependencies": {
+		"ncp": "2.0.0"
+	},
 	"browserslist": [
 		"> 1%",
 		"last 2 versions"
