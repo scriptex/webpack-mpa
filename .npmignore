@@ -39,7 +39,6 @@ yarn.lock
 
 # Config files
 renovate.json
-webpack.config.js
 
 # Project specific
 webpack-mpa.svg
