@@ -80,6 +80,6 @@
 	"main": "assets/scripts/main.js",
 	"private": false,
 	"bin": {
-		"wmpa": "./cli.js"
+		"wmpa": "./bin/cli.js"
 	}
 }
