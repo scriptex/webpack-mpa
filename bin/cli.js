@@ -10,8 +10,8 @@ const { join } = require('path');
  */
 const { copyDir } = require('./copy');
 
-const filter = name => name === 'node_modules' || name === 'bin' || name[0] === '.';
+const shouldSkip = name => name === 'node_modules' || name === 'bin' || name[0] === '.';
 
-copyDir(join(__dirname, '../'), process.env.PWD, filter);
+copyDir(join(__dirname, '../'), process.env.PWD, shouldSkip);
 
-console.log('Webpack MPA is not setup! Run "npm i" or "yarn" to continue');
+console.log('Webpack MPA is now setup! Run "npm i" or "yarn" to continue');
