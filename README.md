@@ -66,18 +66,16 @@ Then navigate to the `webpack-mpa` folder and proceed with the rest of the instr
 It is possible to use the CLI tool included in Webpack MPA. In order to do this you must install Webpack MPA globally:
 
 ```sh
-npm i webpack-mpa ncp -g
+npm i webpack-mpa -g
 ```
 
 or
 
 ```sh
-yarn global add webpack-mpa ncp
+yarn global add webpack-mpa
 ```
 
 The `wmpa` binary is now available for you to use.
-
-`ncp` is a peer dependency and is needed for the CLI interface. If you don't install it you will not be able to use the `wmpa` binary.
 
 Go to your new project folder and execute
 
