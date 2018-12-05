@@ -63,7 +63,7 @@
 		"postcss-watch-folder": "0.1.2",
 		"sass-loader": "7.1.0",
 		"spritesh": "1.2.1",
-		"webpack": "4.27.0",
+		"webpack": "4.27.1",
 		"webpack-cli": "3.1.2",
 		"webpack-shell-plugin": "0.5.0",
 		"webpack-spritesmith": "0.5.4",
