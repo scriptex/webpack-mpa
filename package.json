@@ -52,7 +52,7 @@
 		"cssnano": "4.1.7",
 		"extract-text-webpack-plugin": "4.0.0-beta.0",
 		"file-loader": "2.0.0",
-		"node-sass": "4.10.0",
+		"node-sass": "4.11.0",
 		"node-sass-magic-importer": "5.2.0",
 		"postcss-easy-import": "3.0.0",
 		"postcss-flexbugs-fixes": "4.1.0",
