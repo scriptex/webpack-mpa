@@ -10,7 +10,7 @@ const { join } = require('path');
  */
 const { copyDir } = require('./copy');
 
-const shouldSkip = name => name === 'node_modules' || name === 'bin' || name[0] === '.';
+const shouldSkip = name => name === 'node_modules' || name === 'bin';
 
 copyDir(join(__dirname, '../'), process.env.PWD, shouldSkip);
 
