@@ -73,7 +73,7 @@
 		"webpack": "4.29.6",
 		"webpack-cli": "3.3.0",
 		"webpack-shell-plugin": "0.5.0",
-		"webpack-spritesmith": "1.0.0",
+		"webpack-spritesmith": "1.0.1",
 		"yargs": "13.2.2"
 	},
 	"browserslist": [
