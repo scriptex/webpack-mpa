@@ -9600,12 +9600,12 @@ postcss-url@8.0.0:
     postcss "^7.0.2"
     xxhashjs "^0.2.1"
 
-postcss-utilities@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/postcss-utilities/-/postcss-utilities-0.8.0.tgz#2378ff421638d68f9e31bc61ab4a8c220b4a7c43"
-  integrity sha1-I3j/QhY41o+eMbxhq0qMIgtKfEM=
+postcss-utilities@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/postcss-utilities/-/postcss-utilities-0.8.1.tgz#fc1ede5b6cd3264efcb06008680390bec19c590e"
+  integrity sha512-VksI5cIodWmPaEw2KERrbj9h2m+/9hZSk7pyXzqkwQoBmC/KGC4LWwEEF90AdEe7XMmEmlmjrJQm12mFkg3i4Q==
   dependencies:
-    postcss "^6.0.16"
+    postcss "^7.0.2"
     postcss-value-parser "^3.3.0"
 
 postcss-value-parser@^3.0.0, postcss-value-parser@^3.2.3, postcss-value-parser@^3.3.0:
@@ -9635,7 +9635,7 @@ postcss@7.0.7, postcss@^7.0.3, postcss@^7.0.7:
     source-map "^0.6.1"
     supports-color "^5.5.0"
 
-postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.11, postcss@^6.0.14, postcss@^6.0.16:
+postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.11, postcss@^6.0.14:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
