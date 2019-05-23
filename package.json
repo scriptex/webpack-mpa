@@ -43,7 +43,7 @@
 		"@babel/plugin-syntax-dynamic-import": "7.2.0",
 		"@babel/plugin-syntax-import-meta": "7.2.0",
 		"@babel/preset-env": "7.4.5",
-		"@three11/optisize": "0.7.0",
+		"@three11/optisize": "1.0.0",
 		"autoprefixer": "9.5.1",
 		"babel-loader": "8.0.6",
 		"browser-sync": "2.26.5",
