@@ -38,6 +38,7 @@ yarn.lock
 .prettierignore
 
 # Config files
+.github
 renovate.json
 _config.yml
 _.config.yml
