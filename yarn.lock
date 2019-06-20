@@ -9612,10 +9612,10 @@ postcss-url@8.0.0:
     postcss "^7.0.2"
     xxhashjs "^0.2.1"
 
-postcss-utilities@0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/postcss-utilities/-/postcss-utilities-0.8.1.tgz#fc1ede5b6cd3264efcb06008680390bec19c590e"
-  integrity sha512-VksI5cIodWmPaEw2KERrbj9h2m+/9hZSk7pyXzqkwQoBmC/KGC4LWwEEF90AdEe7XMmEmlmjrJQm12mFkg3i4Q==
+postcss-utilities@0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/postcss-utilities/-/postcss-utilities-0.8.2.tgz#a294e91d0883a22d87c6a582b44d0b97eb2d2721"
+  integrity sha512-GqRS3DLmo3isguKHzZB55MQJWuot5gDfVMrdG7vrgela05vow4oDNpeACNt9vZiRhrT3+oISTvIb7Vpr40lsxg==
   dependencies:
     postcss "^7.0.2"
     postcss-value-parser "^3.3.0"
