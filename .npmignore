@@ -42,6 +42,8 @@ yarn.lock
 renovate.json
 _config.yml
 _.config.yml
+.whitesource
 
 # Project specific
 webpack-mpa.svg
+webpack-mpa.sketch
