@@ -9652,13 +9652,13 @@ postcss-url@8.0.0:
     postcss "^7.0.2"
     xxhashjs "^0.2.1"
 
-postcss-utilities@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/postcss-utilities/-/postcss-utilities-0.8.2.tgz#a294e91d0883a22d87c6a582b44d0b97eb2d2721"
-  integrity sha512-GqRS3DLmo3isguKHzZB55MQJWuot5gDfVMrdG7vrgela05vow4oDNpeACNt9vZiRhrT3+oISTvIb7Vpr40lsxg==
+postcss-utilities@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/postcss-utilities/-/postcss-utilities-0.8.4.tgz#1587c77a33b003137db2a900f72808665c4677a0"
+  integrity sha512-Ut4cEjuCMvxd7sA+QWNppLjKcfFUbIT41NsNBfitE/2QX1eMZs5G4HskNxW2L4JE6HhWad91aWVWKKYTZVWx6g==
   dependencies:
-    postcss "^7.0.2"
-    postcss-value-parser "^3.3.0"
+    postcss "^7.0.17"
+    postcss-value-parser "^4.0.0"
 
 postcss-value-parser@^3.0.0, postcss-value-parser@^3.2.3, postcss-value-parser@^3.3.0:
   version "3.3.0"
