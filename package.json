@@ -13,7 +13,7 @@
 		"prod": "yarn build && yarn html && yarn critical && yarn rm-html",
 		"lint": "yarn lint:js && yarn lint:scss",
 		"lint:js": "eslint './assets/**/*.js'",
-		"lint:scss": "stylelint './src/**/*.scss'"
+		"lint:scss": "stylelint assets/**/*.scss"
 	},
 	"keywords": [
 		"MPA",
