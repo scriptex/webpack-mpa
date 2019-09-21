@@ -20,23 +20,6 @@ Thumbs.db
 # Build directory
 /assets/dist
 
-# EditorConfig
-.editorconfig
-
-# Git
-.gitignore
-.gitattributes
-
-# CI
-.travis.yml
-
-# lock files
-yarn.lock
-
-# Prettier
-.prettierrc
-.prettierignore
-
 # Config files
 .github
 renovate.json
