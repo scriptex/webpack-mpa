@@ -18,7 +18,7 @@ This boilerplate is suitable for static web applications, WordPress websites, et
 
 In order to use this setup you need to have installed the following dependencies:
 
-1.  Node - min v8.9.4
+1.  Node - min v8.9.4 - LTS recommended
 2.  NPM - min v5.6.0
     or
 3.  Yarn - min v1.3.2
@@ -32,13 +32,13 @@ Also, you can always switch to another file/folder structure if the current one 
 
 Just keep in mind that the styles should be located in `assets/styles` and the scripts should be located in `assets/scripts`.
 
-## Zero config and fast installation	
+## Zero config and fast installation
 
-Navigate to your new project's folder and execute the following command:	
+Navigate to your new project's folder and execute the following command:
 
-```sh	
-npx webpack-mpa && npm i && npm start	
-```	
+```sh
+npx webpack-mpa && npm i && npm start
+```
 
 This will install Webpack-MPA in your project folder and you will be able to start right away.
 
