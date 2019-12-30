@@ -10029,7 +10029,7 @@ spritesh@1.2.1:
     commander "^2.9.0"
     fs-promise "^0.5.0"
 
-spritesheet-templates@^10.2.4:
+spritesheet-templates@^10.4.2:
   version "10.4.2"
   resolved "https://registry.yarnpkg.com/spritesheet-templates/-/spritesheet-templates-10.4.2.tgz#ff708aa1cdcc7b980e9567a384d07901962312fc"
   integrity sha512-+1gMDlZn19hm4qaceAy4gLqqwlitfXnHvRtFmLf59QVeTXadqLLoALAm0IgWpx0Q6aufFpqWMJcaPy/31Ai8HQ==
@@ -10040,7 +10040,7 @@ spritesheet-templates@^10.2.4:
     underscore "~1.4.2"
     underscore.string "~3.3.0"
 
-spritesmith@^3.3.1:
+spritesmith@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/spritesmith/-/spritesmith-3.4.0.tgz#5cfa004278c9072ab4900a0cd800141c7cf296e2"
   integrity sha512-epa/Ib2GzkrzOA6ZMKH+YOX4ooBlRz8JwIV5NQDt9FvqXVHTh4dVn/0oA+n5eeu6wem1CCrtZWODlOqvwXXpyA==
@@ -11299,18 +11299,18 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack-spritesmith@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/webpack-spritesmith/-/webpack-spritesmith-1.0.2.tgz#a861de8a6150bab0461df5b6cea48fbdc2199d11"
-  integrity sha512-iESHe2ne3364zRcJlfdtX+YUWa68BclDR2GbSna6m9ZVNgK9LokYRLZ7A9SlbEkD9qML85pjKlJFcxASVFI5iQ==
+webpack-spritesmith@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/webpack-spritesmith/-/webpack-spritesmith-1.1.0.tgz#a012907f19d54553facb870c762b95660f22621b"
+  integrity sha512-VEuk3VbZA3FXKFwEVwnxLlosqEkvwJx3kh0P2MRb7vSR8T24dhas3bicH42/wg1FyrUMWoUgcG1NuDfm4vITYQ==
   dependencies:
     gaze "^1.1.3"
     loader-utils "^1.2.3"
     lodash "^4.17.15"
     mkdirp "^0.5.1"
     mz "^2.7.0"
-    spritesheet-templates "^10.2.4"
-    spritesmith "^3.3.1"
+    spritesheet-templates "^10.4.2"
+    spritesmith "^3.4.0"
 
 webpack@4.41.5:
   version "4.41.5"
