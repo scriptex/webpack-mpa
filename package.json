@@ -42,7 +42,7 @@
 		"@babel/plugin-proposal-throw-expressions": "7.8.3",
 		"@babel/plugin-syntax-dynamic-import": "7.8.3",
 		"@babel/plugin-syntax-import-meta": "7.8.3",
-		"@babel/preset-env": "7.9.0",
+		"@babel/preset-env": "7.9.5",
 		"@three11/optisize": "1.0.0",
 		"autoprefixer": "9.7.6",
 		"babel-loader": "8.1.0",
