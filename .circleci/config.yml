@@ -2,22 +2,21 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:lts
-      - image: circleci/php:latest
+      - image: misterio92/ci-php-node
     steps:
       - checkout
       - run:
           name: install
-          command: yarn install
+          command: npm install
       - run:
           name: pwa
-          command: yarn pwa
+          command: npm run pwa
       - run:
           name: optisize
-          command: yarn optisize
+          command: npm run optisize
       - run:
           name: lint
-          command: yarn lint
+          command: npm run lint
       - run:
           name: prod
-          command: yarn prod
+          command: npm run prod
