@@ -1,0 +1,22 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: misterio92/ci-php-node
+    steps:
+      - checkout
+      - run:
+          name: install
+          command: yarn install
+      - run:
+          name: pwa
+          command: yarn pwa
+      - run:
+          name: optisize
+          command: yarn optisize
+      - run:
+          name: lint
+          command: yarn lint
+      - run:
+          name: prod
+          command: yarn prod
