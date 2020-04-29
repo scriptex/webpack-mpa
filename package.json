@@ -3,8 +3,8 @@
 	"version": "3.3.0",
 	"description": "Multi page app setup with webpack",
 	"scripts": {
-		"build": "webpack --env.NODE_ENV=production",
-		"start": "webpack --watch --env.NODE_ENV=development",
+		"build": "webpack --NODE_ENV=production",
+		"start": "webpack --watch --NODE_ENV=development",
 		"optisize": "optisize --src=\"./assets/images\"",
 		"html": "php index.php > index.html",
 		"critical": "critical index.html > assets/dist/critical.css",

@@ -1,7 +1,9 @@
+// @ts-nocheck
 const fs = require('fs');
-const url = require('url');
 const path = require('path');
+const { exec } = require('child_process');
 const { argv } = require('yargs');
+const { parse } = require('url');
 
 const magicImporter = require('node-sass-magic-importer');
 const { ProvidePlugin } = require('webpack');
@@ -11,9 +13,14 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 
+const { url, server, NODE_ENV } = argv;
 const sourceMap = {
-	sourceMap: argv.env.NODE_ENV === 'development'
+	sourceMap: NODE_ENV === 'development'
 };
+
+if (server) {
+	exec('php index.php > index.html');
+}
 
 const svgoConfig = {
 	plugins: [
@@ -77,7 +84,23 @@ const browserSyncConfig = {
 	host: 'localhost',
 	port: 3000,
 	open: 'external',
-	files: ['**/*.php', '**/*.html', './assets/dist/app.css', './assets/dist/app.js'],
+	/* eslint-disable no-mixed-spaces-and-tabs */
+	files: [
+		server
+			? {
+					match: ['*.php'],
+					fn(_, file) {
+						const name = file.replace(/.php$/, '');
+
+						exec(`php ${file} > ${name}.html`);
+					}
+			  }
+			: '**/*.php',
+		'**/*.html',
+		'./assets/dist/app.css',
+		'./assets/dist/app.js'
+	],
+	/* eslint-enable */
 	ghostMode: {
 		clicks: false,
 		scroll: true,
@@ -129,9 +152,9 @@ if (svgs.length) {
 	shellScripts.push('spritesh -q -i assets/images/svg -o ./assets/dist/sprite.svg -p svg-');
 }
 
-module.exports = env => {
-	const isDevelopment = env.NODE_ENV === 'development';
-	const isProduction = env.NODE_ENV === 'production';
+module.exports = () => {
+	const isDevelopment = NODE_ENV === 'development';
+	const isProduction = NODE_ENV === 'production';
 
 	if (isProduction) {
 		postcssConfig.plugins.push(
@@ -154,7 +177,7 @@ module.exports = env => {
 	}
 
 	const config = {
-		mode: env.NODE_ENV,
+		mode: NODE_ENV,
 		entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
 		output: {
 			path: path.resolve(__dirname, './assets'),
@@ -230,9 +253,16 @@ module.exports = env => {
 	};
 
 	if (isDevelopment) {
-		if (env.url) {
-			browserSyncConfig.host = url.parse(env.url).hostname;
-			browserSyncConfig.proxy = env.url;
+		if (url) {
+			browserSyncConfig.host = parse(url).hostname;
+			browserSyncConfig.proxy = url;
+		}
+
+		if (server) {
+			delete browserSyncConfig.host;
+			delete browserSyncConfig.proxy;
+
+			browserSyncConfig.server = true;
 		}
 
 		config.plugins.push(

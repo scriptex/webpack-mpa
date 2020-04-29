@@ -163,22 +163,34 @@ npm run build
 
 5.  Automatic browser reload using [BrowserSync](https://browsersync.io/)
 
-    -   The setup assumes that you have a web server installed. If you do not, then the files will be served via the browser-sync built-in server.
-    -   If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:
+    -   The setup assumes that you have a web server installed.
+    -   If you wish to use a proxy in browsersync you can do it using the `--url` CLI argument like this:
 
     ```sh
-    yarn start --env.url=http://your.app
+    yarn start --url=http://your.app
     ```
 
     or
 
     ```sh
-    npm start -- --env.url=http://your.app
+    npm start -- --url=http://your.app
     ```
 
-6.  Images optimization using [Optisize](https://github.com/three11/optisize)
+    If you do not have a web server installed, then the files can be served via the browser-sync built-in server. In order to use this you need to pass a new CLI argument `--server` like this.
 
-7.  SVG Sprite generating using [spritesh](https://www.npmjs.com/package/spritesh)
+    ```sh
+    yarn start --server
+    ```
+
+    or
+
+    ```sh
+    npm start -- --server
+    ```
+
+6)  Images optimization using [Optisize](https://github.com/three11/optisize)
+
+7)  SVG Sprite generating using [spritesh](https://www.npmjs.com/package/spritesh)
 
     All svg files located in `assets/images/svg` are merged into a single `sprite.svg` file in `dist` directory.
 
@@ -200,7 +212,7 @@ npm run build
     </svg>
     ```
 
-8.  All front-end assets are stored in an auto-generated `dist` folder.
+8)  All front-end assets are stored in an auto-generated `dist` folder.
 
 ## Assets
 
