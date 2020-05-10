@@ -12,8 +12,8 @@
 		"pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\" --launch=\"./assets/images/favicon/launch.png\"",
 		"prod": "yarn build && yarn html && yarn critical && yarn rm-html",
 		"lint": "yarn lint:js && yarn lint:scss",
-		"lint:js": "eslint './assets/**/*.js'",
-		"lint:scss": "stylelint assets/**/*.scss"
+		"lint:js": "eslint './assets/scripts/**/*.js'",
+		"lint:scss": "stylelint assets/styles/**/*.scss"
 	},
 	"keywords": [
 		"MPA",
