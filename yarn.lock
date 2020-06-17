@@ -3433,10 +3433,10 @@ create-pwa@2.3.0:
     sharp "0.25.2"
     yargs "15.3.1"
 
-critical@1.3.9:
-  version "1.3.9"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-1.3.9.tgz#31626d21fdb5ddd69eb439b56c729756074ac86a"
-  integrity sha512-4vI7de7BQQF0O5V02snD9RCKqVO1pZW+4TcsDN+wMD9wFaLEFc1rJJgzBZZbqcJhgtrSpJr/f3W9jvuUt0maWA==
+critical@1.3.10:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-1.3.10.tgz#76fbe0065abc24df753bf302fb4027374fe3687b"
+  integrity sha512-Anvk1U7NKArRXyExO9uz8snAcWsTxiGH2BB9TbSzOKsQPR/SFt+sx0IjM7yLoOcjdY/YaOfuw9RVvm3jdmFGlw==
   dependencies:
     async-exit-hook "^2.0.1"
     bluebird "^3.7.1"
