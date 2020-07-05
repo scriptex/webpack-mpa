@@ -1,5 +1,13 @@
 {
-  "extends": [
-    "config:base"
-  ]
+	"extends": ["config:base"],
+	"travis": {
+		"enabled": true
+	},
+	"assignees": ["@scriptex"],
+	"labels": ["dependencies"],
+	"rebaseWhen": "conflicted",
+	"vulnerabilityAlerts": {
+		"labels": ["security"],
+		"assignees": ["@scriptex"]
+	}
 }
