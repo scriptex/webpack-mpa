@@ -2,13 +2,12 @@
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-        @keyframes typing {
-          from { width: 0 }
-          to { width: 100% }
+        @keyframes type {
+          0% { width: 0; }
+          20%, 100% { width: 100%; }
         }
 
-
-        @keyframes blink-caret {
+        @keyframes caret {
           from, to { border-color: transparent }
           50% { border-color: orange }
         }
@@ -43,7 +42,7 @@
           overflow: hidden;
           border-right: .15em solid orange;
           margin: 0 auto;
-          animation:  typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+          animation: type 15s steps(30, end) infinite, caret .5s step-end infinite;
         }
 
         .typewriter h1:first-letter {
