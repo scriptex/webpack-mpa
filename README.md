@@ -1,4 +1,9 @@
-![Webpack MPA Logo](https://raw.githubusercontent.com/scriptex/webpack-mpa/master/webpack-mpa.svg?sanitize=true)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/scriptex/webpack-mpa/master/webpack-mpa.svg" alt="Webpack MPA Logo">
+	<br><br>
+	<img src="https://raw.githubusercontent.com/scriptex/webpack-mpa/master/readme.svg" alt="Zero config and fast installation: Run `npx webpack-mpa && npm i && npm start` in your terminal.">
+	<br><br>
+</div>
 
 [![GitHub release](https://img.shields.io/github/release/scriptex/webpack-mpa.svg)](https://github.com/scriptex/webpack-mpa/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/scriptex/webpack-mpa.svg)](https://github.com/scriptex/webpack-mpa/issues)
