@@ -1,0 +1,61 @@
+<svg fill="none" viewBox="0 0 440 200" width="440" height="200" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+
+
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: orange }
+        }
+
+        .container {
+          width: 100%;
+          height: 200px;
+          padding: 1rem;
+          box-sizing: border-box;
+          background: #333;
+        }
+
+        .container,
+        .typewriter {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .typewriter {
+          font-family: monospace;
+          font-size: 1.25rem;
+          color: #fff;
+          font-weight: normal;
+          white-space: nowrap;
+        }
+
+        .typewriter h1 {
+          font-size: 100%;
+          font-weight: inherit;
+          overflow: hidden;
+          border-right: .15em solid orange;
+          margin: 0 auto;
+          animation:  typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+        }
+
+        .typewriter h1:first-letter {
+            color: orange;
+        }
+			</style>
+
+			<div class="container">
+        <div class="typewriter">
+          <h1>$ npx webpack-mpa &amp;&amp; npm i &amp;&amp; npm start</h1>
+        </div>
+      </div>
+		</div>
+	</foreignObject>
+</svg>
