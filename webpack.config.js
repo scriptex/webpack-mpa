@@ -1,4 +1,5 @@
 // @ts-nocheck
+
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
@@ -7,10 +8,10 @@ const { parse } = require('url');
 
 const magicImporter = require('node-sass-magic-importer');
 const { ProvidePlugin } = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const { url, server, NODE_ENV } = argv;
@@ -120,8 +121,7 @@ const browserSyncConfig = {
 };
 
 const extractTextConfig = {
-	filename: 'dist/app.css',
-	allChunks: true
+	filename: 'dist/app.css'
 };
 
 const spritesmithConfig = {
@@ -156,14 +156,7 @@ module.exports = () => {
 	const isProduction = NODE_ENV === 'production';
 
 	if (isProduction) {
-		postcssConfig.plugins.push(
-			require('postcss-merge-rules'),
-			require('cssnano')({
-				discardComments: {
-					removeAll: true
-				}
-			})
-		);
+		postcssConfig.plugins.push(require('postcss-merge-rules'), require('cssnano')());
 	}
 
 	if (isDevelopment) {
@@ -188,28 +181,32 @@ module.exports = () => {
 		module: {
 			rules: [
 				{
-					test: /\.scss$/,
-					use: ExtractTextPlugin.extract({
-						use: [
-							{
-								loader: 'css-loader',
-								options: sourceMap
-							},
-							{
-								loader: 'postcss-loader',
-								options: postcssConfig
-							},
-							{
-								loader: 'sass-loader',
-								options: {
-									sassOptions: {
-										importer: magicImporter()
-									},
-									...sourceMap
-								}
+					test: /\.(sa|sc|c)ss$/,
+					use: [
+						{
+							loader: MiniCssExtractPlugin.loader,
+							options: {
+								hmr: isDevelopment
 							}
-						]
-					})
+						},
+						{
+							loader: 'css-loader',
+							options: sourceMap
+						},
+						{
+							loader: 'postcss-loader',
+							options: postcssConfig
+						},
+						{
+							loader: 'sass-loader',
+							options: {
+								sassOptions: {
+									importer: magicImporter()
+								},
+								...sourceMap
+							}
+						}
+					]
 				},
 				{
 					test: /\.js$/,
@@ -238,7 +235,7 @@ module.exports = () => {
 				jQuery: 'jquery',
 				'window.jQuery': 'jquery'
 			}),
-			new ExtractTextPlugin(extractTextConfig),
+			new MiniCssExtractPlugin(extractTextConfig),
 			new SpritesmithPlugin(spritesmithConfig),
 			new CleanWebpackPlugin(cleanConfig),
 			new WebpackShellPlugin({
