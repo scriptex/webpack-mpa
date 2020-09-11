@@ -6563,10 +6563,10 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-itscss@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/itscss/-/itscss-1.2.0.tgz#a74113218f0a6e1c9eead233762abda69f6c1991"
-  integrity sha512-Yfh5en7FzZ+07XX7NRlmH6u85pzwy2ahupSKnrO6Fo2I/l/y3hNqzvrxlKedEgNJsC7IJcIC2/kUZnWEqf/eoA==
+itscss@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/itscss/-/itscss-1.3.0.tgz#55546f23c8b234da77c828f81c90c1ba2ab06407"
+  integrity sha512-CBVUdsoavRR/UdKQZWJfLvc4orrnjlfK+fW1y5YZKqauM6PAeD1caA0mgKxpNlg64HJwJVzF52KJnFJz96zghA==
 
 jimp@^0.9.3:
   version "0.9.8"
