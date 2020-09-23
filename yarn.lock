@@ -9131,10 +9131,10 @@ postcss@7.0.7:
     source-map "^0.6.1"
     supports-color "^5.5.0"
 
-postcss@8.0.6:
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.0.6.tgz#1507160d7df320c77f8f4819cf52491f4748b672"
-  integrity sha512-P4lvqkhoiba/w0JE1t432xlQyeJnnf1elrviZOX0GybserV79IN4skB2nQg+NoOmkq30MNqVv9ggdqVmYjaolA==
+postcss@8.0.8:
+  version "8.0.8"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.0.8.tgz#5a80323a5107c0411451d1513f17984cfcfcc830"
+  integrity sha512-SJpf3Yrghve9ygpOcVhloo6e7q/mkp0YU3FLr3grdZpHmSjgwxTYEIrzkz7cFx27IMLFvIfLBnuw+JrHio14WQ==
   dependencies:
     colorette "^1.2.1"
     line-column "^1.0.2"
