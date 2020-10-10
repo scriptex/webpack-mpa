@@ -53,7 +53,7 @@
 		"postcss": "8.1.1",
 		"postcss-easy-import": "3.0.0",
 		"postcss-flexbugs-fixes": "4.2.1",
-		"postcss-loader": "4.0.3",
+		"postcss-loader": "4.0.4",
 		"postcss-merge-rules": "4.0.3",
 		"postcss-url": "8.0.0",
 		"postcss-utilities": "0.8.4",
