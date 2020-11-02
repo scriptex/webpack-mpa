@@ -11,8 +11,8 @@ const { ProvidePlugin } = require('webpack');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const { url, server, NODE_ENV } = argv;
 const sourceMap = {
@@ -127,7 +127,9 @@ const spritesmithConfig = {
 };
 
 const cleanConfig = {
-	cleanOnceBeforeBuildPatterns: ['dist/*', '!dist/sprite.svg']
+	verbose: false,
+	exclude: ['sprite.svg'],
+	allowExternal: true
 };
 
 const shellScripts = [];
@@ -224,7 +226,7 @@ module.exports = () => {
 			}),
 			new MiniCssExtractPlugin(extractTextConfig),
 			new SpritesmithPlugin(spritesmithConfig),
-			new CleanWebpackPlugin(cleanConfig),
+			new CleanWebpackPlugin(['../assets/dist/'], cleanConfig),
 			new WebpackShellPlugin({
 				onBuildStart: shellScripts
 			})
