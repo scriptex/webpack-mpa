@@ -23,11 +23,13 @@ Thumbs.db
 # Config files
 .github
 .circleci
+.travis.ci
 renovate.json
 _config.yml
 _.config.yml
 .whitesource
 
 # Project specific
+readme.svg
 webpack-mpa.svg
 webpack-mpa.sketch
