@@ -23,7 +23,7 @@ Thumbs.db
 # Config files
 .github
 .circleci
-.travis.ci
+.travis.yml
 renovate.json
 _config.yml
 _.config.yml
