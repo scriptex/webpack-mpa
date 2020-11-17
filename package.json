@@ -60,7 +60,7 @@
 		"postcss-watch-folder": "1.0.0",
 		"sass-loader": "10.1.0",
 		"spritesh": "1.2.1",
-		"stylelint": "13.7.2",
+		"stylelint": "13.8.0",
 		"stylelint-config-recommended": "3.0.0",
 		"webpack": "4.44.2",
 		"webpack-cli": "3.3.12",
