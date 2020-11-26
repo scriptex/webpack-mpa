@@ -55,7 +55,7 @@
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-loader": "4.1.0",
 		"postcss-merge-rules": "4.0.3",
-		"postcss-url": "10.1.0",
+		"postcss-url": "10.1.1",
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "1.0.0",
 		"sass-loader": "10.1.0",
