@@ -6746,10 +6746,10 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-itscss@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/itscss/-/itscss-1.4.0.tgz#ccb65206181041ab5320f75e094df9a1f1467856"
-  integrity sha512-3LR6DjuDM2AF1zQ8hmtjKLpmEUgjiQ8y+hXZr4hEi4PmjZCr9zOgvtdAGvgdWBsq7SggtPmEZkDthJhcfs41xQ==
+itscss@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/itscss/-/itscss-1.6.0.tgz#8cd7badfd75bd9de0dfde3dafc817ea45572ddfe"
+  integrity sha512-B5SqvxEUfeWvnEvYtfcdyGmIpyPh4m0appq4v+VdPhti+6QwRzQpnjbwMIW+dsMYuatwRgFWsDjnuqA12q9KzA==
 
 jimp@^0.9.3:
   version "0.9.8"
