@@ -50,7 +50,7 @@
 		"file-loader": "6.2.0",
 		"node-sass": "4.14.1",
 		"node-sass-magic-importer": "5.3.2",
-		"postcss": "8.2.4",
+		"postcss": "8.2.5",
 		"postcss-easy-import": "3.0.0",
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-loader": "4.2.0",
