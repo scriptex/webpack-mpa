@@ -255,8 +255,8 @@ There are several scripts defined in the `package.json` file:
 
 ```json
 {
-	"build": "webpack --env.NODE_ENV=production",
-	"start": "webpack --watch --env.NODE_ENV=development",
+	"build": "webpack --mode=production",
+	"start": "webpack --watch --mode=development",
 	"optisize": "optisize --src=\"./assets/images\"",
 	"html": "php index.php > index.html",
 	"critical": "critical index.html > assets/dist/critical.css",

@@ -9,6 +9,5 @@
 	"vulnerabilityAlerts": {
 		"labels": ["security"],
 		"assignees": ["@scriptex"]
-	},
-	"ignoreDeps": ["css-loader"]
+	}
 }
