@@ -1,5 +1,5 @@
 {
-	"extends": ["config:base"],
+	"extends": ["config:base", ":automergePatch", ":automergeBranch"],
 	"travis": {
 		"enabled": true
 	},
@@ -10,14 +10,7 @@
 		"labels": ["security"],
 		"assignees": ["@scriptex"]
 	},
-	"packageRules": [
-		{
-			"updateTypes": ["patch", "pin", "digest"],
-			"automerge": true
-		}
-	],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"automerge": true
+	"major": {
+		"automerge": false
 	}
 }
