@@ -68,7 +68,7 @@
 		"webpack-cli": "4.6.0",
 		"webpack-shell-plugin-next": "2.2.2",
 		"webpack-spritesmith": "1.1.0",
-		"yargs": "16.2.0"
+		"yargs": "17.0.1"
 	},
 	"browserslist": [
 		"> 1%",
