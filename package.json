@@ -64,7 +64,7 @@
 		"spritesh": "1.2.1",
 		"stylelint": "13.13.1",
 		"stylelint-config-recommended": "5.0.0",
-		"webpack": "5.37.0",
+		"webpack": "5.37.1",
 		"webpack-cli": "4.7.0",
 		"webpack-shell-plugin-next": "2.2.2",
 		"webpack-spritesmith": "1.1.0",
