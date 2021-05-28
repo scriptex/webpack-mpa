@@ -3175,15 +3175,16 @@ create-pwa@2.3.1:
     sharp "0.27.1"
     yargs "16.2.0"
 
-critical@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-3.0.1.tgz#636000465dd5f3e2ec61bcd618be6628a771ec9c"
-  integrity sha512-ONjumtwbUvC4hg92qlSPhGUFtrLqNEj3l50LJoqpMeBu/CBVxkBUY8vLRoPWy7SF0drobc+EYVV+tg7/L0ma5g==
+critical@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-3.1.0.tgz#46697219a09c91d00f15006280d9e1b2aea60197"
+  integrity sha512-PsZlB4o5g+SMduwknfgfsO86eNSu9moPFzB2IBrFzC0t2KqksdTAehex8TrspnNsp7owL3z5t4CdXmf1GvgxFw==
   dependencies:
     chalk "^4.1.0"
     clean-css "^5.1.2"
     common-tags "^1.8.0"
     css-url-parser "^1.1.3"
+    data-uri-to-buffer "^3.0.1"
     debug "^4.3.1"
     find-up "^5.0.0"
     get-stdin "^8.0.0"
@@ -3197,7 +3198,7 @@ critical@3.0.1:
     lodash "^4.17.21"
     make-dir "^3.1.0"
     meow "^9.0.0"
-    oust "^1.0.5"
+    oust "^1.2.0"
     p-all "^3.0.0"
     penthouse "^2.3.2"
     plugin-error "^1.0.1"
@@ -3503,6 +3504,11 @@ data-uri-to-buffer@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-0.0.3.tgz#18ae979a6a0ca994b0625853916d2662bbae0b1a"
   integrity sha1-GK6XmmoMqZSwYlhTkW0mYruuCxo=
+
+data-uri-to-buffer@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
+  integrity sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==
 
 data-urls@^2.0.0:
   version "2.0.0"
@@ -7892,10 +7898,10 @@ os-tmpdir@~1.0.2:
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
-oust@^1.0.5:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/oust/-/oust-1.1.0.tgz#bfd2e82d5bfabf40a9961a73eb3f64a44aafaf01"
-  integrity sha512-QfQPVvnZZzQmGLvn0W8Kyhgjwu+DJ/zDlVa7q5xRxvEKauihVTxvJVC6SjcP25HmJAXkZ0YVLtGXkpOnJBFuSw==
+oust@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/oust/-/oust-1.2.0.tgz#32ce08210eb01bf9737724aa0f68bd703f2a165a"
+  integrity sha512-L9vXymJcTKsi0wTOeoFQfANaG47NOCdop9i5i7BXYlf0wno5slHNKKJIL54HpzQi3Wp8vgCFv1o4hWOskB563Q==
   dependencies:
     cheerio "^0.22.0"
     minimist "^1.2.5"
