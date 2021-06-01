@@ -23,27 +23,6 @@ if (server) {
 	exec('php index.php > index.html');
 }
 
-const svgoConfig = {
-	plugins: [
-		{ name: 'cleanupAttrs', active: true },
-		{ name: 'removeDoctype', active: true },
-		{ name: 'removeXMLProcInst', active: true },
-		{ name: 'removeComments', active: true },
-		{ name: 'removeMetadata', active: true },
-		{ name: 'removeUselessDefs', active: true },
-		{ name: 'removeEditorsNSData', active: true },
-		{ name: 'removeEmptyAttrs', active: true },
-		{ name: 'removeHiddenElems', active: false },
-		{ name: 'removeEmptyText', active: true },
-		{ name: 'removeEmptyContainers', active: true },
-		{ name: 'cleanupEnableBackground', active: true },
-		{ name: 'removeViewBox', active: false },
-		{ name: 'cleanupIDs', active: false },
-		{ name: 'convertStyleToAttrs', active: true },
-		{ name: 'removeUselessStrokeAndFill', active: true }
-	]
-};
-
 const postcssOptions = {
 	plugins: [
 		require('postcss-easy-import'),
@@ -136,7 +115,7 @@ const shellScripts = [];
 const svgs = readdirSync('./assets/images/svg').filter(svg => svg[0] !== '.');
 
 if (svgs.length) {
-	shellScripts.push('svgo -f assets/images/svg --config=' + JSON.stringify(svgoConfig));
+	shellScripts.push('svgo -f assets/images/svg');
 	shellScripts.push('spritesh -q -i assets/images/svg -o ./assets/dist/sprite.svg -p svg-');
 }
 
