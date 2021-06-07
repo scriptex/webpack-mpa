@@ -2655,13 +2655,6 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-clean-css@^4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
-  integrity sha512-VcMWDN54ZN/DS+g58HYL5/n4Zrqe8vHJpGA8KdgUXFU4fuP/aHNw8eld9SyEIyabIMJX/0RaY/fplOo5hYLSFA==
-  dependencies:
-    source-map "~0.6.0"
-
 clean-css@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.1.2.tgz#6ea0da7286b4ddc2469a1b776e2461a5007eed54"
@@ -3030,10 +3023,10 @@ create-pwa@2.3.1:
     sharp "0.27.1"
     yargs "16.2.0"
 
-critical@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-3.1.0.tgz#46697219a09c91d00f15006280d9e1b2aea60197"
-  integrity sha512-PsZlB4o5g+SMduwknfgfsO86eNSu9moPFzB2IBrFzC0t2KqksdTAehex8TrspnNsp7owL3z5t4CdXmf1GvgxFw==
+critical@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-4.0.0.tgz#3ae49c4cb68fabbc0877925b9dc304d309abfd86"
+  integrity sha512-A3K95JZwHXqZ7auMrnWyejdYfWgtp/qLjfnRE9LmkqtyfAPaEyfU2FLpGNVp31GyS/OWae7YBXLlTV2BEhVG6Q==
   dependencies:
     chalk "^4.1.0"
     clean-css "^5.1.2"
@@ -3047,7 +3040,7 @@ critical@3.1.0:
     got "^11.8.2"
     group-args "^0.1.0"
     indent-string "^4.0.0"
-    inline-critical "^6.0.3"
+    inline-critical "^8.0.0"
     is-glob "^4.0.1"
     joi "^17.4.0"
     lodash "^4.17.21"
@@ -3057,11 +3050,10 @@ critical@3.1.0:
     p-all "^3.0.0"
     penthouse "^2.3.2"
     plugin-error "^1.0.1"
-    postcss "^8.2.10"
-    postcss-discard "^1.0.1"
-    postcss-image-inliner "^4.0.4"
+    postcss "^8.3.0"
+    postcss-discard "^2.0.0"
+    postcss-image-inliner "^5.0.0"
     postcss-url "^10.1.3"
-    prettier "^2.2.1"
     replace-ext "^2.0.0"
     slash "^3.0.0"
     tempy "^1.0.1"
@@ -3601,7 +3593,7 @@ detect-file@^1.0.0:
   resolved "https://registry.yarnpkg.com/detect-file/-/detect-file-1.0.0.tgz#f0d66d03672a825cb1b73bdb3fe62310c8e552b7"
   integrity sha1-8NZtA2cqglyxtzvbP+YjEMjlUrc=
 
-detect-indent@^6.0.0:
+detect-indent@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.1.0.tgz#592485ebbbf6b3b1ab2be175c8393d04ca0d57e6"
   integrity sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==
@@ -5734,31 +5726,30 @@ ini@^1.3.4, ini@^1.3.5, ini@~1.3.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
   integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
-inline-critical@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/inline-critical/-/inline-critical-6.0.3.tgz#cf93de7588e326745c1f50e3d59fa131f8574844"
-  integrity sha512-PDtsLeh4sjvdlbk2q0oMZQfiO9NDeOY+ff9vz6gnK4vnJ/Kl/2OedVsWo4V13eQ0AUOQfahdmgRTw/y4I2Fn3A==
+inline-critical@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/inline-critical/-/inline-critical-8.0.0.tgz#042acc3b9cb30266616444b00db5e8cc7f060569"
+  integrity sha512-qaxO4/aYmQuLdCOmLFZGJQ3SRmhj4vVHBR2RcwwrHmliCXHyF5TDLgpaP4vTb4KftgcJluzBjogfDIsSF166Dg==
   dependencies:
-    chalk "^4.1.0"
-    clean-css "^4.2.3"
+    chalk "^4.1.1"
+    clean-css "^5.1.2"
     css "^3.0.0"
-    detect-indent "^6.0.0"
+    detect-indent "^6.1.0"
     fg-loadcss "^2.1.0"
     get-stdin "^8.0.0"
     indent-string "^4.0.0"
-    jsdom "^16.4.0"
+    jsdom "^16.6.0"
     lodash.defaults "^4.2.0"
     lodash.escaperegexp "^4.1.2"
     lodash.isregexp "^4.0.1"
     lodash.isstring "^4.0.1"
-    meow "^8.1.0"
+    meow "^9.0.0"
     normalize-newline "^3.0.0"
-    postcss "^7.0.32"
-    postcss-discard "^1.0.1"
-    prettier "^2.2.1"
+    postcss "^8.3.0"
+    postcss-discard "^2.0.0"
     reaver "^2.0.0"
     slash "^3.0.0"
-    uglify-js "^3.12.3"
+    uglify-js "^3.13.8"
 
 inquirer@^7.0.0:
   version "7.3.3"
@@ -6295,7 +6286,7 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdom@^16.4.0:
+jsdom@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.6.0.tgz#f79b3786682065492a3da6a60a4695da983805ac"
   integrity sha512-Ty1vmF4NHJkolaEmdjtxTfSfkdb8Ywarwf63f+F8/mDD1uLSSWDxDuMiZxiPhwunLrn9LOSVItWj4bLYsLN3Dg==
@@ -7004,23 +6995,6 @@ meow@^7.1.1:
     trim-newlines "^3.0.0"
     type-fest "^0.13.1"
     yargs-parser "^18.1.3"
-
-meow@^8.1.0:
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/meow/-/meow-8.1.2.tgz#bcbe45bda0ee1729d350c03cffc8395a36c4e897"
-  integrity sha512-r85E3NdZ+mpYk1C6RjPFEMSE+s1iZMuHtsHAqY0DT3jZczl0diWUZ8g6oU7h0M9cD2EL+PzaYghhCLzR0ZNn5Q==
-  dependencies:
-    "@types/minimist" "^1.2.0"
-    camelcase-keys "^6.2.2"
-    decamelize-keys "^1.1.0"
-    hard-rejection "^2.1.0"
-    minimist-options "4.1.0"
-    normalize-package-data "^3.0.0"
-    read-pkg-up "^7.0.1"
-    redent "^3.0.0"
-    trim-newlines "^3.0.0"
-    type-fest "^0.18.0"
-    yargs-parser "^20.2.3"
 
 meow@^9.0.0:
   version "9.0.0"
@@ -8309,10 +8283,10 @@ postcss-discard-overridden@^5.0.1:
   resolved "https://registry.yarnpkg.com/postcss-discard-overridden/-/postcss-discard-overridden-5.0.1.tgz#454b41f707300b98109a75005ca4ab0ff2743ac6"
   integrity sha512-Y28H7y93L2BpJhrdUR2SR2fnSsT+3TVx1NmVQLbcnZWwIUpJ7mfcTC6Za9M2PG6w8j7UQRfzxqn8jU2VwFxo3Q==
 
-postcss-discard@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/postcss-discard/-/postcss-discard-1.0.3.tgz#a6e305dabfe259ef82a64ebcf6772ed349f45a66"
-  integrity sha512-GSEw59lvAr29wvsDQNbuI5hQHeXto+8UaM7VsNzRp0vJyfhNDc9xNDzxtKml4hO/kf7QxcB5dlaZj8lyBnthtg==
+postcss-discard@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-discard/-/postcss-discard-2.0.0.tgz#b575dc52efe4c5d25f74f59ffd0f146462ff28e5"
+  integrity sha512-M7e1ckqMd3r0THkY4zTIRKP3H2NUrsNsI7UuIUYbyFDPRD26QgFR/BGGw8CNt5X4F0uGBnAMAFGgktraPdOZFw==
   dependencies:
     clean-css "^5.1.2"
     lodash.isfunction "^3.0.9"
@@ -8345,16 +8319,15 @@ postcss-html@^0.36.0:
   dependencies:
     htmlparser2 "^3.10.0"
 
-postcss-image-inliner@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/postcss-image-inliner/-/postcss-image-inliner-4.0.4.tgz#fb516f2df3847ab175203d37dc98eb745fb417ab"
-  integrity sha512-qM7KfjOMYaNYHqkZRR7msu/WJasMdVk946o6RnCgN67gFxj9NTcTRMUCxrxh7qREgg+NJK3XZP6LXS7qQhZQmQ==
+postcss-image-inliner@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-image-inliner/-/postcss-image-inliner-5.0.0.tgz#ec06a58d09ddb1feba30149e2ec96f48e4753381"
+  integrity sha512-4F5nt3Xf1r5zslG5d1ugPxU2X8NjM0zm4uMKz9KxWzescmOSLPGoO2F7zscdH+GSArvrpVoJssGkO8ReAUxq/w==
   dependencies:
     asset-resolver "^3.0.4"
     debug "^4.3.1"
     escape-string-regexp "^4.0.0"
     filesize "^6.1.0"
-    postcss "^7.0.32"
     svgo "^1.3.2"
 
 postcss-import@^10.0.0:
@@ -8685,7 +8658,7 @@ postcss-watch-folder@1.1.0:
     chokidar "3.5.1"
     postcss "8.3.0"
 
-postcss@8.3.0, postcss@^8.2.10, postcss@^8.2.15, postcss@^8.3.0:
+postcss@8.3.0, postcss@^8.2.15, postcss@^8.3.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.0.tgz#b1a713f6172ca427e3f05ef1303de8b65683325f"
   integrity sha512-+ogXpdAjWGa+fdYY5BQ96V/6tAo+TdSSIMP5huJBIygdWwKtVoB5JWZ7yUd4xZ8r+8Kvvx4nyg/PQ071H4UtcQ==
@@ -8772,11 +8745,6 @@ prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
-
-prettier@^2.2.1:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.0.tgz#b6a5bf1284026ae640f17f7ff5658a7567fc0d18"
-  integrity sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==
 
 pretty-hrtime@^1.0.3:
   version "1.0.3"
@@ -10874,10 +10842,15 @@ ua-parser-js@^0.7.18:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
   integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
-uglify-js@^3.1.4, uglify-js@^3.12.3:
+uglify-js@^3.1.4:
   version "3.13.8"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.8.tgz#7c2f9f2553f611f3ff592bdc19c6fb208dc60afb"
   integrity sha512-PvFLMFIQHfIjFFlvAch69U2IvIxK9TNzNWt1SxZGp9JZ/v70yvqIQuiJeVPPtUMOzoNt+aNRDk4wgxb34wvEqA==
+
+uglify-js@^3.13.8:
+  version "3.13.9"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.9.tgz#4d8d21dcd497f29cfd8e9378b9df123ad025999b"
+  integrity sha512-wZbyTQ1w6Y7fHdt8sJnHfSIuWeDgk6B5rCb4E/AM6QNNPbOMIZph21PW5dRB3h7Df0GszN+t7RuUH6sWK5bF0g==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"
