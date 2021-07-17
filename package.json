@@ -45,7 +45,7 @@
 		"critical": "4.0.0",
 		"css-loader": "6.0.0",
 		"cssnano": "5.0.6",
-		"eslint": "7.30.0",
+		"eslint": "7.31.0",
 		"eslint-config-recommended": "4.1.0",
 		"file-loader": "6.2.0",
 		"mini-css-extract-plugin": "2.1.0",
