@@ -70,7 +70,7 @@
 		"webpack-cli": "4.7.2",
 		"webpack-shell-plugin-next": "2.2.2",
 		"webpack-spritesmith": "1.1.0",
-		"yargs": "17.0.1"
+		"yargs": "17.1.0"
 	},
 	"browserslist": [
 		"> 1%",
