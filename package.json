@@ -67,7 +67,7 @@
 		"stylelint": "13.13.1",
 		"stylelint-config-recommended": "5.0.0",
 		"stylelint-no-unsupported-browser-features": "5.0.2",
-		"svgo": "2.5.0",
+		"svgo": "2.6.0",
 		"webpack": "5.52.1",
 		"webpack-cli": "4.8.0",
 		"webpack-shell-plugin-next": "2.2.2",
