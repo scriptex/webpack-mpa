@@ -64,7 +64,7 @@
 		"sass": "1.43.2",
 		"sass-loader": "12.2.0",
 		"spritesh": "1.2.1",
-		"stylelint": "13.13.1",
+		"stylelint": "14.0.0",
 		"stylelint-config-recommended": "5.0.0",
 		"stylelint-no-unsupported-browser-features": "5.0.2",
 		"svgo": "2.7.0",
