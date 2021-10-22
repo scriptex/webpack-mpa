@@ -1,26 +1,9 @@
 {
-	"extends": [
-		"stylelint-config-recommended"
-	],
-	"plugins": [
-		"stylelint-no-unsupported-browser-features"
-	],
+	"extends": ["stylelint-config-recommended", "stylelint-config-standard-scss"],
+	"plugins": ["stylelint-scss", "stylelint-no-unsupported-browser-features"],
 	"rules": {
-		"at-rule-no-unknown": [
-			true,
-			{
-				"ignoreAtRules": [
-					"function",
-					"if",
-					"each",
-					"include",
-					"mixin",
-					"for",
-					"while",
-					"else",
-					"return"
-				]
-			}
-		]
+		"string-quotes": "single",
+		"at-rule-no-unknown": null,
+		"scss/at-rule-no-unknown": true
 	}
 }
