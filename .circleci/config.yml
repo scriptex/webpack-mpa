@@ -10,16 +10,16 @@ jobs:
                   command: sudo apt install automake
             - run:
                   name: install
-                  command: npm install
+                  command: yarn
             - run:
                   name: pwa
-                  command: npm run pwa
+                  command: yarn pwa
             - run:
                   name: optisize
-                  command: npm run optisize
+                  command: yarn optisize
             - run:
                   name: lint
-                  command: npm run lint
+                  command: yarn lint
             - run:
                   name: prod
-                  command: npm run prod
+                  command: yarn prod
