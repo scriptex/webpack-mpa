@@ -6184,10 +6184,10 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-itscss@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/itscss/-/itscss-2.0.0.tgz#f2b860597156f7ae4ecd7dddfbdce48289972bde"
-  integrity sha512-6nDAHJUYWAjedPH+EkEp6ff0rVjeMvLawokN+MaR3BJksMTReSBm4cFzOlYhAUmLtggp/rKzRGFzngQpNVZZyw==
+itscss@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/itscss/-/itscss-2.0.1.tgz#bcd2dd3c327fd3408b2b76d82851656220472ce6"
+  integrity sha512-rSoYAdGs1k77x6nm9pWD/OrLpGhoBHPg/49MytiMixLELJLwhfzzYhNZyx25KKpr/MBvp/VvN32zkATNR/bntQ==
 
 jest-worker@^27.0.6:
   version "27.3.1"

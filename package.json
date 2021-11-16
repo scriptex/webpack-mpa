@@ -29,7 +29,7 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"itscss": "2.0.0"
+		"itscss": "2.0.1"
 	},
 	"devDependencies": {
 		"@babel/core": "7.16.0",
