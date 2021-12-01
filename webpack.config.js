@@ -5,7 +5,6 @@ const { parse } = require('url');
 const { resolve } = require('path');
 const { readdirSync } = require('fs');
 
-const { argv } = require('yargs');
 const magicImporter = require('node-sass-magic-importer');
 const { ProvidePlugin } = require('webpack');
 const SpritesmithPlugin = require('webpack-spritesmith');
@@ -13,28 +12,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin-next');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
-const { url, server, mode } = argv;
-const sourceMap = {
-	sourceMap: mode === 'development'
-};
-
-if (server) {
-	exec('php index.php > index.html');
-}
-
-const postcssOptions = {
-	plugins: [
-		require('postcss-easy-import'),
-		require('postcss-url')({
-			url: 'rebase'
-		}),
-		require('postcss-utilities'),
-		require('postcss-flexbugs-fixes'),
-		require('autoprefixer')()
-	],
-	...sourceMap
-};
 
 const babelConfig = [
 	{
@@ -47,7 +24,7 @@ const babelConfig = [
 	}
 ];
 
-const browserSyncConfig = {
+const browserSyncConfig = server => ({
 	host: 'localhost',
 	port: 3000,
 	open: 'external',
@@ -84,7 +61,7 @@ const browserSyncConfig = {
 		}
 	},
 	proxy: 'localhost'
-};
+});
 
 const extractTextConfig = {
 	filename: 'app.css'
@@ -117,9 +94,33 @@ if (svgs.length) {
 	shellScripts.push('spritesh -q -i assets/images/svg -o ./assets/dist/sprite.svg -p svg-');
 }
 
-module.exports = () => {
+module.exports = (env, argv) => {
+	const { url, server } = env;
+	const { mode } = argv;
+
 	const isDevelopment = mode === 'development';
 	const isProduction = mode === 'production';
+
+	if (server) {
+		exec('php index.php > index.html');
+	}
+
+	const sourceMap = {
+		sourceMap: isDevelopment
+	};
+
+	const postcssOptions = {
+		plugins: [
+			require('postcss-easy-import'),
+			require('postcss-url')({
+				url: 'rebase'
+			}),
+			require('postcss-utilities'),
+			require('postcss-flexbugs-fixes'),
+			require('autoprefixer')()
+		],
+		...sourceMap
+	};
 
 	if (isProduction) {
 		postcssOptions.plugins.push(require('postcss-merge-rules'), require('cssnano')());
@@ -135,7 +136,7 @@ module.exports = () => {
 	}
 
 	const config = {
-		mode: mode,
+		mode,
 		entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
 		output: {
 			path: resolve(__dirname, './assets/dist'),
@@ -206,21 +207,23 @@ module.exports = () => {
 		stats: 'errors-only'
 	};
 
+	const bsConfig = browserSyncConfig(server);
+
 	if (isDevelopment) {
 		if (url) {
-			browserSyncConfig.host = parse(url).hostname;
-			browserSyncConfig.proxy = url;
+			bsConfig.host = parse(url).hostname;
+			bsConfig.proxy = url;
 		}
 
 		if (server) {
-			delete browserSyncConfig.host;
-			delete browserSyncConfig.proxy;
+			delete bsConfig.host;
+			delete bsConfig.proxy;
 
-			browserSyncConfig.server = true;
+			bsConfig.server = true;
 		}
 
 		config.plugins.push(
-			new BrowserSyncPlugin(browserSyncConfig, {
+			new BrowserSyncPlugin(bsConfig, {
 				reload: false
 			})
 		);
