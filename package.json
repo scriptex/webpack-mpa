@@ -61,7 +61,7 @@
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "2.0.0",
 		"sass": "1.44.0",
-		"sass-loader": "12.3.0",
+		"sass-loader": "12.4.0",
 		"spritesh": "1.2.1",
 		"stylelint": "14.1.0",
 		"stylelint-config-recommended": "6.0.0",
