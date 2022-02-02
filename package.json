@@ -43,7 +43,7 @@
 		"clean-webpack-plugin": "4.0.0",
 		"create-pwa": "2.3.1",
 		"critical": "4.0.1",
-		"css-loader": "6.5.1",
+		"css-loader": "6.6.0",
 		"cssnano": "5.0.16",
 		"eslint": "8.8.0",
 		"eslint-config-recommended": "4.1.0",
