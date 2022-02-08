@@ -32,7 +32,7 @@
 		"itscss": "3.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.17.0",
+		"@babel/core": "7.17.2",
 		"@babel/preset-env": "7.16.11",
 		"@three11/optisize": "2.0.0",
 		"autoprefixer": "10.4.2",
