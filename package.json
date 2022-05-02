@@ -35,7 +35,7 @@
 		"@babel/core": "7.17.10",
 		"@babel/preset-env": "7.17.10",
 		"@three11/optisize": "2.0.0",
-		"autoprefixer": "10.4.5",
+		"autoprefixer": "10.4.6",
 		"babel-loader": "8.2.5",
 		"browser-sync": "2.27.9",
 		"browser-sync-webpack-plugin": "2.3.0",
