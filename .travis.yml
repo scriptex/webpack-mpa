@@ -6,6 +6,6 @@ install:
     - yarn
 script:
     - yarn lint
-    - yarn build
-    - yarn optisize
     - yarn pwa
+    - yarn optisize
+    - yarn prod
