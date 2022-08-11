@@ -12,14 +12,14 @@ jobs:
                   name: install
                   command: yarn
             - run:
+                  name: lint
+                  command: yarn lint
+            - run:
                   name: pwa
                   command: yarn pwa
             - run:
                   name: optisize
                   command: yarn optisize
-            - run:
-                  name: lint
-                  command: yarn lint
             - run:
                   name: prod
                   command: yarn prod
