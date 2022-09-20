@@ -2,12 +2,36 @@
 	"name": "webpack-mpa",
 	"version": "3.11.0",
 	"description": "Multi page app setup with webpack",
+	"keywords": [
+		"MPA",
+		"Multi page",
+		"Webpack setup",
+		"Webpack config",
+		"Webpack boilerplate",
+		"Multiple pages application",
+		"Multiple pages application setup",
+		"Multiple pages application boilerplate"
+	],
+	"homepage": "https://atanas.info/projects/webpack-mpa.html",
+	"bugs": {
+		"url": "https://github.com/scriptex/webpack-mpa/issues",
+		"email": "hi@atanas.info"
+	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"main": "assets/scripts/main.js",
+	"style": "assets/styles/main.css",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/webpack-mpa"
+	},
 	"scripts": {
 		"build": "webpack --mode=production",
 		"start": "webpack --watch --mode=development",
 		"optisize": "optisize --src=\"./assets/images\"",
 		"html": "php index.php > index.html",
-		"critical": "node critical.js",
+		"critical": "node critical.mjs",
 		"rm-html": "rm index.html",
 		"pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\" --launch=\"./assets/images/favicon/launch.png\"",
 		"prod": "yarn build && yarn html && yarn critical && yarn rm-html",
@@ -15,19 +39,6 @@
 		"lint:js": "eslint './assets/scripts/**/*.js'",
 		"lint:scss": "stylelint assets/styles/**/*.scss"
 	},
-	"keywords": [
-		"MPA",
-		"webpack",
-		"setup",
-		"multi-page"
-	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/webpack-mpa",
-	"bugs": {
-		"url": "https://github.com/scriptex/webpack-mpa/issues",
-		"email": "scriptex.bg@gmail.com"
-	},
-	"license": "MIT",
 	"dependencies": {
 		"itscss": "3.1.0"
 	},
@@ -42,7 +53,7 @@
 		"browserslist": "4.21.4",
 		"clean-webpack-plugin": "4.0.0",
 		"create-pwa": "2.6.0",
-		"critical": "4.0.1",
+		"critical": "5.0.2",
 		"css-loader": "6.7.1",
 		"cssnano": "5.1.13",
 		"eslint": "8.23.1",
@@ -74,13 +85,11 @@
 		"webpack-shell-plugin-next": "2.2.2",
 		"webpack-spritesmith": "1.1.0"
 	},
+	"bin": {
+		"wmpa": "./bin/cli.js"
+	},
 	"browserslist": [
 		"> 1%",
 		"last 2 versions"
-	],
-	"main": "assets/scripts/main.js",
-	"private": false,
-	"bin": {
-		"wmpa": "./bin/cli.js"
-	}
+	]
 }

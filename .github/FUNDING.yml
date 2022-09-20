@@ -9,4 +9,4 @@ community_bridge: # Replace with a single Community Bridge project-name e.g., cl
 liberapay: scriptex
 issuehunt: scriptex
 otechie: # Replace with a single Otechie username
-custom: ['paypal.me/scriptex']
+custom: ['paypal.me/scriptex', 'revolut.me/scriptex']
