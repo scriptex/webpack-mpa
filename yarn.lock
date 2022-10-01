@@ -9738,10 +9738,10 @@ stylelint-config-standard@^26.0.0:
   dependencies:
     stylelint-config-recommended "^8.0.0"
 
-stylelint-no-unsupported-browser-features@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-6.0.0.tgz#e34bfc72165c3722ea5d61528175f8b4053bc526"
-  integrity sha512-Jziz54qTcDLCSHnqK+xRiwV2kraBopENwqpCvXTDCHR+ng03fdUFfCLRbyMSP6BWK0diLC8pvvbncHUJpK+zTA==
+stylelint-no-unsupported-browser-features@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-6.0.1.tgz#a816b72bfdf7d1c4ffcf2f6a4f3524442a4a8e7b"
+  integrity sha512-cuhp3gU+SMp0I5dCykjQ0iSTtBsWeA7qNZlNBYnCW7L4KPudunRYyGQ8gcClRJtFpGkElQUtsfLMALNFZVdEFw==
   dependencies:
     doiuse "^4.4.1"
     lodash "^4.17.15"
