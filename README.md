@@ -1,8 +1,8 @@
 <div align="center">
-	<img src="https://raw.githubusercontent.com/scriptex/webpack-mpa/master/webpack-mpa.svg" alt="Webpack MPA Logo">
-	<br><br>
-	<img src="https://raw.githubusercontent.com/scriptex/webpack-mpa/master/readme.svg" alt="Zero config and fast installation: Run `npx webpack-mpa && npm i && npm start` in your terminal.">
-	<br><br>
+	<img src="https://raw.githubusercontent.com/scriptex/webpack-mpa/master/webpack-mpa.svg" alt="Webpack MPA Logo" />
+	<br /><br />
+	<img src="https://raw.githubusercontent.com/scriptex/webpack-mpa/master/readme.svg" alt="Zero config and fast installation: Run `npx webpack-mpa && npm i && npm start` in your terminal." />
+	<br /><br />
 </div>
 
 [![Travis CI](https://travis-ci.com/scriptex/webpack-mpa.svg?branch=master)](https://travis-ci.com/scriptex/webpack-mpa)
