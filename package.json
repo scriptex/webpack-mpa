@@ -1,6 +1,6 @@
 {
 	"name": "webpack-mpa",
-	"version": "3.12.0",
+	"version": "3.12.1",
 	"description": "Multi page app setup with webpack",
 	"keywords": [
 		"MPA",
@@ -12,7 +12,7 @@
 		"Multiple pages application setup",
 		"Multiple pages application boilerplate"
 	],
-	"homepage": "https://atanas.info/projects/webpack-mpa.html",
+	"homepage": "https://atanas.info/portfolio/open-source/webpack-mpa",
 	"bugs": {
 		"url": "https://github.com/scriptex/webpack-mpa/issues",
 		"email": "hi@atanas.info"
