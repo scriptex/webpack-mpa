@@ -45,7 +45,7 @@
 	"devDependencies": {
 		"@babel/core": "7.20.5",
 		"@babel/preset-env": "7.20.2",
-		"@three11/optisize": "2.0.0",
+		"@three11/optisize": "3.0.1",
 		"autoprefixer": "10.4.13",
 		"babel-loader": "9.1.0",
 		"browser-sync": "2.27.10",
