@@ -7,7 +7,7 @@ jobs:
             - checkout
             - run:
                   name: native deps
-                  command: sudo apt install -y gcc make automake libpng-dev
+                  command: sudo apt install -y gcc make automake libpng-dev libpng-devel
             - run:
                   name: install
                   command: yarn
