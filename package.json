@@ -85,7 +85,7 @@
 	"resolutions": {
 		"got": "^11.8.5",
 		"http-cache-semantics": "^4.1.1",
-		"semver-regex": "^3.1.4",
+		"semver-regex": "^4.0.0",
 		"ua-parser-js": "^1.0.33"
 	},
 	"bin": {
