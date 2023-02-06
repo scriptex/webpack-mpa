@@ -29,7 +29,6 @@
 	"scripts": {
 		"build": "webpack --mode=production",
 		"start": "webpack --watch --mode=development",
-		"optisize": "optisize --src=\"./assets/images\"",
 		"html": "php index.php > index.html",
 		"critical": "node critical.mjs",
 		"rm-html": "rm index.html",
@@ -45,7 +44,6 @@
 	"devDependencies": {
 		"@babel/core": "7.20.12",
 		"@babel/preset-env": "7.20.2",
-		"@three11/optisize": "3.0.1",
 		"autoprefixer": "10.4.13",
 		"babel-loader": "9.1.2",
 		"browser-sync": "2.27.11",

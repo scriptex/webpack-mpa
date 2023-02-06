@@ -6,8 +6,8 @@ jobs:
         steps:
             - checkout
             - run:
-                  name: native deps
-                  command: sudo apt install -y gcc make automake libpng-dev libpng-devel
+                  name: autoreconf
+                  command: sudo apt install automake
             - run:
                   name: install
                   command: yarn
@@ -17,9 +17,6 @@ jobs:
             - run:
                   name: pwa
                   command: yarn pwa
-            - run:
-                  name: optisize
-                  command: yarn optisize
             - run:
                   name: prod
                   command: yarn prod
