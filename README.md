@@ -207,9 +207,7 @@ npm run build
     npm start --env server
     ```
 
-6)  Images optimization using [Optisize](https://github.com/three11/optisize)
-
-7)  SVG Sprite generating using [spritesh](https://www.npmjs.com/package/spritesh)
+6)  SVG Sprite generating using [spritesh](https://www.npmjs.com/package/spritesh)
 
     All svg files located in `assets/images/svg` are merged into a single `sprite.svg` file in `dist` directory.
 
@@ -231,7 +229,7 @@ npm run build
     </svg>
     ```
 
-8)  All front-end assets are stored in an auto-generated `dist` folder.
+7)  All front-end assets are stored in an auto-generated `dist` folder.
 
 ## Assets
 
@@ -271,7 +269,6 @@ There are several scripts defined in the `package.json` file:
 {
 	"build": "webpack --mode=production",
 	"start": "webpack --watch --mode=development",
-	"optisize": "optisize --src=\"./assets/images\"",
 	"html": "php index.php > index.html",
 	"critical": "critical index.html > assets/dist/critical.css",
 	"rm-html": "rm index.html",
@@ -284,12 +281,11 @@ Here is a bit more about what each script does:
 
 1.  `build`: Builds the production version of the javascript and css bundles, regenerates PNG and SVG sprites.
 2.  `start`: Starts the development sequence, regenerates PNG and SVG sprites, opens your default browser and watches for changes.
-3.  `optisize`: Optimizes your PNG, JPG and GIF images.
-4.  `html`: Converts your `index.php` file to `index.html`.
-5.  `critical`: Using the `index.html` extracts the critical css and generates a `critical.css` file in the `assets/dist` folder which is then inlined in the `index.php` file.
-6.  `rm-html`: Deletes the `index.html` file.
-7.  `pwa`: Generates boilerplate files for a PWA. More info [here](https://github.com/scriptex/create-pwa).
-8.  `prod`: Runs 1, 4, 5, 6. (In this exact order).
+3.  `html`: Converts your `index.php` file to `index.html`.
+4.  `critical`: Using the `index.html` extracts the critical css and generates a `critical.css` file in the `assets/dist` folder which is then inlined in the `index.php` file.
+5.  `rm-html`: Deletes the `index.html` file.
+6.  `pwa`: Generates boilerplate files for a PWA. More info [here](https://github.com/scriptex/create-pwa).
+7.  `prod`: Runs 1, 4, 5, 6. (In this exact order).
 
 In order to use the ability to generate critical CSS you must have the `php` binary exposed in your bash terminal.
 More about PHP's commandline usage can be found [here](http://php.net/manual/en/features.commandline.php).

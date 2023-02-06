@@ -8,7 +8,7 @@ jobs:
 
         strategy:
             matrix:
-                node-version: [14.x, 16.x]
+                node-version: [18.x]
 
         steps:
             - uses: actions/checkout@v3
@@ -19,5 +19,4 @@ jobs:
             - run: yarn
             - run: yarn lint
             - run: yarn pwa
-            - run: yarn optisize
             - run: yarn prod

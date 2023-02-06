@@ -18,8 +18,5 @@ jobs:
                   name: pwa
                   command: yarn pwa
             - run:
-                  name: optisize
-                  command: yarn optisize
-            - run:
                   name: prod
                   command: yarn prod

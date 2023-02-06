@@ -7,5 +7,4 @@ install:
 script:
     - yarn lint
     - yarn pwa
-    - yarn optisize
     - yarn prod
