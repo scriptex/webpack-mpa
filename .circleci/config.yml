@@ -6,8 +6,8 @@ jobs:
         steps:
             - checkout
             - run:
-                  name: autoreconf
-                  command: sudo apt install automake
+                  name: native deps
+                  command: sudo apt install -y gcc make automake libpng-dev
             - run:
                   name: install
                   command: yarn
