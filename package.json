@@ -74,7 +74,7 @@
 		"stylelint": "15.1.0",
 		"stylelint-config-recommended": "10.0.1",
 		"stylelint-config-standard-scss": "7.0.0",
-		"stylelint-no-unsupported-browser-features": "6.0.1",
+		"stylelint-no-unsupported-browser-features": "6.1.0",
 		"stylelint-scss": "4.4.0",
 		"svg-symbol-sprite": "1.4.0",
 		"webpack": "5.75.0",

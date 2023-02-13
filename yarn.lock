@@ -8363,10 +8363,10 @@ stylelint-config-standard@^30.0.1:
   dependencies:
     stylelint-config-recommended "^10.0.1"
 
-stylelint-no-unsupported-browser-features@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-6.0.1.tgz#a816b72bfdf7d1c4ffcf2f6a4f3524442a4a8e7b"
-  integrity sha512-cuhp3gU+SMp0I5dCykjQ0iSTtBsWeA7qNZlNBYnCW7L4KPudunRYyGQ8gcClRJtFpGkElQUtsfLMALNFZVdEFw==
+stylelint-no-unsupported-browser-features@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-6.1.0.tgz#04aabd68eeef98cdc3c3926c85848995c32adb36"
+  integrity sha512-3Taj+z9PjIiY6cz4hg3eN8Khue3kMm9lPXYuEvdjAFXDK20uQo2NocJaWN6anIKclYlwrpkBAS9W/KV3qPTWsw==
   dependencies:
     doiuse "^4.4.1"
     lodash "^4.17.15"
