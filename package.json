@@ -71,7 +71,7 @@
 		"postcss-watch-folder": "2.0.0",
 		"sass": "1.59.3",
 		"sass-loader": "13.2.0",
-		"stylelint": "15.2.0",
+		"stylelint": "15.3.0",
 		"stylelint-config-recommended": "10.0.1",
 		"stylelint-config-standard-scss": "7.0.1",
 		"stylelint-no-unsupported-browser-features": "6.1.0",
