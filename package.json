@@ -63,7 +63,7 @@
 		"postcss-cli": "10.1.0",
 		"postcss-easy-import": "4.0.0",
 		"postcss-flexbugs-fixes": "5.0.2",
-		"postcss-loader": "7.0.2",
+		"postcss-loader": "7.1.0",
 		"postcss-merge-rules": "5.1.4",
 		"postcss-normalize": "10.0.1",
 		"postcss-url": "10.1.3",
