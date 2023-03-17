@@ -22,7 +22,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.20.14.tgz#4106fc8b755f3e3ee0a0a7c27dde5de1d2b2baf8"
   integrity sha512-0YpKHD6ImkWMEINCyDAD0HLLUH/lPCefG8ld9it8DJB2wnApraKuhgYTvTY1z7UFIfBTGy5LwncZ+5HWWGbhFw==
 
-"@babel/core@7.21.3":
+"@babel/core@7.21.3", "@babel/core@^7.21.3":
   version "7.21.3"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.21.3.tgz#cf1c877284a469da5d1ce1d1e53665253fae712e"
   integrity sha512-qIJONzoa/qiHghnm0l1n4i/6IIziDpzqc36FBs4pzMhDUraHqponwJLiAKm1hGLP3OSB/TVNz6rMwVGpwxxySw==
@@ -823,7 +823,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.18.6"
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/preset-env@7.20.2":
+"@babel/preset-env@7.20.2", "@babel/preset-env@^7.20.2":
   version "7.20.2"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.20.2.tgz#9b1642aa47bb9f43a86f9630011780dab7f86506"
   integrity sha512-1G0efQEWR1EHkKvKHqbG+IN/QdgwfByUpM5V5QroDzGV2t3S/WXNQd693cHiHTlCFMpr9B6FkPFXDA2lQcKoDg==
@@ -1884,7 +1884,7 @@ babel-eslint@^10.0.1:
     eslint-visitor-keys "^1.0.0"
     resolve "^1.12.0"
 
-babel-loader@9.1.2:
+babel-loader@9.1.2, babel-loader@^9.1.2:
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-9.1.2.tgz#a16a080de52d08854ee14570469905a5fc00d39c"
   integrity sha512-mN14niXW43tddohGl8HPu5yfQq70iUThvFL/4QzESA7GcZoC0eVOhvWdQ8+3UlSjaDE9MVtsW9mxDY07W7VpVA==
@@ -2021,21 +2021,24 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browser-sync-client@^2.28.3:
-  version "2.28.3"
-  resolved "https://registry.yarnpkg.com/browser-sync-client/-/browser-sync-client-2.28.3.tgz#cc9c35430235c131b3ab15138f1d8ef2b204b9a4"
-  integrity sha512-SMsnGkyXlySVLBWRrXdnTdtQCy0Sl5UoiF8BVtigj9S49DaPWQiesbsyq+uJBUKgpyNve+cvfpBU3KSfIp6oLQ==
+browser-sync-client@^2.29.0:
+  version "2.29.0"
+  resolved "https://registry.yarnpkg.com/browser-sync-client/-/browser-sync-client-2.29.0.tgz#80d91eabdc1f3c183aa233eaa8ed69efd5433f4d"
+  integrity sha512-2nKb/MMIkaXNiHADhr5m+OSV0TCMn3P84xXVq2YY6HSrXrXCIHCmI/DgCMi3zJasmrxtducB6rx4AtykWrHz8Q==
   dependencies:
+    "@babel/core" "^7.21.3"
+    "@babel/preset-env" "^7.20.2"
+    babel-loader "^9.1.2"
     etag "1.8.1"
     fresh "0.5.2"
     mitt "^1.1.3"
     rxjs "^5.5.6"
     typescript "^4.6.2"
 
-browser-sync-ui@^2.28.3:
-  version "2.28.3"
-  resolved "https://registry.yarnpkg.com/browser-sync-ui/-/browser-sync-ui-2.28.3.tgz#6ed7469a9d557e04c264106cbeb7032fc175f09d"
-  integrity sha512-Mj5M+O3jroGp5hlO6pDfUo19wzUTIuvGyzaRrJAYUgsSkpFacrX+MLCjN9VbZm9fYXbtHyIsnIUUIlYag87wgQ==
+browser-sync-ui@^2.29.0:
+  version "2.29.0"
+  resolved "https://registry.yarnpkg.com/browser-sync-ui/-/browser-sync-ui-2.29.0.tgz#292c81a81c47c4ca55ccbe99c27a1eb90cadaeef"
+  integrity sha512-wrbU8dvlOkxoSDif3Q12IF/BXs2qVqH8cuGBgsvGFqASAQly42Jf2cp8UAZPq0Y07p0InPEnAaEgzRkhxfHKJg==
   dependencies:
     async-each-series "0.1.1"
     chalk "4.1.2"
@@ -2052,13 +2055,13 @@ browser-sync-webpack-plugin@2.3.0:
   dependencies:
     lodash "^4"
 
-browser-sync@2.28.3:
-  version "2.28.3"
-  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.28.3.tgz#ff4c4a7b8e905f20d5ff517ecb0b4ba82c234896"
-  integrity sha512-gublDeevvAuypnc01SQNGL8fkm4RdIkEagnAJ8Tl9mvr2td3Pl4nVIg5S6fcgoMDEWb8IT7nUHG9YwTATn/k2g==
+browser-sync@2.29.0:
+  version "2.29.0"
+  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.29.0.tgz#d7640742418ba9d5ea00bf68f746be1d88d3e295"
+  integrity sha512-If5snHp16ql9jd0rzGCrwX2x2N+YTjW6Ggy1h+XxNxUW3Aeaq2FbLu8p9W9+vKJ9vLTrJqpp9waFyU/rmBBxmw==
   dependencies:
-    browser-sync-client "^2.28.3"
-    browser-sync-ui "^2.28.3"
+    browser-sync-client "^2.29.0"
+    browser-sync-ui "^2.29.0"
     bs-recipes "1.3.4"
     bs-snippet-injector "^2.0.1"
     chalk "4.1.2"
