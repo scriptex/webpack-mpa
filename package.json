@@ -59,7 +59,7 @@
 		"eslint-plugin-compat": "4.2.0",
 		"mini-css-extract-plugin": "2.7.6",
 		"node-sass-magic-importer": "5.3.3",
-		"postcss": "8.4.28",
+		"postcss": "8.4.29",
 		"postcss-cli": "10.1.0",
 		"postcss-easy-import": "4.0.0",
 		"postcss-flexbugs-fixes": "5.0.2",
