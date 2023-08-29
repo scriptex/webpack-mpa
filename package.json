@@ -56,7 +56,7 @@
 		"cssnano": "6.0.1",
 		"eslint": "8.48.0",
 		"eslint-config-recommended": "4.1.0",
-		"eslint-plugin-compat": "4.1.4",
+		"eslint-plugin-compat": "4.2.0",
 		"mini-css-extract-plugin": "2.7.6",
 		"node-sass-magic-importer": "5.3.3",
 		"postcss": "8.4.28",
