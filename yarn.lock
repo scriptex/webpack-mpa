@@ -2897,10 +2897,10 @@ create-pwa@2.7.0:
     sharp "0.31.3"
     yargs "17.6.2"
 
-critical@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-5.2.0.tgz#0203e7690386bf81b743c47d44560e24b04b4355"
-  integrity sha512-DkFh8R5csInufKczT4qn8yWJ/kPYCvg0tvNNDxk8v0vz59T5Es8MS6CxMeCFrQOtmXttFVB/4CtJ2n/lkex0MQ==
+critical@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-5.3.0.tgz#e676795114231a8e0ffd742e1a6b20addb16b9ea"
+  integrity sha512-LJaLOddf+jWA/rujW6Bzr/eBd5KNhuwo0ps1WCho5WK58qWminXjJUqLbY75Nf2MIO9h879WfYrucG+9hwMYCw==
   dependencies:
     clean-css "^5.3.2"
     common-tags "^1.8.2"
