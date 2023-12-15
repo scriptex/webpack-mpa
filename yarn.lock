@@ -3041,6 +3041,11 @@ cssnano-utils@^4.0.0:
   resolved "https://registry.yarnpkg.com/cssnano-utils/-/cssnano-utils-4.0.0.tgz#d1da885ec04003ab19505ff0e62e029708d36b08"
   integrity sha512-Z39TLP+1E0KUcd7LGyF4qMfu8ZufI0rDzhdyAMsa/8UyNUU8wpS0fhdBxbQbv32r64ea00h4878gommRVg2BHw==
 
+cssnano-utils@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/cssnano-utils/-/cssnano-utils-4.0.1.tgz#fd18b42f95938bf55ab47967705355d6047bf1da"
+  integrity sha512-6qQuYDqsGoiXssZ3zct6dcMxiqfT6epy7x4R0TQJadd4LWO3sPR6JH6ZByOvVLoZ6EdwPGgd7+DR1EmX3tiXQQ==
+
 cssnano@6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-6.0.1.tgz#87c38c4cd47049c735ab756d7e77ac3ca855c008"
@@ -6638,7 +6643,17 @@ postcss-merge-longhand@^6.0.0:
     postcss-value-parser "^4.2.0"
     stylehacks "^6.0.0"
 
-postcss-merge-rules@6.0.1, postcss-merge-rules@^6.0.1:
+postcss-merge-rules@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-6.0.2.tgz#b0f0063a05d671b7093a86f0faa6d2c6695dc036"
+  integrity sha512-6lm8bl0UfriSfxI+F/cezrebqqP8w702UC6SjZlUlBYwuRVNbmgcJuQU7yePIvD4MNT53r/acQCUAyulrpgmeQ==
+  dependencies:
+    browserslist "^4.21.4"
+    caniuse-api "^3.0.0"
+    cssnano-utils "^4.0.1"
+    postcss-selector-parser "^6.0.5"
+
+postcss-merge-rules@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-6.0.1.tgz#39f165746404e646c0f5c510222ccde4824a86aa"
   integrity sha512-a4tlmJIQo9SCjcfiCcCMg/ZCEe0XTkl/xK0XHBs955GWg9xDX3NwP9pwZ78QUOWB8/0XCjZeJn98Dae0zg6AAw==
@@ -8209,18 +8224,7 @@ stylelint-no-unsupported-browser-features@7.0.0:
     lodash "^4.17.15"
     postcss "^8.4.16"
 
-stylelint-scss@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-6.0.0.tgz#bf6be6798d71c898484b7e97007d5ed69a89308d"
-  integrity sha512-N1xV/Ef5PNRQQt9E45unzGvBUN1KZxCI8B4FgN/pMfmyRYbZGVN4y9qWlvOMdScU17c8VVCnjIHTVn38Bb6qSA==
-  dependencies:
-    known-css-properties "^0.29.0"
-    postcss-media-query-parser "^0.2.3"
-    postcss-resolve-nested-selector "^0.1.1"
-    postcss-selector-parser "^6.0.13"
-    postcss-value-parser "^4.2.0"
-
-stylelint-scss@^6.0.0:
+stylelint-scss@6.0.0, stylelint-scss@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-6.0.0.tgz#bf6be6798d71c898484b7e97007d5ed69a89308d"
   integrity sha512-N1xV/Ef5PNRQQt9E45unzGvBUN1KZxCI8B4FgN/pMfmyRYbZGVN4y9qWlvOMdScU17c8VVCnjIHTVn38Bb6qSA==
