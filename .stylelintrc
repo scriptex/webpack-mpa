@@ -2,8 +2,6 @@
 	"extends": ["stylelint-config-recommended", "stylelint-config-standard-scss"],
 	"plugins": ["stylelint-scss", "stylelint-no-unsupported-browser-features"],
 	"rules": {
-		"string-quotes": "single",
-		"at-rule-no-unknown": null,
 		"scss/at-rule-no-unknown": true
 	}
 }
