@@ -12,6 +12,11 @@
   resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.3.2.tgz#a6abc715fb6884851fca9dad37fc34739a04fd11"
   integrity sha512-DA5a1C0gD/pLOvhv33YMrbf2FK3oUzwNl9oOJqE4XVjuEtt6XIakRcsd7eLiOSPkp1kTRQGICTA8cKra/vFbjw==
 
+"@adobe/css-tools@^4.3.3":
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.3.3.tgz#90749bde8b89cd41764224f5aac29cd4138f75ff"
+  integrity sha512-rE0Pygv0sEZ4vBWHlAgJLGDU7Pm8xoO6p3wsEceb7GYAjScrOHpEo8KK/eVkAcnSM+slAEtXjA2JpdjLp4fJQQ==
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"
@@ -2878,11 +2883,12 @@ create-pwa@2.7.0:
     sharp "0.31.3"
     yargs "17.6.2"
 
-critical@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-7.0.0.tgz#b7798ee9fdd00201689cf6de3932f6e264b8548a"
-  integrity sha512-srl/depgzy1xfsMKSMJab7tbn+KttYN3NQw0QQAVRUWR0kBLs8hTiFdGPEJwIYLTNMslzVG60d02Hqvj21fhyA==
+critical@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-7.1.0.tgz#1f3a0d4a45550bd9416c98607a62d1ca9e5bd576"
+  integrity sha512-8XKg4lXUHfFSJS9Y+w2CdVx4OmJTnW8wox1yzQEwdlBs5lBAVbcz3JaOyDcCMbu3/vky0y1GETePZB7VKFBQsQ==
   dependencies:
+    "@adobe/css-tools" "^4.3.3"
     clean-css "^5.3.3"
     common-tags "^1.8.2"
     css-url-parser "^1.1.3"
