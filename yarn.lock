@@ -3087,11 +3087,6 @@ cssnano-preset-default@^6.1.0:
     postcss-svgo "^6.0.3"
     postcss-unique-selectors "^6.0.3"
 
-cssnano-utils@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/cssnano-utils/-/cssnano-utils-4.0.1.tgz#fd18b42f95938bf55ab47967705355d6047bf1da"
-  integrity sha512-6qQuYDqsGoiXssZ3zct6dcMxiqfT6epy7x4R0TQJadd4LWO3sPR6JH6ZByOvVLoZ6EdwPGgd7+DR1EmX3tiXQQ==
-
 cssnano-utils@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/cssnano-utils/-/cssnano-utils-4.0.2.tgz#56f61c126cd0f11f2eef1596239d730d9fceff3c"
@@ -6684,17 +6679,7 @@ postcss-merge-longhand@^6.0.4:
     postcss-value-parser "^4.2.0"
     stylehacks "^6.1.0"
 
-postcss-merge-rules@6.0.4:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-6.0.4.tgz#a4ac3ed63502428d846f8b71b2c880dba58c78f1"
-  integrity sha512-97iF3UJ5v8N1BWy38y+0l+Z8o5/9uGlEgtWic2PJPzoRrLB6Gxg8TVG93O0EK52jcLeMsywre26AUlX1YAYeHA==
-  dependencies:
-    browserslist "^4.23.0"
-    caniuse-api "^3.0.0"
-    cssnano-utils "^4.0.1"
-    postcss-selector-parser "^6.0.15"
-
-postcss-merge-rules@^6.1.0:
+postcss-merge-rules@6.1.0, postcss-merge-rules@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-6.1.0.tgz#f3edd175056599a284444aa6553a09d5a4440266"
   integrity sha512-lER+W3Gr6XOvxOYk1Vi/6UsAgKMg6MDBthmvbNqi2XxAk/r9XfhdYZSigfWjuWWn3zYw2wLelvtM8XuAEFqRkA==
