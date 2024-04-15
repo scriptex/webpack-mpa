@@ -12,7 +12,7 @@ const {
 
 const mkdir = dir => {
 	try {
-		mkdirSync(dir, 0755);
+		mkdirSync(dir, 0o755);
 	} catch (e) {
 		if (e.code !== 'EEXIST') {
 			throw e;

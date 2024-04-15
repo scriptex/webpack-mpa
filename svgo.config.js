@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 const { extendDefaultPlugins } = require('svgo');
 
 module.exports = {

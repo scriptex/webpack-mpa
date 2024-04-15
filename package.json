@@ -35,7 +35,7 @@
 		"pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\" --launch=\"./assets/images/favicon/launch.png\"",
 		"prod": "yarn build && yarn html && yarn critical && yarn rm-html",
 		"lint": "yarn lint:js && yarn lint:scss",
-		"lint:js": "eslint './assets/scripts/**/*.js'",
+		"lint:js": "eslint",
 		"lint:scss": "stylelint assets/styles/**/*.scss"
 	},
 	"dependencies": {
@@ -54,7 +54,7 @@
 		"critical": "7.1.1",
 		"css-loader": "7.1.1",
 		"cssnano": "6.1.2",
-		"eslint": "8.57.0",
+		"eslint": "9.0.0",
 		"eslint-config-recommended": "4.1.0",
 		"eslint-plugin-compat": "4.2.0",
 		"mini-css-extract-plugin": "2.8.1",
@@ -81,12 +81,6 @@
 		"webpack-cli": "5.1.4",
 		"webpack-shell-plugin-next": "2.3.1",
 		"webpack-spritesmith": "1.1.0"
-	},
-	"resolutions": {
-		"got": "^11.8.5",
-		"http-cache-semantics": "^4.1.1",
-		"semver-regex": "^4.0.0",
-		"ua-parser-js": "^1.0.33"
 	},
 	"bin": {
 		"wmpa": "./bin/cli.js"
