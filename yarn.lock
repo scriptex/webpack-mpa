@@ -2511,10 +2511,10 @@ create-pwa@2.7.0:
     sharp "0.31.3"
     yargs "17.6.2"
 
-critical@7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-7.1.1.tgz#f1e34e195a5f59a3cec2b78ad72a8fc9bb6d9314"
-  integrity sha512-DVNu4QzpQgYhR/9DQGcBn83R8ZKWBVUq9FfUZqOg2QpntHCrwynVynnAWQDPXG87IfO1dYyIiiWbTZtL+ahfPQ==
+critical@7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-7.1.2.tgz#f943226cc059e7f4a77b4bfb3f5c8fbb3bd938a3"
+  integrity sha512-2C0d9zH7nDsrN8yWH5IOb977lFTy3+i/yPX2ik2+4PdZCBHvSs4XF9Ag2Xp5Znq2o0Gdma6nNcBQTsF4Lc0PKw==
   dependencies:
     "@adobe/css-tools" "^4.3.3"
     clean-css "^5.3.3"
