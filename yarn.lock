@@ -8063,10 +8063,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svg-symbol-sprite@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/svg-symbol-sprite/-/svg-symbol-sprite-1.5.1.tgz#b44ae4e4387fe9a88bce9aa55028321e95fdac3d"
-  integrity sha512-X+WNptueoTLOifNxMBTLOHFzHnV70gbuTdLp+iolt37c82pAyztZ73zhVnxKe+18MEk2lRNiObq8fV6pGzyvGg==
+svg-symbol-sprite@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/svg-symbol-sprite/-/svg-symbol-sprite-1.5.2.tgz#6bd6b23dbf968ecea0a056cdab1cac5a284afc9b"
+  integrity sha512-+1CI0XbDsfArMD015I+noC+YgRXozxj6MTJ+nVl+Z73cor+2YyD97APC57y4vRgqXgwgTW9mVmdaFqu29yve6w==
   dependencies:
     cheerio "1.0.0-rc.12"
     commander "^12.0.0"
