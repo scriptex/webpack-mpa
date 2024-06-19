@@ -8096,10 +8096,10 @@ stylelint-no-unsupported-browser-features@8.0.1:
     doiuse "^6.0.2"
     postcss "^8.4.32"
 
-stylelint-scss@6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-6.3.1.tgz#eb56f23f4d3e0896647365ab1681653a00bdbc2b"
-  integrity sha512-w/czBoWUZxJNk5fBRPODcXSN4qcPv3WHjTSSpFovVY+TE3MZTMR0yRlbmaDYrm8tTWHvpwQAuEBZ0lk2wwkboQ==
+stylelint-scss@6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-6.3.2.tgz#085072e774e5a31e65aa2acefaad5417a29d6ec1"
+  integrity sha512-pNk9mXOVKkQtd+SROPC9io8ISSgX+tOVPhFdBE+LaKQnJMLdWPbGKAGYv4Wmf/RrnOjkutunNTN9kKMhkdE5qA==
   dependencies:
     known-css-properties "^0.31.0"
     postcss-media-query-parser "^0.2.3"
