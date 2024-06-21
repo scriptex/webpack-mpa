@@ -72,7 +72,7 @@
 		"sass": "1.77.6",
 		"sass-loader": "14.2.1",
 		"stylelint": "16.6.1",
-		"stylelint-config-recommended": "14.0.0",
+		"stylelint-config-recommended": "14.0.1",
 		"stylelint-config-standard-scss": "13.1.0",
 		"stylelint-no-unsupported-browser-features": "8.0.1",
 		"stylelint-scss": "6.3.2",
