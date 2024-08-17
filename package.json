@@ -51,7 +51,7 @@
 		"browserslist": "4.23.3",
 		"clean-webpack-plugin": "4.0.0",
 		"create-pwa": "2.7.0",
-		"critical": "7.1.2",
+		"critical": "7.2.0",
 		"css-loader": "7.1.2",
 		"cssnano": "7.0.5",
 		"eslint": "9.9.0",
