@@ -53,7 +53,7 @@
 		"create-pwa": "2.7.0",
 		"critical": "7.2.0",
 		"css-loader": "7.1.2",
-		"cssnano": "7.0.5",
+		"cssnano": "7.0.6",
 		"eslint": "9.9.1",
 		"eslint-config-recommended": "4.1.0",
 		"eslint-plugin-compat": "6.0.0",
