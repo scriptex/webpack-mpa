@@ -6488,17 +6488,7 @@ postcss-merge-longhand@^7.0.4:
     postcss-value-parser "^4.2.0"
     stylehacks "^7.0.4"
 
-postcss-merge-rules@7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-7.0.3.tgz#2340495eba01aff0dc98d92ce9433167e39b4616"
-  integrity sha512-2eSas2p3voPxNfdI5sQrvIkMaeUHpVc3EezgVs18hz/wRTQAC9U99tp9j3W5Jx9/L3qHkEDvizEx/LdnmumIvQ==
-  dependencies:
-    browserslist "^4.23.3"
-    caniuse-api "^3.0.0"
-    cssnano-utils "^5.0.0"
-    postcss-selector-parser "^6.1.1"
-
-postcss-merge-rules@^7.0.4:
+postcss-merge-rules@7.0.4, postcss-merge-rules@^7.0.4:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-7.0.4.tgz#648cc864d3121e6ec72c2a4f08df1cc801e60ce8"
   integrity sha512-ZsaamiMVu7uBYsIdGtKJ64PkcQt6Pcpep/uO90EpLS3dxJi6OXamIobTYcImyXGoW0Wpugh7DSD3XzxZS9JCPg==
