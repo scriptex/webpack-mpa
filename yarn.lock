@@ -6628,10 +6628,10 @@ postcss-normalize-whitespace@^7.0.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
-postcss-normalize@10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-10.0.1.tgz#464692676b52792a06b06880a176279216540dd7"
-  integrity sha512-+5w18/rDev5mqERcG3W5GZNMJa1eoYYNGo8gB7tEwaos0ajk3ZXAI4mHGcNT47NE+ZnZD1pEpUOFLvltIwmeJA==
+postcss-normalize@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-12.0.0.tgz#893f6cc21317e4e185bde7390d1a5a568a26afc3"
+  integrity sha512-hok6Xu5mw9TCs7YgquubxxB/T7icKslAU3zyronFa3Sxq56iGAVMBccWXUjMWN9v5wHZ7DUNuqsXRS9Z+S1T2g==
   dependencies:
     "@csstools/normalize.css" "*"
     postcss-browser-comments "^4"
