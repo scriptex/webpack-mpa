@@ -46,7 +46,7 @@
 		"@babel/preset-env": "7.25.4",
 		"autoprefixer": "10.4.20",
 		"babel-loader": "9.2.1",
-		"browser-sync": "3.0.2",
+		"browser-sync": "3.0.3",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"browserslist": "4.23.3",
 		"clean-webpack-plugin": "4.0.0",
