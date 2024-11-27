@@ -1,16 +1,24 @@
 {
-	"extends": ["config:base", ":automergePatch", ":automergeMinor", ":automergeBranch", ":disableDependencyDashboard"],
-	"travis": {
-		"enabled": true
-	},
-	"assignees": ["@scriptex"],
-	"labels": ["dependencies"],
-	"rebaseWhen": "conflicted",
-	"vulnerabilityAlerts": {
-		"labels": ["security"],
-		"assignees": ["@scriptex"]
-	},
-	"major": {
-		"automerge": false
-	}
+  "extends": [
+    "config:base",
+    ":automergePatch",
+    ":automergeMinor",
+    ":automergeBranch",
+    ":disableDependencyDashboard",
+    "group:allNonMajor"
+  ],
+  "travis": {
+    "enabled": true
+  },
+  "assignees": ["@scriptex"],
+  "labels": ["dependencies"],
+  "rebaseWhen": "conflicted",
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "assignees": ["@scriptex"]
+  },
+  "major": {
+    "automerge": false
+  },
+  "schedule": ["* * 14,28 * *"]
 }
