@@ -78,7 +78,7 @@
 		"stylelint-scss": "6.10.0",
 		"svg-symbol-sprite": "1.5.2",
 		"webpack": "5.97.1",
-		"webpack-cli": "5.1.4",
+		"webpack-cli": "6.0.1",
 		"webpack-shell-plugin-next": "2.3.2",
 		"webpack-spritesmith": "1.1.0"
 	},
