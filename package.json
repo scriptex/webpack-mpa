@@ -42,8 +42,8 @@
 		"itscss": "3.1.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.26.0",
-		"@babel/preset-env": "7.26.0",
+		"@babel/core": "7.26.7",
+		"@babel/preset-env": "7.26.7",
 		"autoprefixer": "10.4.20",
 		"babel-loader": "9.2.1",
 		"browser-sync": "3.0.3",
@@ -74,8 +74,8 @@
 		"stylelint": "16.13.2",
 		"stylelint-config-recommended": "15.0.0",
 		"stylelint-config-standard-scss": "14.0.0",
-		"stylelint-no-unsupported-browser-features": "8.0.2",
-		"stylelint-scss": "6.10.0",
+		"stylelint-no-unsupported-browser-features": "8.0.4",
+		"stylelint-scss": "6.10.1",
 		"svg-symbol-sprite": "1.5.2",
 		"webpack": "5.97.1",
 		"webpack-cli": "6.0.1",
