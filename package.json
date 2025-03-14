@@ -42,9 +42,9 @@
 		"itscss": "3.1.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.26.9",
+		"@babel/core": "7.26.10",
 		"@babel/preset-env": "7.26.9",
-		"autoprefixer": "10.4.20",
+		"autoprefixer": "10.4.21",
 		"babel-loader": "10.0.0",
 		"browser-sync": "3.0.3",
 		"browser-sync-webpack-plugin": "2.3.0",
@@ -60,7 +60,7 @@
 		"mini-css-extract-plugin": "2.9.2",
 		"node-sass-magic-importer": "5.3.3",
 		"postcss": "8.5.3",
-		"postcss-cli": "11.0.0",
+		"postcss-cli": "11.0.1",
 		"postcss-easy-import": "4.0.0",
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-loader": "8.1.1",
