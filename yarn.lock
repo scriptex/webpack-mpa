@@ -6837,7 +6837,17 @@ postcss-merge-longhand@^7.0.5:
     postcss-value-parser "^4.2.0"
     stylehacks "^7.0.5"
 
-postcss-merge-rules@7.0.5, postcss-merge-rules@^7.0.5:
+postcss-merge-rules@7.0.6:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-7.0.6.tgz#f5a0cabf6423b1370ba76d5363dfe44776f1e619"
+  integrity sha512-2jIPT4Tzs8K87tvgCpSukRQ2jjd+hH6Bb8rEEOUDmmhOeTcqDg5fEFK8uKIu+Pvc3//sm3Uu6FRqfyv7YF7+BQ==
+  dependencies:
+    browserslist "^4.25.1"
+    caniuse-api "^3.0.0"
+    cssnano-utils "^5.0.1"
+    postcss-selector-parser "^7.1.0"
+
+postcss-merge-rules@^7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-7.0.5.tgz#08c009036172db1305f988c67b04881ee8aaa76b"
   integrity sha512-ZonhuSwEaWA3+xYbOdJoEReKIBs5eDiBVLAGpYZpNFPzXZcEE5VKR7/qBEQvTZpiwjqhhqEQ+ax5O3VShBj9Wg==
@@ -9156,10 +9166,10 @@ webpack-merge@^6.0.1:
     flat "^5.0.2"
     wildcard "^2.0.1"
 
-webpack-shell-plugin-next@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/webpack-shell-plugin-next/-/webpack-shell-plugin-next-2.3.2.tgz#e7ff817f007cbdc8b9e29800d36c92e3cd64bafd"
-  integrity sha512-VAM1TcncZJHVkXDLlqXt2YMUEYuJca8MRqPThXX0SzxKetXCE16eTzEWaF3a/QbLF2j3grBMosCpnLzxXyu3cA==
+webpack-shell-plugin-next@2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/webpack-shell-plugin-next/-/webpack-shell-plugin-next-2.3.3.tgz#30a935543be1aa023e03132a0fd875e3afed38fe"
+  integrity sha512-3TMY32HKeEiaKqv6o6MSM3sN/G2HgtPWldINI5YkTyY31XB7I/awarZICBoSusbCYwW13oowG+Xrw9zg3mfT7w==
 
 webpack-sources@^3.3.3:
   version "3.3.3"
@@ -9179,10 +9189,10 @@ webpack-spritesmith@1.1.0:
     spritesheet-templates "^10.4.2"
     spritesmith "^3.4.0"
 
-webpack@5.100.1:
-  version "5.100.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.100.1.tgz#d8a7e7761d253b961248ed9ed7661c51698593de"
-  integrity sha512-YJB/ESPUe2Locd0NKXmw72Dx8fZQk1gTzI6rc9TAT4+Sypbnhl8jd8RywB1bDsDF9Dy1RUR7gn3q/ZJTd0OZZg==
+webpack@5.100.2:
+  version "5.100.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.100.2.tgz#e2341facf9f7de1d702147c91bcb65b693adf9e8"
+  integrity sha512-QaNKAvGCDRh3wW1dsDjeMdDXwZm2vqq3zn6Pvq4rHOEOGSaUMgOOjG2Y9ZbIGzpfkJk9ZYTHpDqgDfeBDcnLaw==
   dependencies:
     "@types/eslint-scope" "^3.7.7"
     "@types/estree" "^1.0.8"
