@@ -48,7 +48,7 @@
 		"babel-loader": "10.0.0",
 		"browser-sync": "3.0.4",
 		"browser-sync-webpack-plugin": "2.4.0",
-		"browserslist": "4.26.0",
+		"browserslist": "4.26.2",
 		"clean-webpack-plugin": "4.0.0",
 		"create-pwa": "2.7.0",
 		"critical": "7.2.1",
