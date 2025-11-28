@@ -2,7 +2,7 @@ version: 2.1
 jobs:
     build:
         docker:
-            - image: cimg/php:8.4-browsers
+            - image: cimg/php:8.5-browsers
         steps:
             - checkout
             - run:
