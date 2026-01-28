@@ -3117,19 +3117,19 @@ css-functions-list@^3.2.3:
   resolved "https://registry.yarnpkg.com/css-functions-list/-/css-functions-list-3.2.3.tgz#95652b0c24f0f59b291a9fc386041a19d4f40dbe"
   integrity sha512-IQOkD3hbR5KrN93MtcYuad6YPuTSUhntLHDuLEbFWE+ff2/XSZNdZG+LcbbIW5AXKg/WFIfYItIzVoHngHXZzA==
 
-css-loader@7.1.2:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-7.1.2.tgz#64671541c6efe06b0e22e750503106bdd86880f8"
-  integrity sha512-6WvYYn7l/XEGN8Xu2vWFt9nVzrCn39vKyTEFf/ExEyoksJjjSZV/0/35XPlMbpnr6VGhZIUg5yJrL8tGfes/FA==
+css-loader@7.1.3:
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-7.1.3.tgz#c0de715ceabe39b8531a85fcaf6734a430c4d99a"
+  integrity sha512-frbERmjT0UC5lMheWpJmMilnt9GEhbZJN/heUb7/zaJYeIzj5St9HvDcfshzzOqbsS+rYpMk++2SD3vGETDSyA==
   dependencies:
     icss-utils "^5.1.0"
-    postcss "^8.4.33"
+    postcss "^8.4.40"
     postcss-modules-extract-imports "^3.1.0"
     postcss-modules-local-by-default "^4.0.5"
     postcss-modules-scope "^3.2.0"
     postcss-modules-values "^4.0.0"
     postcss-value-parser "^4.2.0"
-    semver "^7.5.4"
+    semver "^7.6.3"
 
 css-mediaquery@^0.1.2:
   version "0.1.2"
@@ -7349,7 +7349,7 @@ postcss-watch-folder@2.0.0:
   resolved "https://registry.yarnpkg.com/postcss-watch-folder/-/postcss-watch-folder-2.0.0.tgz#0f0b22da8add6cc626be2fd86d099cc7c970b75f"
   integrity sha512-afXH6ow2TFIyCKmQiTjCbjzLOpc1cN4Tsr5J5hctLyQYfIo05pVIiADoKWOaHU8k3Axx/smL6x99Y4dDQyx7fA==
 
-postcss@8.5.6, postcss@^8.5.6:
+postcss@8.5.6, postcss@^8.4.40, postcss@^8.5.6:
   version "8.5.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.6.tgz#2825006615a619b4f62a9e7426cc120b349a8f3c"
   integrity sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==
@@ -7375,7 +7375,7 @@ postcss@^7.0.17:
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.2.7, postcss@^8.3.0, postcss@^8.4.32, postcss@^8.4.33, postcss@^8.4.38, postcss@^8.4.47:
+postcss@^8.2.7, postcss@^8.3.0, postcss@^8.4.32, postcss@^8.4.38, postcss@^8.4.47:
   version "8.5.3"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.3.tgz#1463b6f1c7fb16fe258736cba29a2de35237eafb"
   integrity sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==
@@ -8005,10 +8005,10 @@ sass-loader@16.0.6:
   dependencies:
     neo-async "^2.6.2"
 
-sass@1.97.2:
-  version "1.97.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.97.2.tgz#e515a319092fd2c3b015228e3094b40198bff0da"
-  integrity sha512-y5LWb0IlbO4e97Zr7c3mlpabcbBtS+ieiZ9iwDooShpFKWXf62zz5pEPdwrLYm+Bxn1fnbwFGzHuCLSA9tBmrw==
+sass@1.97.3:
+  version "1.97.3"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.97.3.tgz#9cb59339514fa7e2aec592b9700953ac6e331ab2"
+  integrity sha512-fDz1zJpd5GycprAbu4Q2PV/RprsRtKC/0z82z0JLgdytmcq0+ujJbJ/09bPGDxCLkKY3Np5cRAOcWiVkLXJURg==
   dependencies:
     chokidar "^4.0.0"
     immutable "^5.0.2"
@@ -8071,10 +8071,15 @@ semver@^6.0.0, semver@^6.1.2, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.5, semver@^7.3.8, semver@^7.5.4, semver@^7.6.2:
+semver@^7.3.5, semver@^7.3.8, semver@^7.6.2:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
   integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
+
+semver@^7.6.3:
+  version "7.7.3"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.3.tgz#4b5f4143d007633a8dc671cd0a6ef9147b8bb946"
+  integrity sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==
 
 send@0.19.0:
   version "0.19.0"
