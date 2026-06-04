@@ -143,20 +143,17 @@ npm run build
 ## Details
 
 1.  [SCSS](http://sass-lang.com/) stylesheets preprocessing
-
-    -   SCSS entry point is `main.scss` file located in `assets/styles`
-    -   The whole stylesheets file/folder structure is up to you
-    -   [ITSCSS](https://github.com/scriptex/itscss) boilerplate used as a starting point.
-    -   Glob import in SCSS thanks to [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer)
+    - SCSS entry point is `main.scss` file located in `assets/styles`
+    - The whole stylesheets file/folder structure is up to you
+    - [ITSCSS](https://github.com/scriptex/itscss) boilerplate used as a starting point.
 
 2.  [PostCSS](https://github.com/postcss/postcss) stylesheets postprocessing including:
-
-    -   [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
-    -   [url rebase](https://github.com/postcss/postcss-url) - locates and copies assets from `node_modules`
-    -   [postcss-utilities](https://github.com/ismamz/postcss-utilities) - allows usage of utility mixins such as `clearfix`
-    -   [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) - fixes common flexbox issues on Internet Explorer
-    -   [css minification](http://cssnano.co/) - minifies the bundles stylesheet
-    -   [automatic vendor prefixes](https://github.com/postcss/autoprefixer)
+    - [easy importing](https://github.com/TrySound/postcss-easy-import) of non-sass files
+    - [url rebase](https://github.com/postcss/postcss-url) - locates and copies assets from `node_modules`
+    - [postcss-utilities](https://github.com/ismamz/postcss-utilities) - allows usage of utility mixins such as `clearfix`
+    - [flexbox bugs](https://github.com/luisrudge/postcss-flexbugs-fixes) - fixes common flexbox issues on Internet Explorer
+    - [css minification](http://cssnano.co/) - minifies the bundles stylesheet
+    - [automatic vendor prefixes](https://github.com/postcss/autoprefixer)
 
     > "Write your CSS rules without vendor prefixes (in fact, forget about them entirely)"
 
@@ -174,16 +171,14 @@ npm run build
     The class name corresponds to the name of the PNG file.
 
 4.  Latest EcmaScript support
-
-    -   Usage of the latest features in EcmaScript
-    -   Using [Babel](https://github.com/babel/babel) to transpile to ES5
-    -   Minification of the bundled file
-    -   Source maps
+    - Usage of the latest features in EcmaScript
+    - Using [Babel](https://github.com/babel/babel) to transpile to ES5
+    - Minification of the bundled file
+    - Source maps
 
 5.  Automatic browser reload using [BrowserSync](https://browsersync.io/)
-
-    -   The setup assumes that you have a web server (MAMP, XAMPP, etc) installed.
-    -   If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:
+    - The setup assumes that you have a web server (MAMP, XAMPP, etc) installed.
+    - If you wish to use a proxy in browsersync you can do it using the `url` CLI argument like this:
 
     ```sh
     yarn start --env url=http://your.app
@@ -214,10 +209,9 @@ npm run build
     This action is performed each time the `start` command is invoked.
 
     In order to use the SVG sprite you first need to include it in your markup. You can do so in several ways:
-
-    -   If you're using PHP files, include it in each of your PHP files: `<?php include_once('assets/dist/sprite.svg'); ?>`
-    -   If you're using HTML files, paste the content of the SVG sprite in each of your HTML files.
-    -   If you're using another templating method (posthtml include, handlebars, ejs, etc) you need to do so according to its documentation.
+    - If you're using PHP files, include it in each of your PHP files: `<?php include_once('assets/dist/sprite.svg'); ?>`
+    - If you're using HTML files, paste the content of the SVG sprite in each of your HTML files.
+    - If you're using another templating method (posthtml include, handlebars, ejs, etc) you need to do so according to its documentation.
 
     It is preferred to include the SVG sprite right after your opening `<body>` tag
 
@@ -235,13 +229,13 @@ npm run build
 
 The `assets` folder contains several folders:
 
--   `images` - contains several folders too:
-    -   `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
-    -   `sprite` - contains png sprite's parts
-    -   `svg` - contains svg sprite's parts
-    -   `temp` - contains content images
--   `scripts` - contains the JS modules
--   `styles` - contains the SASS stylesheets
+- `images` - contains several folders too:
+    - `favicon` - contains [all icons variations](https://github.com/audreyr/favicon-cheat-sheet)
+    - `sprite` - contains png sprite's parts
+    - `svg` - contains svg sprite's parts
+    - `temp` - contains content images
+- `scripts` - contains the JS modules
+- `styles` - contains the SASS stylesheets
 
 **Each `start` command regenerates the contents of the `dist` folder.**
 
