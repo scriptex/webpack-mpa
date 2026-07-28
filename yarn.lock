@@ -3258,10 +3258,10 @@ engine.io@~6.6.0:
     engine.io-parser "~5.2.1"
     ws "~8.20.1"
 
-enhanced-resolve@^5.24.2:
-  version "5.24.3"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.24.3.tgz#406bbf1ec20971265a30254f08030fce6a8207fe"
-  integrity sha512-PwKooW9JUzh5chmYfHM3IQl5OkK2u2Nm011MgeZrss3JmFraUx/fqrf78kk8GUMYoibx/14MdwTl/1WKkG7TpQ==
+enhanced-resolve@^5.24.4:
+  version "5.24.4"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.24.4.tgz#ec1f25ece12a37cc299762b412fa6c5962d52227"
+  integrity sha512-GVoi+ICHocoOIU7qVVM48wOJziRsqrsyqlI0Ce0LdowRn6v3bcH2zUa9kp85ncx0nwIb9/HOCOLS3fdThDG/XQ==
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.3.3"
@@ -8770,10 +8770,10 @@ webidl-conversions@^7.0.0:
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-7.0.0.tgz#256b4e1882be7debbf01d05f0aa2039778ea080a"
   integrity sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==
 
-webpack-cli@7.2.1:
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-7.2.1.tgz#180a5b2232ca582f909eccf32c6fb3a56647d294"
-  integrity sha512-YwSGbcZdfz12DM8JIseVPr3oBb09IgVCVc4vY3oDvZnI/mALTGPAP1QiqOi4/bBLSJrRHaqDIXeHcNA0+G38aw==
+webpack-cli@7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-7.2.2.tgz#94ff4f8a28aa087c8127c821e26a6fd0a50323e5"
+  integrity sha512-lD0pALneslq8FfV+rwvm1BMW0AFAJrHHhNupAGN4asYjMvqrtRsenU4iKpiBo09gS4ntMxKGUxl9jhTEzVt0oA==
   dependencies:
     "@discoveryjs/json-ext" "^1.1.0"
     commander "^14.0.3"
@@ -8816,10 +8816,10 @@ webpack-spritesmith@1.1.0:
     spritesheet-templates "^10.4.2"
     spritesmith "^3.4.0"
 
-webpack@5.109.1:
-  version "5.109.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.109.1.tgz#e920c94d522f5deffb5b05991f4e547b0529bfc0"
-  integrity sha512-Q4XQscWSLNQSaMFsIWUZ+IVpvwLqD+MvjIuSQC1hG8m1ZMK78VAsNMhTjD3icJelypp6aM5Hq8BZNEX3sc1PJw==
+webpack@5.109.2:
+  version "5.109.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.109.2.tgz#b58dc289561c3282db35c210a99379a836a4c28d"
+  integrity sha512-U9/cvLzxObKNEZ9+TtdqrHM5/9z3lgl2c+c4BzbqGxFQvQvBAq87yql5A8pQ+rrMbS496MZJeF5enVBndIy2hw==
   dependencies:
     "@types/estree" "^1.0.8"
     "@types/json-schema" "^7.0.15"
@@ -8829,7 +8829,7 @@ webpack@5.109.1:
     acorn "^8.16.0"
     browserslist "^4.28.1"
     chrome-trace-event "^1.0.2"
-    enhanced-resolve "^5.24.2"
+    enhanced-resolve "^5.24.4"
     es-module-lexer "^2.1.0"
     eslint-scope "5.1.1"
     events "^3.2.0"

@@ -76,8 +76,8 @@
 		"stylelint-no-unsupported-browser-features": "8.1.1",
 		"stylelint-scss": "7.2.0",
 		"svg-symbol-sprite": "1.5.2",
-		"webpack": "5.109.1",
-		"webpack-cli": "7.2.1",
+		"webpack": "5.109.2",
+		"webpack-cli": "7.2.2",
 		"webpack-shell-plugin-next": "2.3.3",
 		"webpack-spritesmith": "1.1.0"
 	},
