@@ -3026,7 +3026,7 @@ cssesc@^3.0.0:
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-cssnano-preset-default@^9.1.2:
+cssnano-preset-default@^9.8.0:
   version "9.8.0"
   resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-9.8.0.tgz#b9db3b493b8c8e79e39c942c57cce1b3ffb662c3"
   integrity sha512-BIZvo83PsVGlCErJrFOVTTYgESKzPP3NnQwXVGwYQT6YfGnVHC3TKyVKSSyaAZPmu8pvDco58+5nnDfVniz86g==
@@ -3060,13 +3060,6 @@ cssnano-preset-default@^9.1.2:
     postcss-reduce-transforms "^9.0.6"
     postcss-unique-selectors "^9.0.6"
 
-cssnano-utils@^8.1.0:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/cssnano-utils/-/cssnano-utils-8.2.1.tgz#c1bd1d97517d4533499814f8e5336e35d276e8d9"
-  integrity sha512-ZdZOIbZdO6bDQbRAEdZKsWuaRD00sAltCSkSx0ipDjAc1THTV01Lw3NVAYMrgYbb4Yz3hySIpCHi+x0qUGzohA==
-  dependencies:
-    "@csstools/css-tokenizer" "^4.0.2"
-
 cssnano-utils@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/cssnano-utils/-/cssnano-utils-9.0.0.tgz#6f4b85124f3420f42fa5ab7e35a28a443ebe13e2"
@@ -3074,12 +3067,12 @@ cssnano-utils@^9.0.0:
   dependencies:
     "@csstools/css-tokenizer" "^4.0.2"
 
-cssnano@9.1.2:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-9.1.2.tgz#2e4dc2d5ad70cad6639d384e30489d8f64981af2"
-  integrity sha512-UJnrkOxzaK21cYEbxnp21vUohm/wg8B8R0eoLe7A6Jnm9nHeIQ0irn3L9HYzml9BFkrF97JwE7d6HV4UU6+1dQ==
+cssnano@9.8.0:
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-9.8.0.tgz#e1fdba39d85a3832490118e1797e2f8827d460b9"
+  integrity sha512-sNgrmVv7rtwR3j6VwjlgoDPq52ptYAKbsBQBm3SR1rEAg0e1feS8N2OqkPp1ZKmyGkpNr80kerYNCCbdQXhDtg==
   dependencies:
-    cssnano-preset-default "^9.1.2"
+    cssnano-preset-default "^9.8.0"
 
 csso@^5.0.5:
   version "5.0.5"
@@ -3883,10 +3876,10 @@ eslint-visitor-keys@^5.0.1:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz#9e3c9489697824d2d4ce3a8ad12628f91e9f59be"
   integrity sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==
 
-eslint@10.11.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.11.0.tgz#304d1591b7c6a327e3f64b4f550f99fda160ae20"
-  integrity sha512-P7a6UEEqb9G95MYAtqkmsTbVXIYyzIfl6NGOIJk162PaahFxFyeGcrlXYFSiagECg4sEm8IseJdZBKR3rx6MsQ==
+eslint@10.12.0:
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.12.0.tgz#4f2f7e679bdce9d71438c2900f2c8d4d297332b0"
+  integrity sha512-npHjrHb2o4ehH3mE+YuxABR+0gyb0aVWCIolgJDArwCiHEIsonBm3ZKjel5b0U5+a+MbEvIyRCGCzD3eKKK2NA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.8.0"
     "@eslint-community/regexpp" "^4.12.2"
@@ -6763,18 +6756,7 @@ postcss-merge-longhand@^9.4.0:
     cssnano-utils "^9.0.0"
     stylehacks "^9.0.8"
 
-postcss-merge-rules@9.0.8:
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-9.0.8.tgz#d923340235678ac11fc313f9ca43e34c352fd8ef"
-  integrity sha512-kp14dE0AlXwd69pcfU6VWG9G6pCPK11OWJqlb3/ccoO9CRKGVsqiHOq/hpkAm4scYzuo3ZMYQs1E0O7c2K8SSA==
-  dependencies:
-    "@csstools/css-tokenizer" "^4.0.2"
-    browserslist "^4.29.3"
-    caniuse-api "^4.0.0"
-    cssnano-utils "^8.1.0"
-    postcss-minify-selectors "^9.0.6"
-
-postcss-merge-rules@^9.1.5:
+postcss-merge-rules@9.1.5, postcss-merge-rules@^9.1.5:
   version "9.1.5"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-9.1.5.tgz#8686e70ea4867ae0f07ecda75ff5ed070add1c6f"
   integrity sha512-URhX03eaZ1lwYS+A573lNCsioCd6kNUkJUYXSq30uYDmRKSI+3FfR3a4c0lNqmYkgBPFzI8bY94QPdoQh5zNeA==
@@ -6810,7 +6792,7 @@ postcss-minify-params@^9.1.0:
     browserslist "^4.29.3"
     cssnano-utils "^9.0.0"
 
-postcss-minify-selectors@^9.0.6, postcss-minify-selectors@^9.0.8:
+postcss-minify-selectors@^9.0.8:
   version "9.0.8"
   resolved "https://registry.yarnpkg.com/postcss-minify-selectors/-/postcss-minify-selectors-9.0.8.tgz#a853cd5a75a0144ba7fab80b2975757159d7990d"
   integrity sha512-qMeQvr3ODymnvoDSwml4uTWufma0T2FhRxce4htQ+45otzsm1QyNAg98DXGrawVpGooU2vElaBd8qI+YCwF0UQ==
@@ -8403,10 +8385,10 @@ stylelint-scss@^7.0.0:
     postcss-selector-parser "^7.1.1"
     postcss-value-parser "^4.2.0"
 
-stylelint@17.15.0:
-  version "17.15.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-17.15.0.tgz#724532b29f07f14e0a67f24c287661d86bdc4877"
-  integrity sha512-mWIkesYQvQjf4Kvdeu9ns0IL8/K/wtjaGxPqsPd6DlLZvaQxGysJsocxUDrBcyHQ5VleAk4uSMat4yMrVED7PA==
+stylelint@17.16.0:
+  version "17.16.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-17.16.0.tgz#1d35ff4963122bcd55fa20573856689c3d43b366"
+  integrity sha512-ejlWnbJ13x1GU32+zZXa6sYQJsKKkwSdv2B4rAdO3OWdEmvhSJKcXi5pOphQYSzyaj1kXpuGJr7pcMBNfDIuPw==
   dependencies:
     "@csstools/css-calc" "^3.3.0"
     "@csstools/css-parser-algorithms" "^4.0.0"
